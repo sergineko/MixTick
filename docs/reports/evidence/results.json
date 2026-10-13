@@ -1,0 +1,114 @@
+[
+  {
+    "name": "flutter-version",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "--version"
+    ],
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "dart-version",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\dart.bat",
+    "arguments": [
+      "--version"
+    ],
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "flutter-doctor",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "doctor",
+      "-v"
+    ],
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "pub-get",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "pub",
+      "get"
+    ],
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "gen-l10n",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "gen-l10n"
+    ],
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "format",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\dart.bat",
+    "arguments": [
+      "format",
+      "lib",
+      "test"
+    ],
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "format-check",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\dart.bat",
+    "arguments": [
+      "format",
+      "--output=none",
+      "--set-exit-if-changed",
+      "lib",
+      "test"
+    ],
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "analyze",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "analyze"
+    ],
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "test",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "--reporter",
+      "expanded"
+    ],
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "identifiers",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "arguments": [
+      "scripts/check_identifiers.py",
+      "--strict"
+    ],
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "android-debug-build",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "build",
+      "apk",
+      "--debug"
+    ],
+    "exit_code": 0,
+    "status": "PASS"
+  }
+]

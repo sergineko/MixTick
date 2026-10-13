@@ -1,0 +1,2 @@
+-- Fase 01: sin esquema ni datos de negocio.
+-- La semilla reproducible se implementará con autorización de la Fase 02.

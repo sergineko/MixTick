@@ -1,0 +1,30 @@
+product:
+  working_name: MixTick
+  name_status: provisional_unverified
+  tagline_en: "Cook it. Share it. Tick it."
+  tagline_es: "Cocina, comparte y marca tu compra."
+  internal_slug: mixtick
+  organization: es.sergiotech
+  package_id_prefix: es.sergiotech.
+  android_application_id: es.sergiotech.mixtick
+  android_namespace: es.sergiotech.mixtick
+  ios_bundle_identifier: es.sergiotech.mixtick
+  identifier_status: fixed_for_project
+  initial_locale: es-ES
+  future_locales: [en]
+  platforms: [android, ios]
+  backend: supabase
+  auth_required: true
+  tabs: [community, my_recipes, cook_today, shopping_list]
+  modules_exactly: 4
+  allowed_support: [auth, profile, settings_minimal, moderation_minimal]
+  excluded:
+    - pantry_inventory
+    - weekly_meal_planner
+    - generative_ai
+    - camera_ingredient_detection
+    - subscription_payments
+    - supermarket_price_comparisons
+    - calorie_tracking
+    - food_delivery
+  release_gate: approval_required

@@ -1,0 +1,14 @@
+flowchart TB
+    User[Usuario autenticado] --> Nav[App Flutter: cuatro pestañas]
+    Nav --> C[Comunidad]
+    Nav --> R[Mi recetario]
+    Nav --> M[¿Qué cocino hoy?]
+    Nav --> S[Lista de compra]
+    C --> Recipes[(Recetas + perfiles + interacciones)]
+    R --> Recipes
+    M --> Recipes
+    M --> Catalog[(Ingredientes normalizados)]
+    R --> Catalog
+    Recipes --> S
+    S --> Lists[(Listas + ítems + miembros)]
+    Lists --> RT[Supabase Realtime]

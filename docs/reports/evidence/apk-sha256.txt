@@ -1,0 +1,6 @@
+
+Algorithm : SHA256
+Hash      : 4708E9E807E53A9F085CBDC6B8B354382C9C5E2F994A9D2625FA8ED596BC8686
+Path      : C:\Users\Sergio\Desktop\Proyectos\MixTick\build\app\outputs\flutter-apk\app-debug.apk
+
+

@@ -1,0 +1,15 @@
+{
+  "project": "MixTick",
+  "version": "2.0",
+  "build_date": "2026-10-13",
+  "type": "AI development specification handoff, not compilable source code",
+  "application_id": "es.sergiotech.mixtick",
+  "flutter_project_name": "mixtick",
+  "file_count_excluding_manifest": 34,
+  "modules": [
+    "community",
+    "my_recipes",
+    "cook_today",
+    "shopping_list"
+  ]
+}
