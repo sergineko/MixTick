@@ -1,0 +1,20 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test_support/recipes_local.dart
+00:00 +0: (setUpAll)
+00:00 +0: R01 create effective private defaults with a real authenticated client
+00:00 +1: R02 R03 R04 full aggregate, numeric precision, servings and times persist
+00:00 +2: R05 R06 R07 atomic editing reorders steps and persists optional ingredients
+00:00 +3: R13 valid photo is reencoded and uploaded to the private bucket
+00:00 +4: R14 reject invalid/oversize data and cancelled uploads before Storage
+00:00 +5: R08 publish uses explicit server operation; B/C see full authorized aggregate
+00:00 +6: R15 public staging and replaced photos hidden from third parties
+00:00 +7: R09 privatizing denies current header, child rows, downloads and new signatures
+00:00 +8: R10 raw RPC, direct mutation, child write and foreign path spoof all denied
+00:00 +9: R17 rejected aggregate rolls back header, version and children together
+00:00 +10: R18 two actual concurrent edits produce one success and one version conflict
+00:00 +11: R17 concurrent retry-safe creation makes one private aggregate and isolates request lookup
+00:00 +12: R12 own title/category/privacy filters and keyset pagination without duplicate records
+00:00 +13: R16 hybrid: lose a real committed creation response then retry without duplication
+00:01 +14: R19 actual account switch scopes subsequent reads and rejects previous private photograph
+00:01 +15: R11 versioned deletion removes aggregate relations; photos inaccessible; retry cannot resurrect
+00:01 +16: (tearDownAll)
+00:01 +16: All tests passed!

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\drive_recipe_gallery.py", line 113, in <module>
+    main()
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\drive_recipe_gallery.py", line 108, in main
+    raise RuntimeError('Native Flutter test failed before completing gallery/screenshots')
+RuntimeError: Native Flutter test failed before completing gallery/screenshots

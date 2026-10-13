@@ -1,0 +1,220 @@
+[
+  {
+    "name": "sql-tests",
+    "executable": "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe",
+    "arguments": [
+      "test",
+      "db",
+      "--network-id",
+      "b19982ba9414278465857c0b14cf0dfeea11c68da24823533094ce2d91b86763"
+    ],
+    "started_at": "2026-10-13T11:10:35.5049684+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "db-lint",
+    "executable": "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe",
+    "arguments": [
+      "db",
+      "lint",
+      "--local",
+      "--level",
+      "warning",
+      "--network-id",
+      "b19982ba9414278465857c0b14cf0dfeea11c68da24823533094ce2d91b86763"
+    ],
+    "started_at": "2026-10-13T11:10:36.7183246+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "api-regression",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "arguments": [
+      "scripts/test_database_api.py",
+      "--cli",
+      "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe",
+      "--evidence-dir",
+      "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\docs\\reports\\phase05\\evidence\\regression-db"
+    ],
+    "started_at": "2026-10-13T11:10:37.0344850+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "recipes-real-client",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "test_support/recipes_local.dart",
+      "--dart-define-from-file=.tooling/phase05-client.local.json",
+      "--reporter",
+      "expanded"
+    ],
+    "started_at": "2026-10-13T11:10:45.3093659+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "client-fixture-cleanup",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "arguments": [
+      "scripts/cleanup_recipe_fixtures.py"
+    ],
+    "started_at": "2026-10-13T11:10:49.5766996+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "community-real-client",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "test_support/community_local.dart",
+      "--dart-define-from-file=.tooling/phase05-client.local.json",
+      "--reporter",
+      "expanded"
+    ],
+    "started_at": "2026-10-13T11:10:54.3432602+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "community-fixture-cleanup",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "arguments": [
+      "scripts/cleanup_community_fixtures.py"
+    ],
+    "started_at": "2026-10-13T11:10:59.1698235+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "native-recipes-regression",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+    "arguments": [
+      "-NoProfile",
+      "-File",
+      "scripts/verify_native_recipes.ps1",
+      "-EvidenceDirectory",
+      "docs/reports/phase05/recipe-regression/evidence"
+    ],
+    "started_at": "2026-10-13T11:11:04.4637046+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "native-community-runner",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+    "arguments": [
+      "-NoProfile",
+      "-File",
+      "scripts/verify_native_community.ps1"
+    ],
+    "started_at": "2026-10-13T11:12:22.3533777+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "auth-regression-auto-confirm",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "test_support/auth_profile_local.dart",
+      "--dart-define-from-file=.tooling/phase05-client.local.json",
+      "--reporter",
+      "expanded"
+    ],
+    "started_at": "2026-10-13T11:13:42.7747169+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "auth-regression-email-confirm",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "test_support/auth_profile_local.dart",
+      "--dart-define-from-file=.tooling/phase05-client.local.json",
+      "--dart-define=MIXTICK_TEST_CONFIRMATION=true",
+      "--reporter",
+      "expanded"
+    ],
+    "started_at": "2026-10-13T11:14:43.2653130+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "gen-l10n",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "gen-l10n"
+    ],
+    "started_at": "2026-10-13T11:15:05.5965734+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "flutter-analyze",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "analyze"
+    ],
+    "started_at": "2026-10-13T11:15:06.7591958+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "flutter-test",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "--reporter",
+      "expanded"
+    ],
+    "started_at": "2026-10-13T11:15:13.5120132+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "format-check",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\dart.bat",
+    "arguments": [
+      "format",
+      "--output=none",
+      "--set-exit-if-changed",
+      "lib",
+      "test",
+      "test_support",
+      "integration_test",
+      "scripts/loopback_docker.dart"
+    ],
+    "started_at": "2026-10-13T11:15:22.0164719+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "identifiers",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "arguments": [
+      "scripts/check_identifiers.py",
+      "--strict"
+    ],
+    "started_at": "2026-10-13T11:15:23.0049560+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "android-debug-build",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "build",
+      "apk",
+      "--debug"
+    ],
+    "started_at": "2026-10-13T11:15:23.0546318+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  }
+]

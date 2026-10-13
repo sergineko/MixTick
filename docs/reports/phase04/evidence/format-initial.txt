@@ -1,0 +1,11 @@
+Formatted lib\features\recipes\data\supabase_recipe_repository.dart
+Formatted lib\features\recipes\domain\recipe.dart
+Formatted lib\features\recipes\domain\recipe_repository.dart
+Formatted lib\features\recipes\presentation\ingredient_editor.dart
+Formatted lib\features\recipes\presentation\recipe_detail_page.dart
+Formatted lib\features\recipes\presentation\recipe_editor_page.dart
+Formatted lib\features\recipes\presentation\recipe_providers.dart
+Formatted lib\features\recipes\presentation\recipe_widgets.dart
+Formatted lib\features\recipes\presentation\recipes_page.dart
+Formatted lib/app/router.dart
+Formatted 10 files (10 changed) in 0.08 seconds.

@@ -1,0 +1,6 @@
+Formatted lib\features\recipes\presentation\recipe_editor_page.dart
+Formatted lib\features\recipes\presentation\recipe_providers.dart
+Formatted integration_test/recipe_native_test.dart
+Formatted test\recipes\recipe_test.dart
+Formatted test_support/recipes_local.dart
+Formatted 12 files (5 changed) in 0.09 seconds.

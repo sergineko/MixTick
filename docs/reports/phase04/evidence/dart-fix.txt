@@ -1,0 +1,22 @@
+Computing fixes in recipes...
+Applying fixes...
+
+data\supabase_recipe_repository.dart
+  curly_braces_in_flow_control_structures - 8 fixes
+
+domain\recipe.dart
+  prefer_is_empty - 5 fixes
+
+presentation\recipe_detail_page.dart
+  curly_braces_in_flow_control_structures - 3 fixes
+
+presentation\recipe_editor_page.dart
+  curly_braces_in_flow_control_structures - 7 fixes
+
+presentation\recipe_providers.dart
+  curly_braces_in_flow_control_structures - 8 fixes
+
+presentation\recipe_widgets.dart
+  curly_braces_in_flow_control_structures - 1 fix
+
+32 fixes made in 6 files.

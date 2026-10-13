@@ -1,0 +1,9 @@
+Analyzing MixTick...                                            
+
+   info - Don't invoke 'print' in production code. Try using a logging framework - integration_test\recipe_native_test.dart:21:3 - avoid_print
+   info - Don't invoke 'print' in production code. Try using a logging framework - integration_test\recipe_native_test.dart:65:9 - avoid_print
+   info - Don't invoke 'print' in production code. Try using a logging framework - integration_test\recipe_native_test.dart:128:7 - avoid_print
+   info - Don't invoke 'print' in production code. Try using a logging framework - integration_test\recipe_native_test.dart:145:7 - avoid_print
+   info - Don't invoke 'print' in production code. Try using a logging framework - test_support\generate_recipe_gallery.dart:33:3 - avoid_print
+
+5 issues found. (ran in 8.2s)

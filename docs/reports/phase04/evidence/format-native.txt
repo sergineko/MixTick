@@ -1,0 +1,3 @@
+Formatted integration_test/recipe_native_test.dart
+Formatted test_support\generate_recipe_gallery.dart
+Formatted 6 files (2 changed) in 0.03 seconds.

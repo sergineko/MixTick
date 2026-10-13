@@ -1,0 +1,8 @@
+Analyzing MixTick...                                            
+
+warning - The '!' will have no effect because the receiver can't be null. Try removing the '!' operator - integration_test\community_native_test.dart:196:26 - unnecessary_non_null_assertion
+  error - The method 'signOut' isn't defined for the type 'AuthController'. Try correcting the name to the name of an existing method, or defining a method named 'signOut' - integration_test\community_native_test.dart:392:61 - undefined_method
+  error - The method 'signOut' isn't defined for the type 'AuthController'. Try correcting the name to the name of an existing method, or defining a method named 'signOut' - integration_test\community_native_test.dart:424:61 - undefined_method
+warning - Unused import: 'package:mixtick/features/community/presentation/community_browse.dart'. Try removing the import directive - test\community\community_test.dart:12:8 - unused_import
+
+4 issues found. (ran in 8.0s)

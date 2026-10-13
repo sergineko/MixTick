@@ -1,0 +1,1 @@
+PASS: final fixture database counts zero; catalog/schema retained; only mixtick-phase02 stopped

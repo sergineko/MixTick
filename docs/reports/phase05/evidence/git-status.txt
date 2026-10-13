@@ -1,0 +1,65 @@
+ M README.md
+ M docs/10_DECISIONS.md
+ M docs/15_STORAGE_SECURITY.md
+ M docs/PROGRESS.md
+ M integration_test/README.md
+ M ios/Runner/Info.plist
+ M lib/app/localization/app_es.arb
+ M lib/app/localization/generated/app_localizations.dart
+ M lib/app/localization/generated/app_localizations_es.dart
+ M lib/app/router.dart
+ M lib/features/community/presentation/community_page.dart
+ M lib/features/profile/presentation/profile_providers.dart
+ M lib/features/profile/presentation/public_profile_page.dart
+ M lib/features/recipes/presentation/recipes_page.dart
+ M supabase/README.md
+?? docs/17_MY_RECIPES.md
+?? docs/18_COMMUNITY.md
+?? docs/adr/018_MY_RECIPES.md
+?? docs/adr/019_COMMUNITY.md
+?? docs/reports/PHASE_04_REPORT.md
+?? docs/reports/PHASE_05_REPORT.md
+?? docs/reports/phase04/
+?? docs/reports/phase05/
+?? integration_test/community_native_test.dart
+?? integration_test/recipe_native_test.dart
+?? lib/core/network/content_revision.dart
+?? lib/core/widgets/access_revalidation.dart
+?? lib/features/community/data/supabase_community_repository.dart
+?? lib/features/community/domain/community.dart
+?? lib/features/community/domain/community_repository.dart
+?? lib/features/community/presentation/blocked_authors_page.dart
+?? lib/features/community/presentation/comments_page.dart
+?? lib/features/community/presentation/community_browse.dart
+?? lib/features/community/presentation/community_detail_social.dart
+?? lib/features/community/presentation/community_providers.dart
+?? lib/features/community/presentation/community_widgets.dart
+?? lib/features/recipes/data/supabase_recipe_repository.dart
+?? lib/features/recipes/domain/recipe.dart
+?? lib/features/recipes/domain/recipe_repository.dart
+?? lib/features/recipes/presentation/ingredient_editor.dart
+?? lib/features/recipes/presentation/recipe_detail_page.dart
+?? lib/features/recipes/presentation/recipe_editor_page.dart
+?? lib/features/recipes/presentation/recipe_providers.dart
+?? lib/features/recipes/presentation/recipe_widgets.dart
+?? scripts/audit_local_community_database.sql
+?? scripts/audit_local_recipe_database.sql
+?? scripts/capture_community_android.py
+?? scripts/cleanup_community_fixtures.py
+?? scripts/cleanup_recipe_fixtures.py
+?? scripts/drive_recipe_gallery.py
+?? scripts/verify_community.ps1
+?? scripts/verify_native_community.ps1
+?? scripts/verify_native_recipes.ps1
+?? scripts/verify_recipes.ps1
+?? supabase/migrations/20261013000800_recipe_editor_safety.sql
+?? supabase/migrations/20261013000900_community_projection.sql
+?? supabase/tests/003_recipe_editor.test.sql
+?? supabase/tests/004_community.test.sql
+?? test/community/
+?? test/recipes/
+?? test/support/fake_community_repository.dart
+?? test/support/fake_recipe_repository.dart
+?? test_support/community_local.dart
+?? test_support/generate_recipe_gallery.dart
+?? test_support/recipes_local.dart

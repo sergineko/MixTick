@@ -1,0 +1,17 @@
+{
+  "name": "native-recipes",
+  "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+  "arguments": [
+    "test",
+    "integration_test/recipe_native_test.dart",
+    "-d",
+    "emulator-5554",
+    "--no-uninstall",
+    "--dart-define-from-file=.tooling/phase04-android.local.json",
+    "--reporter",
+    "expanded"
+  ],
+  "started_at": "2026-10-13T08:08:37.1173905+02:00",
+  "exit_code": -1,
+  "status": "FAIL"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "VERIFIED_LOCAL",
+  "quality_and_backend_commands": 14,
+  "all_recorded_final_exit_codes": 0,
+  "flutter_tests": 66,
+  "sql_checks": 35,
+  "accepted_api_cases": 20,
+  "recipe_client_cases": 16,
+  "recipe_client_hybrid_cases": 1,
+  "auth_cases_per_email_mode": 13,
+  "email_modes": 2,
+  "android_native_tests": 1,
+  "native_gallery_cancel_and_select": "PASS",
+  "fixture_database_and_mail_empty": true,
+  "local_stack_stopped": true,
+  "not_run": [
+    "iOS build/device/gallery",
+    "physical Android"
+  ],
+  "not_verified": [
+    "remote Supabase/email",
+    "CDN",
+    "Realtime collaborative clients",
+    "physical cleanup worker",
+    "complete account deletion",
+    "operational moderation"
+  ]
+}

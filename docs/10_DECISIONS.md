@@ -23,3 +23,7 @@ Ningún prompt debe contradecir estas decisiones sin aprobación expresa del pro
 - **ADR-016 / Base de datos y seguridad:** esquema, RLS, Storage privado, RPC atómicas, control de versiones, catálogo canónico e idempotencia, probados en Supabase local con A/B/C. Detalles y límites en [ADR-016](adr/016_DATABASE_SECURITY.md).
 
 - **ADR-017 / Auth y perfil:** repositorios reales, sesión/verificador seguros, retorno PKCE exacto, perfil público mínimo y edición optimista, avatares privados y aislamiento local comprobable. [ADR-017](adr/017_AUTH_PROFILE.md).
+
+- **ADR-018 / Mi recetario:** agregado real/versionado, creación idempotente, fotografías privadas por referencia actual y cola diferida, estado aislado por cuenta y pruebas de servidor/Android separadas. [ADR-018](adr/018_MY_RECIPES.md).
+
+- **ADR-019 / Comunidad:** proyecciones invoker bajo RLS, referencias guardadas, cursor de publicación, búsqueda explícita, interacciones reconciliadas y comentarios idempotentes por actor. [ADR-019](adr/019_COMMUNITY.md).

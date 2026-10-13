@@ -1,0 +1,133 @@
+[
+  {
+    "name": "db-reset",
+    "executable": "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe",
+    "arguments": [
+      "db",
+      "reset",
+      "--local",
+      "--network-id",
+      "b19982ba9414278465857c0b14cf0dfeea11c68da24823533094ce2d91b86763"
+    ],
+    "started_at": "2026-10-13T11:01:33.0910265+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "sql-tests",
+    "executable": "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe",
+    "arguments": [
+      "test",
+      "db",
+      "--network-id",
+      "b19982ba9414278465857c0b14cf0dfeea11c68da24823533094ce2d91b86763"
+    ],
+    "started_at": "2026-10-13T11:02:10.2674889+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "db-lint",
+    "executable": "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe",
+    "arguments": [
+      "db",
+      "lint",
+      "--local",
+      "--level",
+      "warning",
+      "--network-id",
+      "b19982ba9414278465857c0b14cf0dfeea11c68da24823533094ce2d91b86763"
+    ],
+    "started_at": "2026-10-13T11:02:11.4796348+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "api-regression",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "arguments": [
+      "scripts/test_database_api.py",
+      "--cli",
+      "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe",
+      "--evidence-dir",
+      "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\docs\\reports\\phase05\\evidence\\regression-db"
+    ],
+    "started_at": "2026-10-13T11:02:11.7787111+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "recipes-real-client",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "test_support/recipes_local.dart",
+      "--dart-define-from-file=.tooling/phase05-client.local.json",
+      "--reporter",
+      "expanded"
+    ],
+    "started_at": "2026-10-13T11:02:19.8852305+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "client-fixture-cleanup",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "arguments": [
+      "scripts/cleanup_recipe_fixtures.py"
+    ],
+    "started_at": "2026-10-13T11:02:24.4043458+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "community-real-client",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "test_support/community_local.dart",
+      "--dart-define-from-file=.tooling/phase05-client.local.json",
+      "--reporter",
+      "expanded"
+    ],
+    "started_at": "2026-10-13T11:02:29.1542521+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "community-fixture-cleanup",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "arguments": [
+      "scripts/cleanup_community_fixtures.py"
+    ],
+    "started_at": "2026-10-13T11:02:34.0475388+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "native-recipes-regression",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+    "arguments": [
+      "-NoProfile",
+      "-File",
+      "scripts/verify_native_recipes.ps1",
+      "-EvidenceDirectory",
+      "docs/reports/phase05/recipe-regression/evidence"
+    ],
+    "started_at": "2026-10-13T11:02:39.3144711+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "native-community-runner",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+    "arguments": [
+      "-NoProfile",
+      "-File",
+      "scripts/verify_native_community.ps1"
+    ],
+    "started_at": "2026-10-13T11:04:00.6597846+02:00",
+    "exit_code": 1,
+    "status": "FAIL"
+  }
+]

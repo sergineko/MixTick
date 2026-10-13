@@ -1,0 +1,14 @@
+begin;
+select plan(10);
+select ok(exists(select 1 from pg_class where oid='private.recipe_creation_requests'::regclass and relrowsecurity),'Creation ledger uses RLS');
+select ok(not has_table_privilege('authenticated','private.recipe_creation_requests','SELECT'),'Creation ledger not exposed');
+select ok(not has_function_privilege('anon','public.create_recipe_once(uuid,jsonb,jsonb,jsonb)','EXECUTE'),'Anonymous creation denied');
+select ok(has_function_privilege('authenticated','public.create_recipe_once(uuid,jsonb,jsonb,jsonb)','EXECUTE'),'Authenticated creation entry point');
+select ok(not has_function_privilege('anon','public.lookup_recipe_creation(uuid)','EXECUTE'),'Anonymous request lookup denied');
+select ok(not has_function_privilege('anon','public.delete_recipe_versioned(uuid,bigint)','EXECUTE'),'Anonymous versioned deletion denied');
+select ok(exists(select 1 from pg_trigger where tgrelid='public.recipes'::regclass and tgname='replaced_recipe_photo'),'Replacing/removing photos tracks cleanup');
+select ok(exists(select 1 from pg_trigger where tgrelid='storage.objects'::regclass and tgname='staged_recipe_photo'),'Staged uploads tracked for later cleanup');
+select ok(not has_function_privilege('authenticated','private.track_recipe_photo()','EXECUTE'),'Storage trigger helper not callable');
+select ok(exists(select 1 from pg_indexes where schemaname='public' and indexname='recipes_owner_recent'),'Owner recent pagination index');
+select * from finish();
+rollback;

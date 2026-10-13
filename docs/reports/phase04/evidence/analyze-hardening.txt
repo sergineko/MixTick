@@ -1,0 +1,10 @@
+Analyzing MixTick...                                            
+
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - integration_test\recipe_native_test.dart:48:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\data\supabase_recipe_repository.dart:151:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\ingredient_editor.dart:47:11 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\ingredient_editor.dart:196:23 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\ingredient_editor.dart:204:21 - curly_braces_in_flow_control_structures
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check. Guard a 'State.context' use with a 'mounted' check on the State, and other BuildContext use with a 'mounted' check on the BuildContext - lib\features\recipes\presentation\ingredient_editor.dart:220:33 - use_build_context_synchronously
+
+6 issues found. (ran in 8.0s)

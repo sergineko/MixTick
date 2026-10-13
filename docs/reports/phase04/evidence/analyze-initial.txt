@@ -1,0 +1,40 @@
+Analyzing MixTick...                                            
+
+warning - Unused import: '../../profile/domain/profile_repository.dart'. Try removing the import directive - lib\features\recipes\data\supabase_recipe_repository.dart:9:8 - unused_import
+warning - Dead code: This on-catch block won't be executed because 'InvalidType' is a subtype of 'RecipeFailure' and hence will have been caught already. Try reordering the catch clauses so that this block can be reached, or removing the unreachable catch clause - lib\features\recipes\data\supabase_recipe_repository.dart:43:7 - dead_code_on_catch_subtype
+  error - The name 'ProfileFailure' isn't a type and can't be used in an on-catch clause. Try correcting the name to match an existing class - lib\features\recipes\data\supabase_recipe_repository.dart:43:10 - non_type_in_catch_clause
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\data\supabase_recipe_repository.dart:76:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\data\supabase_recipe_repository.dart:79:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\data\supabase_recipe_repository.dart:161:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\data\supabase_recipe_repository.dart:181:11 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\data\supabase_recipe_repository.dart:194:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\data\supabase_recipe_repository.dart:208:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\data\supabase_recipe_repository.dart:240:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\data\supabase_recipe_repository.dart:256:7 - curly_braces_in_flow_control_structures
+   info - Use 'isNotEmpty' instead of 'length' to test whether the collection is empty. Try rewriting the expression to use 'isNotEmpty' - lib\features\recipes\domain\recipe.dart:106:7 - prefer_is_empty
+   info - Use 'isNotEmpty' instead of 'length' to test whether the collection is empty. Try rewriting the expression to use 'isNotEmpty' - lib\features\recipes\domain\recipe.dart:108:7 - prefer_is_empty
+   info - Use 'isNotEmpty' instead of 'length' to test whether the collection is empty. Try rewriting the expression to use 'isNotEmpty' - lib\features\recipes\domain\recipe.dart:123:16 - prefer_is_empty
+   info - Use 'isNotEmpty' instead of 'length' to test whether the collection is empty. Try rewriting the expression to use 'isNotEmpty' - lib\features\recipes\domain\recipe.dart:140:12 - prefer_is_empty
+   info - Use 'isNotEmpty' instead of 'length' to test whether the collection is empty. Try rewriting the expression to use 'isNotEmpty' - lib\features\recipes\domain\recipe.dart:144:12 - prefer_is_empty
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\recipe_detail_page.dart:128:51 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\recipe_detail_page.dart:169:51 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\recipe_detail_page.dart:177:51 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\recipe_editor_page.dart:110:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\recipe_editor_page.dart:112:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\recipe_editor_page.dart:160:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\recipe_editor_page.dart:174:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\recipe_editor_page.dart:190:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\recipe_editor_page.dart:285:31 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\recipe_editor_page.dart:293:29 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\recipe_providers.dart:58:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\recipe_providers.dart:72:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\recipe_providers.dart:87:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\recipe_providers.dart:107:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\recipe_providers.dart:121:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\recipe_providers.dart:186:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\recipe_providers.dart:201:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\recipe_providers.dart:298:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\recipes\presentation\recipe_widgets.dart:61:7 - curly_braces_in_flow_control_structures
+warning - The value of 'refresh' should be used. Try using the result by invoking a member, passing it to a function, or returning it from this function - lib\features\recipes\presentation\recipes_page.dart:67:19 - unused_result
+
+36 issues found. (ran in 8.2s)

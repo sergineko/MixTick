@@ -10,7 +10,7 @@
         <key>CFBundleURLSchemes</key><array><string>es.sergiotech.mixtick</string></array>
     </dict></array>
     <key>NSPhotoLibraryUsageDescription</key>
-    <string>Elige una foto opcional para tu perfil de MixTick.</string>
+    <string>Elige una foto opcional para tus recetas o tu perfil de MixTick.</string>
     <key>NSAppTransportSecurity</key>
     <dict><key>NSAllowsLocalNetworking</key><true/></dict>
 	<key>CADisableMinimumFrameDurationOnPhone</key>

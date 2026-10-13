@@ -65,3 +65,32 @@ deniegan. Flutter reencodifica antes de subir y descarga con autorización;
 no emite URLs firmadas. Cambios/quitar foto intentan borrado real por API y
 encolan el anterior como respaldo. El trabajador de limpieza continúa pendiente.
 Detalles y pruebas en [Auth/perfiles](16_AUTH_PROFILE.md) y el informe de Fase 03.
+
+## Editor de recetas (Fase 04)
+
+La migración 008 conserva el bucket privado y la escritura propia; los terceros
+solo leen el archivo actualmente referenciado por una receta pública accesible.
+Subidas temporales, fotos retiradas/sustituidas y recetas borradas se gestionan
+por cola. Asignar una referencia retira el job de ese archivo. No hay trabajador
+de eliminación física implementado. El futuro consumidor necesita gracia para
+staging y comprobación de referencia coordinada antes de borrar.
+
+La app usa descarga autenticada, procesamiento y picker de Fase 03, con máximo
+2 MiB/1024 px (más estricto que el bucket). Preserva la imagen válida hasta
+confirmar la nueva referencia; una respuesta perdida no provoca borrado a ciegas.
+Estados de cancelación/error distinguen datos guardados de una foto pendiente.
+Permisos, concurrencia, URL firmada aún vigente y copias descargadas se documentan
+en [Mi recetario](17_MY_RECIPES.md), junto a las pruebas A/B/C/Android.
+
+## Comunidad — Fase 05
+
+Los buckets, paths y políticas 001–008 permanecen intactos. Feed, guardados,
+comentarios y perfiles revalidan permisos al abrir/volver/activar/foreground,
+con consulta periódica cada 30 s en pantallas visibles. Durante carga/error
+se oculta el contenido previo. Invalidar o cambiar identidad desaloja fotos
+y avatares de MemoryImage; no se añade caché persistente ni URL firmada.
+Sin Realtime social, un cambio externo puede permanecer en el frame descargado
+hasta revalidación; no se promete retirarlo instantáneamente ni revocar copias.
+Los accesos nuevos a Storage siguen dependiendo de RLS y referencia actual.
+Los recuentos/búsquedas nuevos son invoker y no conceden acceso a archivos.
+Detalles y pruebas: [Comunidad](18_COMMUNITY.md).

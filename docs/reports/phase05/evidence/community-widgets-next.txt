@@ -1,0 +1,70 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart
+00:00 +0: C11 comment length counts Unicode characters, rejects whitespace and overlong input
+00:00 +1: C06 query identity separates saved, author, category and title caches
+00:00 +2: C07 card opens existing recipe detail without foreign owner controls (mock)
+00:00 +3: C03 obsolete debounce cancels previous search, final term alone loads (mock)
+00:01 +4: C27 saving in feed synchronizes recetario and original detail (mock)
+00:01 +5: C28 failed request hides rows and retry recovers (mock)
+00:01 +6: C08 failed nonoptimistic write revalidates actual totals (mock)
+00:02 +7: C29 stale page response discarded after direct account change (mock)
+00:02 +8: C29 comment draft removed on logout and account switch (mock)
+00:02 +9: C24 report dialog closes when identity changes (mock)
+00:02 +10: C06 pagination removes overlapping IDs and ignores obsolete generation (mock)
+00:02 +11: C09 double action submission blocked while first request is pending (mock)
+00:02 +12: C31 social cards and saved tabs at 200% on 320x640 Brightness.dark (mock)
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following StateError was thrown running a test:
+Bad state: No element
+
+When the exception was thrown, this was the stack:
+#0      Iterable.first (dart:core/iterable.dart:663:7)
+#1      _FirstFinderMixin.filter (package:flutter_test/src/finders.dart:1383:28)
+#3      Iterable.isEmpty (dart:core/iterable.dart:560:33)
+#4      tapSocial (file:///C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart:66:25)
+#5      main.<anonymous closure> (file:///C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart:338:15)
+<asynchronous suspension>
+#6      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#7      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 2 frames from dart:async-patch and package:stack_trace)
+
+The test description was:
+  C31 social cards and saved tabs at 200% on 320x640 Brightness.dark (mock)
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:03 +12 -1: C31 social cards and saved tabs at 200% on 320x640 Brightness.dark (mock) [E]
+  Test failed. See exception logs above.
+  The test description was: C31 social cards and saved tabs at 200% on 320x640 Brightness.dark (mock)
+  
+00:03 +12 -1: C31 social cards and saved tabs at 200% on 320x640 Brightness.light (mock)
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following StateError was thrown running a test:
+Bad state: No element
+
+When the exception was thrown, this was the stack:
+#0      Iterable.first (dart:core/iterable.dart:663:7)
+#1      _FirstFinderMixin.filter (package:flutter_test/src/finders.dart:1383:28)
+#3      Iterable.isEmpty (dart:core/iterable.dart:560:33)
+#4      tapSocial (file:///C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart:66:25)
+#5      main.<anonymous closure> (file:///C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart:338:15)
+<asynchronous suspension>
+#6      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#7      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 2 frames from dart:async-patch and package:stack_trace)
+
+The test description was:
+  C31 social cards and saved tabs at 200% on 320x640 Brightness.light (mock)
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:03 +12 -2: C31 social cards and saved tabs at 200% on 320x640 Brightness.light (mock) [E]
+  Test failed. See exception logs above.
+  The test description was: C31 social cards and saved tabs at 200% on 320x640 Brightness.light (mock)
+  
+00:03 +12 -2: Some tests failed.
+
+Failing tests:
+  C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C31 social cards and saved tabs at 200% on 320x640 Brightness.dark (mock)
+  C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C31 social cards and saved tabs at 200% on 320x640 Brightness.light (mock)

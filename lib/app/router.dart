@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../core/widgets/app_states.dart';
+import '../core/widgets/access_revalidation.dart';
 import '../features/auth/presentation/access_page.dart';
 import '../features/auth/presentation/access_status_page.dart';
 import '../features/auth/presentation/auth_providers.dart';
@@ -12,12 +13,16 @@ import '../features/auth/presentation/confirmation_page.dart';
 import '../features/auth/presentation/session_scope.dart';
 import '../features/auth/presentation/auth_link_error_page.dart';
 import '../features/community/presentation/community_page.dart';
+import '../features/community/presentation/comments_page.dart';
+import '../features/community/presentation/blocked_authors_page.dart';
 import '../features/cook_today/presentation/cook_today_page.dart';
 import '../features/profile/presentation/profile_page.dart';
 import '../features/profile/presentation/profile_edit_page.dart';
 import '../features/profile/presentation/public_profile_page.dart';
 import '../features/profile/presentation/profile_lookup_page.dart';
 import '../features/recipes/presentation/recipes_page.dart';
+import '../features/recipes/presentation/recipe_editor_page.dart';
+import '../features/recipes/presentation/recipe_detail_page.dart';
 import '../features/shopping/presentation/shopping_page.dart';
 import '../shared/models/app_module.dart';
 import 'app_shell.dart';
@@ -47,6 +52,7 @@ final routerProvider = Provider<GoRouter>((ref) {
       }.contains(path);
   ref.listen(authSessionProvider, (_, _) => refresh.refresh());
   final router = GoRouter(
+    observers: [ref.read(contentRouteObserverProvider)],
     initialLocation: ref.read(initialLocationProvider),
     refreshListenable: refresh,
     redirect: (context, state) {
@@ -164,6 +170,32 @@ final routerProvider = Provider<GoRouter>((ref) {
             ],
           ),
         ],
+      ),
+      GoRoute(
+        path: '/recipes/new',
+        builder: (_, _) => const SessionScope(child: RecipeEditorPage()),
+      ),
+      GoRoute(
+        path: '/recipes/:id/edit',
+        builder: (_, state) => SessionScope(
+          child: RecipeEditorPage(recipeId: state.pathParameters['id']!),
+        ),
+      ),
+      GoRoute(
+        path: '/community/blocked',
+        builder: (_, _) => const SessionScope(child: BlockedAuthorsPage()),
+      ),
+      GoRoute(
+        path: '/recipes/:id/comments',
+        builder: (_, state) => SessionScope(
+          child: CommentsPage(recipeId: state.pathParameters['id']!),
+        ),
+      ),
+      GoRoute(
+        path: '/recipes/:id',
+        builder: (_, state) => SessionScope(
+          child: RecipeDetailPage(id: state.pathParameters['id']!),
+        ),
       ),
       GoRoute(path: '/profile', builder: (_, _) => const ProfilePage()),
       GoRoute(

@@ -732,6 +732,810 @@ abstract class AppLocalizations {
   /// In es, this message translates to:
   /// **'Cerrar sesión y recuperar contraseña'**
   String get signOutAndRecover;
+
+  /// No description provided for @recipeCreate.
+  ///
+  /// In es, this message translates to:
+  /// **'Crear receta'**
+  String get recipeCreate;
+
+  /// No description provided for @recipeEdit.
+  ///
+  /// In es, this message translates to:
+  /// **'Editar receta'**
+  String get recipeEdit;
+
+  /// No description provided for @recipeCreatedSection.
+  ///
+  /// In es, this message translates to:
+  /// **'Creadas por mí'**
+  String get recipeCreatedSection;
+
+  /// No description provided for @recipeSavedSection.
+  ///
+  /// In es, this message translates to:
+  /// **'Recetas públicas guardadas'**
+  String get recipeSavedSection;
+
+  /// No description provided for @recipeSavedLater.
+  ///
+  /// In es, this message translates to:
+  /// **'Aquí aparecerán las recetas que guardes de Comunidad cuando esté disponible.'**
+  String get recipeSavedLater;
+
+  /// No description provided for @recipeSearch.
+  ///
+  /// In es, this message translates to:
+  /// **'Buscar por título'**
+  String get recipeSearch;
+
+  /// No description provided for @recipeCategory.
+  ///
+  /// In es, this message translates to:
+  /// **'Categoría'**
+  String get recipeCategory;
+
+  /// No description provided for @recipeVisibility.
+  ///
+  /// In es, this message translates to:
+  /// **'Visibilidad'**
+  String get recipeVisibility;
+
+  /// No description provided for @recipeAllVisibility.
+  ///
+  /// In es, this message translates to:
+  /// **'Privadas y públicas'**
+  String get recipeAllVisibility;
+
+  /// No description provided for @recipeAllCategories.
+  ///
+  /// In es, this message translates to:
+  /// **'Todas las categorías'**
+  String get recipeAllCategories;
+
+  /// No description provided for @recipePrivate.
+  ///
+  /// In es, this message translates to:
+  /// **'Privada'**
+  String get recipePrivate;
+
+  /// No description provided for @recipePublic.
+  ///
+  /// In es, this message translates to:
+  /// **'Pública'**
+  String get recipePublic;
+
+  /// No description provided for @recipeOrderRecent.
+  ///
+  /// In es, this message translates to:
+  /// **'Actualizadas más recientemente'**
+  String get recipeOrderRecent;
+
+  /// No description provided for @recipeLoadMore.
+  ///
+  /// In es, this message translates to:
+  /// **'Cargar más recetas'**
+  String get recipeLoadMore;
+
+  /// No description provided for @recipeLoading.
+  ///
+  /// In es, this message translates to:
+  /// **'Cargando recetas…'**
+  String get recipeLoading;
+
+  /// No description provided for @recipeEmpty.
+  ///
+  /// In es, this message translates to:
+  /// **'Un recetario por descubrir'**
+  String get recipeEmpty;
+
+  /// No description provided for @recipeEmptyHint.
+  ///
+  /// In es, this message translates to:
+  /// **'Crea tu primera receta o cambia los filtros de búsqueda.'**
+  String get recipeEmptyHint;
+
+  /// No description provided for @recipeBackendMissing.
+  ///
+  /// In es, this message translates to:
+  /// **'Recetario sin conexión configurada'**
+  String get recipeBackendMissing;
+
+  /// No description provided for @recipeBackendMissingHint.
+  ///
+  /// In es, this message translates to:
+  /// **'Configura el servicio de MixTick para gestionar tus recetas.'**
+  String get recipeBackendMissingHint;
+
+  /// No description provided for @recipeNeedsProfile.
+  ///
+  /// In es, this message translates to:
+  /// **'Completa tu perfil antes de crear recetas.'**
+  String get recipeNeedsProfile;
+
+  /// No description provided for @recipeRetryCategories.
+  ///
+  /// In es, this message translates to:
+  /// **'Reintentar categorías'**
+  String get recipeRetryCategories;
+
+  /// No description provided for @recipeNoPhoto.
+  ///
+  /// In es, this message translates to:
+  /// **'Receta sin fotografía'**
+  String get recipeNoPhoto;
+
+  /// No description provided for @recipePhoto.
+  ///
+  /// In es, this message translates to:
+  /// **'Fotografía de la receta'**
+  String get recipePhoto;
+
+  /// No description provided for @recipeMinutes.
+  ///
+  /// In es, this message translates to:
+  /// **'min'**
+  String get recipeMinutes;
+
+  /// No description provided for @recipeTitle.
+  ///
+  /// In es, this message translates to:
+  /// **'Título'**
+  String get recipeTitle;
+
+  /// No description provided for @recipeDescription.
+  ///
+  /// In es, this message translates to:
+  /// **'Descripción (opcional)'**
+  String get recipeDescription;
+
+  /// No description provided for @recipeServings.
+  ///
+  /// In es, this message translates to:
+  /// **'Raciones'**
+  String get recipeServings;
+
+  /// No description provided for @recipePrep.
+  ///
+  /// In es, this message translates to:
+  /// **'Preparación (min, opcional)'**
+  String get recipePrep;
+
+  /// No description provided for @recipeCook.
+  ///
+  /// In es, this message translates to:
+  /// **'Cocción (min, opcional)'**
+  String get recipeCook;
+
+  /// No description provided for @recipeBasics.
+  ///
+  /// In es, this message translates to:
+  /// **'Lo esencial'**
+  String get recipeBasics;
+
+  /// No description provided for @recipeIngredients.
+  ///
+  /// In es, this message translates to:
+  /// **'Ingredientes'**
+  String get recipeIngredients;
+
+  /// No description provided for @recipeSteps.
+  ///
+  /// In es, this message translates to:
+  /// **'Preparación paso a paso'**
+  String get recipeSteps;
+
+  /// No description provided for @recipeAddIngredient.
+  ///
+  /// In es, this message translates to:
+  /// **'Añadir ingrediente'**
+  String get recipeAddIngredient;
+
+  /// No description provided for @recipeIngredientName.
+  ///
+  /// In es, this message translates to:
+  /// **'Buscar ingrediente o escribir otro'**
+  String get recipeIngredientName;
+
+  /// No description provided for @recipeCustomIngredient.
+  ///
+  /// In es, this message translates to:
+  /// **'Usar este nombre fuera del catálogo'**
+  String get recipeCustomIngredient;
+
+  /// No description provided for @recipeQuantity.
+  ///
+  /// In es, this message translates to:
+  /// **'Cantidad (opcional)'**
+  String get recipeQuantity;
+
+  /// No description provided for @recipeUnit.
+  ///
+  /// In es, this message translates to:
+  /// **'Unidad (opcional)'**
+  String get recipeUnit;
+
+  /// No description provided for @recipeUnitHint.
+  ///
+  /// In es, this message translates to:
+  /// **'g, kg, ml, l, ud, cucharada…'**
+  String get recipeUnitHint;
+
+  /// No description provided for @recipeOptional.
+  ///
+  /// In es, this message translates to:
+  /// **'Ingrediente opcional'**
+  String get recipeOptional;
+
+  /// No description provided for @recipeDuplicate.
+  ///
+  /// In es, this message translates to:
+  /// **'Este ingrediente ya está incluido. Edita su cantidad en la lista.'**
+  String get recipeDuplicate;
+
+  /// No description provided for @recipeAddStep.
+  ///
+  /// In es, this message translates to:
+  /// **'Añadir paso'**
+  String get recipeAddStep;
+
+  /// No description provided for @recipeStepInstruction.
+  ///
+  /// In es, this message translates to:
+  /// **'Instrucción'**
+  String get recipeStepInstruction;
+
+  /// No description provided for @recipeStepUp.
+  ///
+  /// In es, this message translates to:
+  /// **'Subir paso'**
+  String get recipeStepUp;
+
+  /// No description provided for @recipeStepDown.
+  ///
+  /// In es, this message translates to:
+  /// **'Bajar paso'**
+  String get recipeStepDown;
+
+  /// No description provided for @recipeRemoveIngredient.
+  ///
+  /// In es, this message translates to:
+  /// **'Quitar ingrediente'**
+  String get recipeRemoveIngredient;
+
+  /// No description provided for @recipeRemoveStep.
+  ///
+  /// In es, this message translates to:
+  /// **'Eliminar paso'**
+  String get recipeRemoveStep;
+
+  /// No description provided for @recipeEditIngredient.
+  ///
+  /// In es, this message translates to:
+  /// **'Editar ingrediente'**
+  String get recipeEditIngredient;
+
+  /// No description provided for @recipeCancel.
+  ///
+  /// In es, this message translates to:
+  /// **'Cancelar'**
+  String get recipeCancel;
+
+  /// No description provided for @recipeAdd.
+  ///
+  /// In es, this message translates to:
+  /// **'Añadir'**
+  String get recipeAdd;
+
+  /// No description provided for @recipeSave.
+  ///
+  /// In es, this message translates to:
+  /// **'Guardar receta'**
+  String get recipeSave;
+
+  /// No description provided for @recipeSaving.
+  ///
+  /// In es, this message translates to:
+  /// **'Guardando receta…'**
+  String get recipeSaving;
+
+  /// No description provided for @recipeUploading.
+  ///
+  /// In es, this message translates to:
+  /// **'Subiendo fotografía…'**
+  String get recipeUploading;
+
+  /// No description provided for @recipeLinking.
+  ///
+  /// In es, this message translates to:
+  /// **'Actualizando fotografía…'**
+  String get recipeLinking;
+
+  /// No description provided for @recipeCancelUpload.
+  ///
+  /// In es, this message translates to:
+  /// **'Cancelar subida'**
+  String get recipeCancelUpload;
+
+  /// No description provided for @recipeCancelling.
+  ///
+  /// In es, this message translates to:
+  /// **'Cancelando; comprobando el resultado…'**
+  String get recipeCancelling;
+
+  /// No description provided for @recipePhotoCancelled.
+  ///
+  /// In es, this message translates to:
+  /// **'Subida cancelada. Los datos de la receta se conservaron.'**
+  String get recipePhotoCancelled;
+
+  /// No description provided for @recipeFieldsSaved.
+  ///
+  /// In es, this message translates to:
+  /// **'Los datos se guardaron. Revisa la fotografía y vuelve a guardar para completar el cambio.'**
+  String get recipeFieldsSaved;
+
+  /// No description provided for @recipeInvalid.
+  ///
+  /// In es, this message translates to:
+  /// **'Revisa los campos: se necesita al menos un ingrediente y un paso válidos.'**
+  String get recipeInvalid;
+
+  /// No description provided for @recipeInvalidText.
+  ///
+  /// In es, this message translates to:
+  /// **'Completa el campo respetando su límite de longitud.'**
+  String get recipeInvalidText;
+
+  /// No description provided for @recipeInvalidServings.
+  ///
+  /// In es, this message translates to:
+  /// **'Introduce entre 0,01 y 10.000 raciones, con hasta dos decimales.'**
+  String get recipeInvalidServings;
+
+  /// No description provided for @recipeInvalidQuantity.
+  ///
+  /// In es, this message translates to:
+  /// **'Introduce una cantidad positiva de hasta 1.000.000, con hasta tres decimales.'**
+  String get recipeInvalidQuantity;
+
+  /// No description provided for @recipeInvalidTime.
+  ///
+  /// In es, this message translates to:
+  /// **'Introduce un número entero entre 0 y 10.080, o deja el campo vacío.'**
+  String get recipeInvalidTime;
+
+  /// No description provided for @recipeNetworkError.
+  ///
+  /// In es, this message translates to:
+  /// **'No pudimos completar la operación. Comprueba la conexión; tus cambios siguen en el formulario.'**
+  String get recipeNetworkError;
+
+  /// No description provided for @recipeForbidden.
+  ///
+  /// In es, this message translates to:
+  /// **'Esta receta no está disponible para tu cuenta.'**
+  String get recipeForbidden;
+
+  /// No description provided for @recipeConflict.
+  ///
+  /// In es, this message translates to:
+  /// **'La receta cambió en otra sesión. Revisa la versión actual antes de guardar tus cambios.'**
+  String get recipeConflict;
+
+  /// No description provided for @recipeQuota.
+  ///
+  /// In es, this message translates to:
+  /// **'Has creado varias recetas seguidas. Espera un minuto y vuelve a intentarlo.'**
+  String get recipeQuota;
+
+  /// No description provided for @recipeUnexpected.
+  ///
+  /// In es, this message translates to:
+  /// **'No pudimos completar la operación. Inténtalo de nuevo.'**
+  String get recipeUnexpected;
+
+  /// No description provided for @recipeReload.
+  ///
+  /// In es, this message translates to:
+  /// **'Recargar receta'**
+  String get recipeReload;
+
+  /// No description provided for @recipeReloadWarning.
+  ///
+  /// In es, this message translates to:
+  /// **'Se cargarán los datos actuales y se descartarán los cambios de este formulario.'**
+  String get recipeReloadWarning;
+
+  /// No description provided for @recipeDiscardTitle.
+  ///
+  /// In es, this message translates to:
+  /// **'¿Descartar los cambios?'**
+  String get recipeDiscardTitle;
+
+  /// No description provided for @recipeDiscardMessage.
+  ///
+  /// In es, this message translates to:
+  /// **'Los cambios que no has guardado se perderán.'**
+  String get recipeDiscardMessage;
+
+  /// No description provided for @recipeDiscard.
+  ///
+  /// In es, this message translates to:
+  /// **'Descartar'**
+  String get recipeDiscard;
+
+  /// No description provided for @recipePublish.
+  ///
+  /// In es, this message translates to:
+  /// **'Publicar receta'**
+  String get recipePublish;
+
+  /// No description provided for @recipeMakePrivate.
+  ///
+  /// In es, this message translates to:
+  /// **'Hacer privada'**
+  String get recipeMakePrivate;
+
+  /// No description provided for @recipePublishInfo.
+  ///
+  /// In es, this message translates to:
+  /// **'Las personas que accedan a MixTick podrán ver la receta, sus ingredientes, pasos y fotografía. Puedes volver a hacerla privada después.'**
+  String get recipePublishInfo;
+
+  /// No description provided for @recipePrivateInfo.
+  ///
+  /// In es, this message translates to:
+  /// **'Solo tú podrás consultar la receta. Los accesos nuevos de otras personas se denegarán. Una foto ya descargada o una URL firmada todavía vigente puede conservarse.'**
+  String get recipePrivateInfo;
+
+  /// No description provided for @recipeDelete.
+  ///
+  /// In es, this message translates to:
+  /// **'Eliminar receta'**
+  String get recipeDelete;
+
+  /// No description provided for @recipeDeleteInfo.
+  ///
+  /// In es, this message translates to:
+  /// **'Se eliminarán la receta y sus relaciones. La fotografía dejará de ser accesible; su limpieza física queda pendiente. Esta acción no se puede deshacer.'**
+  String get recipeDeleteInfo;
+
+  /// No description provided for @recipePhotoLifecycle.
+  ///
+  /// In es, this message translates to:
+  /// **'Al sustituir o retirar una foto deja de mostrarse. La limpieza del archivo anterior se procesa por separado.'**
+  String get recipePhotoLifecycle;
+
+  /// No description provided for @recipeView.
+  ///
+  /// In es, this message translates to:
+  /// **'Ver receta'**
+  String get recipeView;
+
+  /// No description provided for @recipeCatalogLoading.
+  ///
+  /// In es, this message translates to:
+  /// **'Cargando catálogo…'**
+  String get recipeCatalogLoading;
+
+  /// No description provided for @recipeCatalogError.
+  ///
+  /// In es, this message translates to:
+  /// **'No pudimos cargar el catálogo. Reintenta para seleccionar ingredientes normalizados.'**
+  String get recipeCatalogError;
+
+  /// No description provided for @recipeAtLeastOneIngredient.
+  ///
+  /// In es, this message translates to:
+  /// **'Añade al menos un ingrediente.'**
+  String get recipeAtLeastOneIngredient;
+
+  /// No description provided for @recipeAtLeastOneStep.
+  ///
+  /// In es, this message translates to:
+  /// **'Añade al menos un paso.'**
+  String get recipeAtLeastOneStep;
+
+  /// No description provided for @recipeLimitReached.
+  ///
+  /// In es, this message translates to:
+  /// **'Puedes incluir hasta 100 ingredientes y 100 pasos.'**
+  String get recipeLimitReached;
+
+  /// No description provided for @communityChronological.
+  ///
+  /// In es, this message translates to:
+  /// **'Recetas de nuestra comunidad, por orden de publicación.'**
+  String get communityChronological;
+
+  /// No description provided for @communitySearch.
+  ///
+  /// In es, this message translates to:
+  /// **'Busca por título, categoría o ingrediente'**
+  String get communitySearch;
+
+  /// No description provided for @communitySearchCoverage.
+  ///
+  /// In es, this message translates to:
+  /// **'Ingredientes: nombre completo del catálogo o sus alias; texto libre por nombre exacto, sin distinguir tildes o mayúsculas.'**
+  String get communitySearchCoverage;
+
+  /// No description provided for @communityLikes.
+  ///
+  /// In es, this message translates to:
+  /// **'me gusta'**
+  String get communityLikes;
+
+  /// No description provided for @communityComments.
+  ///
+  /// In es, this message translates to:
+  /// **'Comentarios'**
+  String get communityComments;
+
+  /// No description provided for @communitySave.
+  ///
+  /// In es, this message translates to:
+  /// **'Guardar'**
+  String get communitySave;
+
+  /// No description provided for @communitySaved.
+  ///
+  /// In es, this message translates to:
+  /// **'Guardada'**
+  String get communitySaved;
+
+  /// No description provided for @communitySavedInfo.
+  ///
+  /// In es, this message translates to:
+  /// **'Referencias a las recetas originales. Su autoría y sus permisos se conservan.'**
+  String get communitySavedInfo;
+
+  /// No description provided for @communitySavedEmpty.
+  ///
+  /// In es, this message translates to:
+  /// **'Guarda recetas de otros autores desde Comunidad. Solo aparecerán las que sigan siendo públicas y accesibles.'**
+  String get communitySavedEmpty;
+
+  /// No description provided for @communityLoading.
+  ///
+  /// In es, this message translates to:
+  /// **'Cargando comunidad…'**
+  String get communityLoading;
+
+  /// No description provided for @communityEmpty.
+  ///
+  /// In es, this message translates to:
+  /// **'No hay recetas para mostrar'**
+  String get communityEmpty;
+
+  /// No description provided for @communityEmptyInfo.
+  ///
+  /// In es, this message translates to:
+  /// **'Prueba otra búsqueda o vuelve más adelante para descubrir recetas publicadas.'**
+  String get communityEmptyInfo;
+
+  /// No description provided for @communityUnavailable.
+  ///
+  /// In es, this message translates to:
+  /// **'Este contenido ya no está disponible o no tienes permiso para consultarlo.'**
+  String get communityUnavailable;
+
+  /// No description provided for @communityInvalid.
+  ///
+  /// In es, this message translates to:
+  /// **'Revisa los datos antes de volver a intentarlo.'**
+  String get communityInvalid;
+
+  /// No description provided for @communityQuota.
+  ///
+  /// In es, this message translates to:
+  /// **'Has enviado varias solicitudes. Espera un minuto antes de intentarlo de nuevo.'**
+  String get communityQuota;
+
+  /// No description provided for @communityConflict.
+  ///
+  /// In es, this message translates to:
+  /// **'La solicitud tiene otro contenido. Recarga para comprobar lo que se ha guardado.'**
+  String get communityConflict;
+
+  /// No description provided for @communityFollow.
+  ///
+  /// In es, this message translates to:
+  /// **'Seguir autor'**
+  String get communityFollow;
+
+  /// No description provided for @communityUnfollow.
+  ///
+  /// In es, this message translates to:
+  /// **'Dejar de seguir'**
+  String get communityUnfollow;
+
+  /// No description provided for @communityFollowers.
+  ///
+  /// In es, this message translates to:
+  /// **'seguidores'**
+  String get communityFollowers;
+
+  /// No description provided for @communityFollowing.
+  ///
+  /// In es, this message translates to:
+  /// **'seguidos'**
+  String get communityFollowing;
+
+  /// No description provided for @communityAuthorRecipes.
+  ///
+  /// In es, this message translates to:
+  /// **'Recetas públicas'**
+  String get communityAuthorRecipes;
+
+  /// No description provided for @communityWriteComment.
+  ///
+  /// In es, this message translates to:
+  /// **'Escribe un comentario'**
+  String get communityWriteComment;
+
+  /// No description provided for @communityCommentInvalid.
+  ///
+  /// In es, this message translates to:
+  /// **'Escribe entre 1 y 2000 caracteres, además de espacios.'**
+  String get communityCommentInvalid;
+
+  /// No description provided for @communitySendComment.
+  ///
+  /// In es, this message translates to:
+  /// **'Publicar comentario'**
+  String get communitySendComment;
+
+  /// No description provided for @communityNoComments.
+  ///
+  /// In es, this message translates to:
+  /// **'Todavía no hay comentarios. Puedes ser la primera persona en comentar.'**
+  String get communityNoComments;
+
+  /// No description provided for @communityDeleteComment.
+  ///
+  /// In es, this message translates to:
+  /// **'Eliminar comentario'**
+  String get communityDeleteComment;
+
+  /// No description provided for @communityDeleteCommentInfo.
+  ///
+  /// In es, this message translates to:
+  /// **'Se eliminará tu comentario. Esta acción no se puede deshacer.'**
+  String get communityDeleteCommentInfo;
+
+  /// No description provided for @communityReport.
+  ///
+  /// In es, this message translates to:
+  /// **'Denunciar'**
+  String get communityReport;
+
+  /// No description provided for @communityReportRecipe.
+  ///
+  /// In es, this message translates to:
+  /// **'Denunciar receta'**
+  String get communityReportRecipe;
+
+  /// No description provided for @communityReportReason.
+  ///
+  /// In es, this message translates to:
+  /// **'Motivo de la denuncia'**
+  String get communityReportReason;
+
+  /// No description provided for @communityReasonSpam.
+  ///
+  /// In es, this message translates to:
+  /// **'Publicidad o spam repetido'**
+  String get communityReasonSpam;
+
+  /// No description provided for @communityReasonAbuse.
+  ///
+  /// In es, this message translates to:
+  /// **'Acoso o contenido ofensivo'**
+  String get communityReasonAbuse;
+
+  /// No description provided for @communityReasonDanger.
+  ///
+  /// In es, this message translates to:
+  /// **'Contenido peligroso o engañoso'**
+  String get communityReasonDanger;
+
+  /// No description provided for @communityReasonRights.
+  ///
+  /// In es, this message translates to:
+  /// **'Vulneración de derechos de autor'**
+  String get communityReasonRights;
+
+  /// No description provided for @communitySendReport.
+  ///
+  /// In es, this message translates to:
+  /// **'Enviar denuncia'**
+  String get communitySendReport;
+
+  /// No description provided for @communityReportSent.
+  ///
+  /// In es, this message translates to:
+  /// **'Denuncia enviada'**
+  String get communityReportSent;
+
+  /// No description provided for @communityReportSentInfo.
+  ///
+  /// In es, this message translates to:
+  /// **'Tu denuncia se ha registrado. Gracias por ayudarnos a cuidar la comunidad.'**
+  String get communityReportSentInfo;
+
+  /// No description provided for @communityClose.
+  ///
+  /// In es, this message translates to:
+  /// **'Cerrar'**
+  String get communityClose;
+
+  /// No description provided for @communityBlock.
+  ///
+  /// In es, this message translates to:
+  /// **'Bloquear cuenta'**
+  String get communityBlock;
+
+  /// No description provided for @communityBlockInfo.
+  ///
+  /// In es, this message translates to:
+  /// **'Sus recetas, perfil e interacciones dejarán de ser accesibles entre ambas cuentas. Puedes desbloquearla desde Comunidad.'**
+  String get communityBlockInfo;
+
+  /// No description provided for @communityUnblock.
+  ///
+  /// In es, this message translates to:
+  /// **'Desbloquear cuenta'**
+  String get communityUnblock;
+
+  /// No description provided for @communityBlocked.
+  ///
+  /// In es, this message translates to:
+  /// **'Cuentas bloqueadas'**
+  String get communityBlocked;
+
+  /// No description provided for @communityNoBlocks.
+  ///
+  /// In es, this message translates to:
+  /// **'No tienes cuentas bloqueadas'**
+  String get communityNoBlocks;
+
+  /// No description provided for @communityBlockedAccount.
+  ///
+  /// In es, this message translates to:
+  /// **'Cuenta bloqueada'**
+  String get communityBlockedAccount;
+
+  /// No description provided for @communityBlockPrivacy.
+  ///
+  /// In es, this message translates to:
+  /// **'El perfil está oculto por el bloqueo. Puedes retirar tu bloqueo aquí.'**
+  String get communityBlockPrivacy;
+
+  /// No description provided for @communitySavedOpen.
+  ///
+  /// In es, this message translates to:
+  /// **'Ver recetas guardadas'**
+  String get communitySavedOpen;
+
+  /// No description provided for @communitySavedTab.
+  ///
+  /// In es, this message translates to:
+  /// **'Guardadas'**
+  String get communitySavedTab;
+
+  /// No description provided for @communityNeedsProfile.
+  ///
+  /// In es, this message translates to:
+  /// **'Completa tu perfil para guardar recetas y participar en la comunidad.'**
+  String get communityNeedsProfile;
+
+  /// No description provided for @communityCommentsCount.
+  ///
+  /// In es, this message translates to:
+  /// **'{count, plural, =1{1 comentario} other{{count} comentarios}}'**
+  String communityCommentsCount(int count);
 }
 
 class _AppLocalizationsDelegate

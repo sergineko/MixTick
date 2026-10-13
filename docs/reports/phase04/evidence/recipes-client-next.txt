@@ -1,0 +1,14 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test_support/recipes_local.dart
+00:00 +0: (setUpAll)
+00:00 +0 -1: (setUpAll) [E]
+  'package:gotrue/src/gotrue_client.dart': Failed assertion: line 478 pos 7: '_asyncStorage != null': You need to provide asyncStorage to perform pkce flow.
+  dart:core                                     _AssertionError._throwNew
+  package:gotrue/src/gotrue_client.dart 478:7   GoTrueClient._generatePKCECodeChallenge
+  package:gotrue/src/gotrue_client.dart 301:35  GoTrueClient.signUp
+  test_support\recipes_local.dart 107:48        main.<fn>
+  
+00:00 +0 -1: (tearDownAll)
+00:00 +0 -1: Some tests failed.
+
+Failing tests:
+  C:/Users/Sergio/Desktop/Proyectos/MixTick/test_support/recipes_local.dart: (setUpAll)

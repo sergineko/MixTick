@@ -1,0 +1,17 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test_support/recipes_local.dart
+00:00 +0 -1: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test_support/recipes_local.dart [E]
+  Failed to load "C:/Users/Sergio/Desktop/Proyectos/MixTick/test_support/recipes_local.dart": Bad state: There is no current invoker. Please make sure that you are making the call inside a test zone.
+  package:test_api                                             printOnFailure
+  package:flutter_test/src/_binding_io.dart 84:20              _MockHttpOverrides.createHttpClient
+  dart:_http                                                   new HttpClient
+  package:http/src/io_client.dart 101:53                       new IOClient
+  package:http/src/io_client.dart 19:10                        createClient
+  package:http/src/client.dart 42:37                           new Client
+  package:mixtick/core/network/bounded_http_client.dart 12:31  new BoundedHttpClient
+  test_support\recipes_local.dart 24:21                        new RecipeActor
+  test_support\recipes_local.dart 79:13                        main
+  
+00:00 +0 -1: Some tests failed.
+
+Failing tests:
+  C:/Users/Sergio/Desktop/Proyectos/MixTick/test_support/recipes_local.dart: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test_support/recipes_local.dart

@@ -1,0 +1,1 @@
+PASS: every published project port explicitly bound to 127.0.0.1; no wildcard/IPv6 binding

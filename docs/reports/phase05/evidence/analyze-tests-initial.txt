@@ -1,0 +1,6 @@
+Analyzing MixTick...                                            
+
+  error - Expected to find '(' - test\community\community_test.dart:44:27 - expected_token
+  error - The name 'isNotNull' isn't a class. Try correcting the name to match an existing class - test\community\community_test.dart:44:27 - creation_with_non_type
+
+2 issues found. (ran in 7.0s)

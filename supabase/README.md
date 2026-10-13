@@ -104,3 +104,44 @@ Para reset seguro y la batería completa usar `scripts/verify_auth_profile.ps1
 RLS, Storage y concurrencia API se han verificado localmente. Producción,
 CDN/caché, clientes Realtime/reconexión y trabajador físico de limpieza de blobs
 siguen pendientes. No se puede publicar la app basándose únicamente en esta fase.
+
+## Mi recetario — Fase 04
+
+La migración 008 añade idempotencia de creación, borrado versionado y ciclo de
+fotografías sin alterar 001–007. Conserva 16 tablas públicas; suma un cuarto
+ledger técnico privado. Se reutilizan los contratos anteriores del agregado,
+publicación, fotografía y catálogo. [Contrato](../docs/17_MY_RECIPES.md).
+
+```powershell
+.\scripts\verify_recipes.ps1 -BackendChecks -ResetLocal -IncludeAndroidBuild
+```
+
+El runner guarda evidencias de Fase 04, comprueba aislamiento antes de operar,
+rechaza reset si existen cuentas, ejecuta regresión SQL/API/Auth y el cliente
+real de recetas, restaura config y apaga solo este proyecto. `cleanup_recipe_fixtures.py`
+es teardown de host: valida los UUID/email/paths/owner de su manifest ignorado,
+comprueba cola/referencia y retira únicamente esos objetos/cuentas de pruebas.
+La clave administrativa se obtiene en memoria de la CLI **solo para esa limpieza**;
+nunca se incluye en Flutter, pruebas de permisos, manifests ni evidencias.
+El trabajador físico de fotografías sigue pendiente del lanzamiento.
+
+## Comunidad — Fase 05
+
+009 conserva 001–008 y añade tres proyecciones invoker bajo RLS, índice de
+publicación descendente, CHECK contra comentarios solo whitespace y creación
+de comentarios idempotente con ledger por actor/request/tombstone. Sigue
+habiendo 16 tablas públicas y ahora 5 privadas. Likes/saves/follows/blocks
+conservan INSERT/DELETE y sus políticas; denuncias usan submit_report existente.
+[Contrato, búsqueda y límites de caché](../docs/18_COMMUNITY.md).
+
+```powershell
+.\scripts\verify_community.ps1 -BackendChecks -ResetLocal -IncludeNative -IncludeAndroidBuild
+```
+
+`-IncludeNative` requiere emulador Android iniciado y PowerShell 7 (`pwsh`).
+Sin ese flag se ejecutan las otras suites y no se inventan resultados nativos.
+El runner escribe solo evidencias de Fase 05; la regresión de galería conserva
+los tests anteriores y usa un directorio distinto mediante EvidenceDirectory.
+Las fixtures p5 se retiran con cleanup_community_fixtures.py: clave administrativa
+local solo en memoria del teardown, nunca en pruebas de permisos/Flutter.
+Se restaura confirmación local original y se apaga únicamente mixtick-phase02.

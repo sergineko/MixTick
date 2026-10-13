@@ -1,0 +1,10 @@
+Analyzing MixTick...                                            
+
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - test_support\community_local.dart:100:7 - curly_braces_in_flow_control_structures
+   info - Statements in a for should be enclosed in a block. Try wrapping the statement in a block - test_support\community_local.dart:250:7 - curly_braces_in_flow_control_structures
+   info - Statements in a for should be enclosed in a block. Try wrapping the statement in a block - test_support\community_local.dart:280:9 - curly_braces_in_flow_control_structures
+   info - Statements in a for should be enclosed in a block. Try wrapping the statement in a block - test_support\community_local.dart:528:11 - curly_braces_in_flow_control_structures
+   info - Statements in a for should be enclosed in a block. Try wrapping the statement in a block - test_support\community_local.dart:660:7 - curly_braces_in_flow_control_structures
+   info - Statements in a for should be enclosed in a block. Try wrapping the statement in a block - test_support\community_local.dart:675:7 - curly_braces_in_flow_control_structures
+
+6 issues found. (ran in 7.2s)

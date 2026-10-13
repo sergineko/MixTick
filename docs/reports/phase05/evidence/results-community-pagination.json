@@ -1,0 +1,14 @@
+{
+  "name": "community-real-client",
+  "status": "PASS",
+  "finished_at": "2026-10-13T20:14:59.0296574+02:00",
+  "arguments": [
+    "test",
+    "test_support/community_local.dart",
+    "--dart-define-from-file=.tooling/phase05-client.local.json",
+    "--reporter",
+    "expanded"
+  ],
+  "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+  "exit_code": 0
+}

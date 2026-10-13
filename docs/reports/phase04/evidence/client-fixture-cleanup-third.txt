@@ -1,0 +1,1 @@
+PASS: removed 3 verified local fixture accounts and 2 fixture objects via trusted Storage API; no production worker claimed

@@ -1,0 +1,10 @@
+Computing fixes in recipes...
+Applying fixes...
+
+data\supabase_recipe_repository.dart
+  curly_braces_in_flow_control_structures - 1 fix
+
+presentation\ingredient_editor.dart
+  curly_braces_in_flow_control_structures - 3 fixes
+
+4 fixes made in 2 files.

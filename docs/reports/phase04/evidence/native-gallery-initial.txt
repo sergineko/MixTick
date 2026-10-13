@@ -1,0 +1,2 @@
+PASS: cancelled the actual Android Photo Picker
+Observed resource IDs: ['', 'android:id/content']

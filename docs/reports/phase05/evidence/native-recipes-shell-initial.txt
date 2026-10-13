@@ -1,0 +1,9 @@
+PASS: explicit loopback bindings/listeners; 18 other-interface probes, 0 connections
+Stopped services: [supabase_imgproxy_mixtick-phase02 supabase_pg_meta_mixtick-phase02 supabase_studio_mixtick-phase02 supabase_edge_runtime_mixtick-phase02 supabase_analytics_mixtick-phase02 supabase_vector_mixtick-phase02 supabase_pooler_mixtick-phase02]
+adb.exe : .tooling/phase04-gallery.png: 1 file pushed, 0 skipped. 14.0 MB/s (6459 bytes in 0.000s)
+En C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\verify_native_recipes.ps1: 37 Carácter: 3
++   & $AdbExecutable -s $Device push .tooling/phase04-gallery.png $owne ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (.tooling/phase0...ytes in 0.000s):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

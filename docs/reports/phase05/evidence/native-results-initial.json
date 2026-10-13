@@ -1,0 +1,17 @@
+{
+  "name": "native-community",
+  "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+  "arguments": [
+    "test",
+    "integration_test/community_native_test.dart",
+    "-d",
+    "emulator-5554",
+    "--no-uninstall",
+    "--dart-define-from-file=.tooling/phase05-android.local.json",
+    "--reporter",
+    "expanded"
+  ],
+  "started_at": "2026-10-13T11:04:10.4072841+02:00",
+  "exit_code": 1,
+  "status": "FAIL"
+}

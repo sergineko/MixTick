@@ -1,15 +1,15 @@
 # MixTick
 
-Base Flutter Android/iOS, backend SQL y autenticación/perfiles de Fases 01–03. Nombre técnico `mixtick`, organización
+Flutter Android/iOS, backend SQL, Auth/perfiles, Mi recetario y Comunidad de Fases 01–05. Nombre técnico `mixtick`, organización
 `es.sergiotech` e identificador fijo `es.sergiotech.mixtick` para ambas plataformas.
 El nombre comercial MixTick sigue pendiente de validación legal/comercial.
 
 La base incluye Riverpod, GoRouter, configuración opcional de Supabase, cuatro
 pestañas protegidas, perfil como soporte, temas claro/oscuro y español `es_ES`.
-Las pantallas de los cuatro módulos indican «Próximamente». Auth/perfiles tienen
+Comunidad y Mi recetario tienen interfaces y repositorios reales. Auth/perfiles tienen
 repositorios reales, formularios, retorno PKCE, sesión segura y avatar opcional.
-Hay esquema SQL probado localmente, sin backend remoto provisionado. El CRUD
-de recetas y demás módulos se implementará en sus fases autorizadas.
+Hay esquema SQL probado localmente, sin backend remoto provisionado. ¿Qué cocino
+hoy? y Lista de compra siguen en Foundation hasta sus fases autorizadas.
 
 ## Entorno
 
@@ -142,15 +142,35 @@ no son capturas de dispositivos ni conexiones externas.
 Consulta `docs/PROGRESS.md`, `docs/reports/PHASE_01_REPORT.md`,
 `docs/reports/PHASE_02_REPORT.md` y `docs/adr/` para resultados y limitaciones.
 
-Las Fases 01, 02 y 03 están implementadas. La Fase 04 requiere revisión y autorización
-expresa del propietario. El informe y evidencias de Fase 03 quedan en
-`docs/reports/PHASE_03_REPORT.md` y `docs/reports/phase03/`.
+Las Fases 01, 02, 03, 04 y 05 están implementadas y verificadas dentro de los límites
+locales de sus informes. Mi recetario incluye CRUD, catálogo/alias, pasos,
+fotografía privada y publicación explícita con Supabase real. Consulta
+`docs/17_MY_RECIPES.md`, `docs/reports/PHASE_04_REPORT.md` y `docs/reports/phase04/`
+para contratos, comandos, pruebas A/B/C y capturas Android reales. Comunidad y
+guardadas: `docs/18_COMMUNITY.md`, `docs/reports/PHASE_05_REPORT.md` y
+`docs/reports/phase05/`. La Fase 06 requiere autorización expresa del propietario.
 El propietario autorizó el commit y push del estado de Fase 01
 a [sergineko/MixTick](https://github.com/sergineko/MixTick) y, posteriormente,
 el commit y push del estado actual de Fase 02 el 2026-10-13. Tras cerrar la
 Fase 03, autorizó también el commit y push de su estado actual a ese repositorio.
-La Fase 04, los despliegues y los cambios de Supabase remoto siguen sin
-autorización. Los informes conservan el estado histórico al finalizar cada
+La autorización posterior de Fase 04 permite exclusivamente Mi recetario local
+y prohíbe nuevos commits/push y despliegues. El propietario autorizó después
+Fase 05 local exclusivamente, conservando la prohibición de Git/remoto/deploy
+y sin avanzar a Fase 06. Los informes
+conservan el estado histórico al finalizar cada
 implementación, previo a su autorización de GitHub.
 Los documentos, manifiesto y checksums del paquete original se conservan como
 referencia; los checksums originales no describen el proyecto modificado.
+
+Verificación de Fase 04: `scripts/verify_recipes.ps1 -BackendChecks -ResetLocal
+-IncludeAndroidBuild`. Galería/UI Android: `scripts/verify_native_recipes.ps1`
+con backend aislado y la fixture de imagen indicada en la documentación técnica.
+El APK estándar compila `lib/main.dart`; su configuración pública se proporciona
+por dart-define según las instrucciones de configuración. El APK de integración
+no es el APK de distribución. No hay backend remoto ni publicación preparada.
+
+Verificación Fase 05: `scripts/verify_community.ps1 -BackendChecks -ResetLocal
+-IncludeNative -IncludeAndroidBuild`, con emulador iniciado y PowerShell 7.
+Sin `-IncludeNative` se omite integración Android; no se atribuye PASS a lo omitido.
+El runner conserva evidencias anteriores, valida aislamiento, retira sus
+fixtures, restaura Auth y apaga solo el backend del proyecto.

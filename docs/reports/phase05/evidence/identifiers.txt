@@ -1,0 +1,6 @@
+PASS Flutter package: mixtick
+PASS Android namespace: es.sergiotech.mixtick
+PASS Android applicationId: es.sergiotech.mixtick
+PASS Android MainActivity package: es.sergiotech.mixtick
+PASS iOS Bundle Identifier: 3 coincidencias con es.sergiotech.mixtick
+RESULT: PASS

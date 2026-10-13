@@ -1,0 +1,2 @@
+PASS: inspected 1 fixture paths; 1 stored unreferenced photos queued; active photos not queued
+PASS: removed 2 verified local fixture accounts and 1 fixture objects via trusted Storage API; no production worker claimed

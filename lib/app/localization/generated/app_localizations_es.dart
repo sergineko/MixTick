@@ -363,6 +363,456 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get signOutAndRecover => 'Cerrar sesión y recuperar contraseña';
+
+  @override
+  String get recipeCreate => 'Crear receta';
+
+  @override
+  String get recipeEdit => 'Editar receta';
+
+  @override
+  String get recipeCreatedSection => 'Creadas por mí';
+
+  @override
+  String get recipeSavedSection => 'Recetas públicas guardadas';
+
+  @override
+  String get recipeSavedLater =>
+      'Aquí aparecerán las recetas que guardes de Comunidad cuando esté disponible.';
+
+  @override
+  String get recipeSearch => 'Buscar por título';
+
+  @override
+  String get recipeCategory => 'Categoría';
+
+  @override
+  String get recipeVisibility => 'Visibilidad';
+
+  @override
+  String get recipeAllVisibility => 'Privadas y públicas';
+
+  @override
+  String get recipeAllCategories => 'Todas las categorías';
+
+  @override
+  String get recipePrivate => 'Privada';
+
+  @override
+  String get recipePublic => 'Pública';
+
+  @override
+  String get recipeOrderRecent => 'Actualizadas más recientemente';
+
+  @override
+  String get recipeLoadMore => 'Cargar más recetas';
+
+  @override
+  String get recipeLoading => 'Cargando recetas…';
+
+  @override
+  String get recipeEmpty => 'Un recetario por descubrir';
+
+  @override
+  String get recipeEmptyHint =>
+      'Crea tu primera receta o cambia los filtros de búsqueda.';
+
+  @override
+  String get recipeBackendMissing => 'Recetario sin conexión configurada';
+
+  @override
+  String get recipeBackendMissingHint =>
+      'Configura el servicio de MixTick para gestionar tus recetas.';
+
+  @override
+  String get recipeNeedsProfile => 'Completa tu perfil antes de crear recetas.';
+
+  @override
+  String get recipeRetryCategories => 'Reintentar categorías';
+
+  @override
+  String get recipeNoPhoto => 'Receta sin fotografía';
+
+  @override
+  String get recipePhoto => 'Fotografía de la receta';
+
+  @override
+  String get recipeMinutes => 'min';
+
+  @override
+  String get recipeTitle => 'Título';
+
+  @override
+  String get recipeDescription => 'Descripción (opcional)';
+
+  @override
+  String get recipeServings => 'Raciones';
+
+  @override
+  String get recipePrep => 'Preparación (min, opcional)';
+
+  @override
+  String get recipeCook => 'Cocción (min, opcional)';
+
+  @override
+  String get recipeBasics => 'Lo esencial';
+
+  @override
+  String get recipeIngredients => 'Ingredientes';
+
+  @override
+  String get recipeSteps => 'Preparación paso a paso';
+
+  @override
+  String get recipeAddIngredient => 'Añadir ingrediente';
+
+  @override
+  String get recipeIngredientName => 'Buscar ingrediente o escribir otro';
+
+  @override
+  String get recipeCustomIngredient => 'Usar este nombre fuera del catálogo';
+
+  @override
+  String get recipeQuantity => 'Cantidad (opcional)';
+
+  @override
+  String get recipeUnit => 'Unidad (opcional)';
+
+  @override
+  String get recipeUnitHint => 'g, kg, ml, l, ud, cucharada…';
+
+  @override
+  String get recipeOptional => 'Ingrediente opcional';
+
+  @override
+  String get recipeDuplicate =>
+      'Este ingrediente ya está incluido. Edita su cantidad en la lista.';
+
+  @override
+  String get recipeAddStep => 'Añadir paso';
+
+  @override
+  String get recipeStepInstruction => 'Instrucción';
+
+  @override
+  String get recipeStepUp => 'Subir paso';
+
+  @override
+  String get recipeStepDown => 'Bajar paso';
+
+  @override
+  String get recipeRemoveIngredient => 'Quitar ingrediente';
+
+  @override
+  String get recipeRemoveStep => 'Eliminar paso';
+
+  @override
+  String get recipeEditIngredient => 'Editar ingrediente';
+
+  @override
+  String get recipeCancel => 'Cancelar';
+
+  @override
+  String get recipeAdd => 'Añadir';
+
+  @override
+  String get recipeSave => 'Guardar receta';
+
+  @override
+  String get recipeSaving => 'Guardando receta…';
+
+  @override
+  String get recipeUploading => 'Subiendo fotografía…';
+
+  @override
+  String get recipeLinking => 'Actualizando fotografía…';
+
+  @override
+  String get recipeCancelUpload => 'Cancelar subida';
+
+  @override
+  String get recipeCancelling => 'Cancelando; comprobando el resultado…';
+
+  @override
+  String get recipePhotoCancelled =>
+      'Subida cancelada. Los datos de la receta se conservaron.';
+
+  @override
+  String get recipeFieldsSaved =>
+      'Los datos se guardaron. Revisa la fotografía y vuelve a guardar para completar el cambio.';
+
+  @override
+  String get recipeInvalid =>
+      'Revisa los campos: se necesita al menos un ingrediente y un paso válidos.';
+
+  @override
+  String get recipeInvalidText =>
+      'Completa el campo respetando su límite de longitud.';
+
+  @override
+  String get recipeInvalidServings =>
+      'Introduce entre 0,01 y 10.000 raciones, con hasta dos decimales.';
+
+  @override
+  String get recipeInvalidQuantity =>
+      'Introduce una cantidad positiva de hasta 1.000.000, con hasta tres decimales.';
+
+  @override
+  String get recipeInvalidTime =>
+      'Introduce un número entero entre 0 y 10.080, o deja el campo vacío.';
+
+  @override
+  String get recipeNetworkError =>
+      'No pudimos completar la operación. Comprueba la conexión; tus cambios siguen en el formulario.';
+
+  @override
+  String get recipeForbidden =>
+      'Esta receta no está disponible para tu cuenta.';
+
+  @override
+  String get recipeConflict =>
+      'La receta cambió en otra sesión. Revisa la versión actual antes de guardar tus cambios.';
+
+  @override
+  String get recipeQuota =>
+      'Has creado varias recetas seguidas. Espera un minuto y vuelve a intentarlo.';
+
+  @override
+  String get recipeUnexpected =>
+      'No pudimos completar la operación. Inténtalo de nuevo.';
+
+  @override
+  String get recipeReload => 'Recargar receta';
+
+  @override
+  String get recipeReloadWarning =>
+      'Se cargarán los datos actuales y se descartarán los cambios de este formulario.';
+
+  @override
+  String get recipeDiscardTitle => '¿Descartar los cambios?';
+
+  @override
+  String get recipeDiscardMessage =>
+      'Los cambios que no has guardado se perderán.';
+
+  @override
+  String get recipeDiscard => 'Descartar';
+
+  @override
+  String get recipePublish => 'Publicar receta';
+
+  @override
+  String get recipeMakePrivate => 'Hacer privada';
+
+  @override
+  String get recipePublishInfo =>
+      'Las personas que accedan a MixTick podrán ver la receta, sus ingredientes, pasos y fotografía. Puedes volver a hacerla privada después.';
+
+  @override
+  String get recipePrivateInfo =>
+      'Solo tú podrás consultar la receta. Los accesos nuevos de otras personas se denegarán. Una foto ya descargada o una URL firmada todavía vigente puede conservarse.';
+
+  @override
+  String get recipeDelete => 'Eliminar receta';
+
+  @override
+  String get recipeDeleteInfo =>
+      'Se eliminarán la receta y sus relaciones. La fotografía dejará de ser accesible; su limpieza física queda pendiente. Esta acción no se puede deshacer.';
+
+  @override
+  String get recipePhotoLifecycle =>
+      'Al sustituir o retirar una foto deja de mostrarse. La limpieza del archivo anterior se procesa por separado.';
+
+  @override
+  String get recipeView => 'Ver receta';
+
+  @override
+  String get recipeCatalogLoading => 'Cargando catálogo…';
+
+  @override
+  String get recipeCatalogError =>
+      'No pudimos cargar el catálogo. Reintenta para seleccionar ingredientes normalizados.';
+
+  @override
+  String get recipeAtLeastOneIngredient => 'Añade al menos un ingrediente.';
+
+  @override
+  String get recipeAtLeastOneStep => 'Añade al menos un paso.';
+
+  @override
+  String get recipeLimitReached =>
+      'Puedes incluir hasta 100 ingredientes y 100 pasos.';
+
+  @override
+  String get communityChronological =>
+      'Recetas de nuestra comunidad, por orden de publicación.';
+
+  @override
+  String get communitySearch => 'Busca por título, categoría o ingrediente';
+
+  @override
+  String get communitySearchCoverage =>
+      'Ingredientes: nombre completo del catálogo o sus alias; texto libre por nombre exacto, sin distinguir tildes o mayúsculas.';
+
+  @override
+  String get communityLikes => 'me gusta';
+
+  @override
+  String get communityComments => 'Comentarios';
+
+  @override
+  String get communitySave => 'Guardar';
+
+  @override
+  String get communitySaved => 'Guardada';
+
+  @override
+  String get communitySavedInfo =>
+      'Referencias a las recetas originales. Su autoría y sus permisos se conservan.';
+
+  @override
+  String get communitySavedEmpty =>
+      'Guarda recetas de otros autores desde Comunidad. Solo aparecerán las que sigan siendo públicas y accesibles.';
+
+  @override
+  String get communityLoading => 'Cargando comunidad…';
+
+  @override
+  String get communityEmpty => 'No hay recetas para mostrar';
+
+  @override
+  String get communityEmptyInfo =>
+      'Prueba otra búsqueda o vuelve más adelante para descubrir recetas publicadas.';
+
+  @override
+  String get communityUnavailable =>
+      'Este contenido ya no está disponible o no tienes permiso para consultarlo.';
+
+  @override
+  String get communityInvalid =>
+      'Revisa los datos antes de volver a intentarlo.';
+
+  @override
+  String get communityQuota =>
+      'Has enviado varias solicitudes. Espera un minuto antes de intentarlo de nuevo.';
+
+  @override
+  String get communityConflict =>
+      'La solicitud tiene otro contenido. Recarga para comprobar lo que se ha guardado.';
+
+  @override
+  String get communityFollow => 'Seguir autor';
+
+  @override
+  String get communityUnfollow => 'Dejar de seguir';
+
+  @override
+  String get communityFollowers => 'seguidores';
+
+  @override
+  String get communityFollowing => 'seguidos';
+
+  @override
+  String get communityAuthorRecipes => 'Recetas públicas';
+
+  @override
+  String get communityWriteComment => 'Escribe un comentario';
+
+  @override
+  String get communityCommentInvalid =>
+      'Escribe entre 1 y 2000 caracteres, además de espacios.';
+
+  @override
+  String get communitySendComment => 'Publicar comentario';
+
+  @override
+  String get communityNoComments =>
+      'Todavía no hay comentarios. Puedes ser la primera persona en comentar.';
+
+  @override
+  String get communityDeleteComment => 'Eliminar comentario';
+
+  @override
+  String get communityDeleteCommentInfo =>
+      'Se eliminará tu comentario. Esta acción no se puede deshacer.';
+
+  @override
+  String get communityReport => 'Denunciar';
+
+  @override
+  String get communityReportRecipe => 'Denunciar receta';
+
+  @override
+  String get communityReportReason => 'Motivo de la denuncia';
+
+  @override
+  String get communityReasonSpam => 'Publicidad o spam repetido';
+
+  @override
+  String get communityReasonAbuse => 'Acoso o contenido ofensivo';
+
+  @override
+  String get communityReasonDanger => 'Contenido peligroso o engañoso';
+
+  @override
+  String get communityReasonRights => 'Vulneración de derechos de autor';
+
+  @override
+  String get communitySendReport => 'Enviar denuncia';
+
+  @override
+  String get communityReportSent => 'Denuncia enviada';
+
+  @override
+  String get communityReportSentInfo =>
+      'Tu denuncia se ha registrado. Gracias por ayudarnos a cuidar la comunidad.';
+
+  @override
+  String get communityClose => 'Cerrar';
+
+  @override
+  String get communityBlock => 'Bloquear cuenta';
+
+  @override
+  String get communityBlockInfo =>
+      'Sus recetas, perfil e interacciones dejarán de ser accesibles entre ambas cuentas. Puedes desbloquearla desde Comunidad.';
+
+  @override
+  String get communityUnblock => 'Desbloquear cuenta';
+
+  @override
+  String get communityBlocked => 'Cuentas bloqueadas';
+
+  @override
+  String get communityNoBlocks => 'No tienes cuentas bloqueadas';
+
+  @override
+  String get communityBlockedAccount => 'Cuenta bloqueada';
+
+  @override
+  String get communityBlockPrivacy =>
+      'El perfil está oculto por el bloqueo. Puedes retirar tu bloqueo aquí.';
+
+  @override
+  String get communitySavedOpen => 'Ver recetas guardadas';
+
+  @override
+  String get communitySavedTab => 'Guardadas';
+
+  @override
+  String get communityNeedsProfile =>
+      'Completa tu perfil para guardar recetas y participar en la comunidad.';
+
+  @override
+  String communityCommentsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count comentarios',
+      one: '1 comentario',
+    );
+    return '$_temp0';
+  }
 }
 
 /// The translations for Spanish Castilian, as used in Spain (`es_ES`).

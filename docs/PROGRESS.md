@@ -5,22 +5,29 @@
 | 01 Base | VERIFIED | 2026-10-13 | Analyze sin incidencias; 21 tests; formato; IDs estrictos; APK debug Android e identidad del binario | iOS y ejecución en dispositivos NOT_RUN; Supabase real pendiente, previsto fuera de esta fase |
 | 02 BD y permisos | VERIFIED | 2026-10-13 | 6 migraciones desde cero; 19 checks pgTAP; 20 escenarios reales Auth/API/Storage; lint limpio; analyze, 21 tests Flutter y IDs estrictos | Entorno remoto y clientes Realtime NOT_VERIFIED; trabajador de limpieza pendiente |
 | 03 Auth/Perfil | VERIFIED | 2026-10-13 | 7 migraciones desde cero; 25 pgTAP; 20 regresiones API; 13 escenarios cliente por cada modo de correo; 48 tests Flutter; 2 procesos Android reales; analyze/formato/IDs/APK; aislamiento real | iOS y galería interactiva NOT_RUN; remoto/CDN/Realtime/worker NOT_VERIFIED |
-| 04 Mi recetario | TODO | — | — | No autorizada |
-| 05 Comunidad | TODO | — | — | No autorizada |
+| 04 Mi recetario | VERIFIED | 2026-10-13 | 8 migraciones desde cero; 35 pgTAP; 20 regresiones API; 16 casos cliente de recetas (1 híbrido); Auth 13 por modo; 66 tests Flutter; UI y galería Android reales; analyze/formato/IDs/APK; auditoría cero fixtures | iOS/físico NOT_RUN; remoto/CDN/Realtime/worker/eliminación completa de cuenta/moderación pendientes |
+| 05 Comunidad | VERIFIED | 2026-10-13 | 9 migraciones desde cero; 50 SQL; 20 API; recetas 16; Comunidad 30 (2 híbridos); Auth 13 por modo; 83 Flutter; 2 integraciones Android; formato/IDs/analyze/APK; auditoría cero fixtures | iOS/físico NOT_RUN; remoto/CDN/Realtime/worker/eliminación de cuenta/moderación operativa pendientes |
 | 06 ¿Qué cocino? | TODO | — | — | No autorizada |
 | 07 Compra | TODO | — | — | No autorizada |
 | 08 Auditoría | TODO | — | — | No autorizada |
 
 ## Último cambio
 
+Fase 05 autorizada exclusivamente por el propietario: Comunidad y guardados,
+conservando los contratos aprobados de Fases 01–04. Las ocho migraciones
+históricas y evidencias previas se conservan. Baseline del workspace aprobado
+registrado en `.tooling/phase05-baseline/`; Fase 04 permanece sin commit.
+Prohibidos commits/push, deploy, remoto y avance a Fase 06.
+
 Fecha: 2026-10-13 (Europe/Madrid).
-Motivo: cierre local de `prompts/03_AUTH_PROFILE.md`, con fases anteriores aceptadas.
-Decisiones: [ADR-017](adr/017_AUTH_PROFILE.md).
-Informe completo/evidencias: [Fase 03](reports/PHASE_03_REPORT.md).
-Contratos: [Auth/perfiles](16_AUTH_PROFILE.md). Informes anteriores:
+Motivo: cierre local de `prompts/05_COMMUNITY.md`, con Fases 01–04 aceptadas.
+Decisiones: [ADR-019](adr/019_COMMUNITY.md).
+Informe completo/evidencias: [Fase 05](reports/PHASE_05_REPORT.md).
+Contratos: [Comunidad](18_COMMUNITY.md), [Mi recetario](17_MY_RECIPES.md), [Auth/perfiles](16_AUTH_PROFILE.md).
+Informes anteriores: [Fase 04](reports/PHASE_04_REPORT.md), [Fase 03](reports/PHASE_03_REPORT.md),
 [Fase 02](reports/PHASE_02_REPORT.md) y [Fase 01](reports/PHASE_01_REPORT.md).
-Próximo paso autorizado: ninguno; esperar revisión del propietario. Sin commits,
-push, deploy, proyectos Supabase remotos ni Fase 04.
+Próximo paso autorizado: ninguno; esperar revisión. Sin commits, push, deploy
+ni proyectos Supabase remotos durante Fase 05. Fase 06 no autorizada.
 
 `VERIFIED` se limita a las comprobaciones locales enumeradas. No representa una
 verificación de backend remoto, CDN, cliente Realtime, compilación iOS o
@@ -93,3 +100,41 @@ La prohibición de Git durante la implementación queda sustituida por esta
 autorización posterior. Se mantiene el cierre sin avanzar a Fase 04, desplegar
 ni modificar Supabase remoto. El resultado del push se verifica comparando el
 commit local con `refs/heads/main` del repositorio remoto.
+
+## Autorización de Fase 04
+
+Fecha: 2026-10-13. El propietario acepta Fases 01/02/03 y autoriza exclusivamente
+Mi recetario: CRUD real, catálogo/alias, pasos, fotografías, publicación explícita,
+concurrencia, pruebas A/B/C locales y Android si está disponible. Se conservan
+las siete migraciones históricas, los cuatro módulos y sus contratos/pruebas.
+Una migración incremental se justifica si es necesaria. Se prohíben commits,
+push, despliegues y fases posteriores. HEAD inicial:
+`cc9be3972d6fc0297d56174b3dfdce69d9719504`.
+
+Fase 04 finalizada: Mi recetario real con listado/CRUD/pasos/catálogo/fotografías
+y cambios explícitos de visibilidad. Solo se añade la migración 008; las siete
+históricas y las implementaciones/informes aceptados permanecen intactos.
+Galería Android seleccionada/cancelada realmente, con capturas claro/oscuro;
+se mantienen y explican los FAIL iniciales. Auditoría final: cero usuarios,
+perfiles, recetas, relaciones, listas, objetos, jobs, ledgers y correos de fixtures;
+catálogo 50/74 conservado. Backend `mixtick-phase02` apagado sin puertos publicados.
+HEAD sigue siendo `cc9be3972d6fc0297d56174b3dfdce69d9719504`; cambios locales sin
+commit/push. Se detiene para revisión y no comienza Fase 05.
+
+## Autorización y cierre de Fase 05
+
+El propietario acepta Fases 01–04 y autoriza exclusivamente Comunidad/guardados.
+Se inspeccionan autorización, documentos, informes, módulos y ocho migraciones
+antes de editar. Baseline local aprobado capturado; no se usa HEAD de Fase 03
+como referencia de cambios de Fase 05.
+
+Comunidad finalizada y verificada localmente. Solo se añade 009; históricos y
+evidencias 01–04 intactos. RLS en proyecciones/recuentos, búsqueda explícita,
+interacciones por Auth, guardados por referencia y comentario idempotente por
+actor. Estado y fotografías se revalidan/descartan; sin prometer retirada de
+copias descargadas o actualización instantánea sin Realtime. Los FAIL iniciales
+se conservan y las ejecuciones finales están PASS en el informe.
+Auditoría final cero fixtures/objetos/correos; catálogo 50/74 conservado. Solo
+mixtick-phase02 y el emulador propio apagados. HEAD continúa
+`cc9be3972d6fc0297d56174b3dfdce69d9719504`, sin cambios staged/commit/push,
+remoto, deploy ni publicación. Fase 06 no autorizada; detener para revisión.

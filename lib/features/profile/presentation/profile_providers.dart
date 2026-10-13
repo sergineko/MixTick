@@ -1,8 +1,11 @@
 import 'dart:typed_data';
 
+import 'package:flutter/painting.dart';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/network/supabase_bootstrap.dart';
+import '../../../core/network/content_revision.dart';
 import '../../auth/presentation/auth_providers.dart';
 import '../data/profile_photo_picker.dart';
 import '../data/supabase_profile_repository.dart';
@@ -51,7 +54,9 @@ final avatarProvider = FutureProvider.autoDispose.family<Uint8List, String>((
   if (userId == null || repo == null) {
     throw const ProfileFailure(ProfileFailureCode.forbidden);
   }
-  return repo.downloadAvatar(path);
+  final bytes = await repo.downloadAvatar(path);
+  if (ref.mounted) ref.onDispose(() => MemoryImage(bytes).evict());
+  return bytes;
 });
 final photoPickerProvider = Provider<ProfilePhotoPicker>(
   (ref) => ProfilePhotoPicker(),
@@ -112,6 +117,7 @@ class ProfileController extends Notifier<ProfileActionState> {
       }
       if (ref.mounted && ref.read(authSessionProvider).value?.userId == actor) {
         ref.invalidate(ownProfileProvider);
+        ref.read(contentRevisionProvider.notifier).changed();
         ref.invalidate(publicProfileProvider);
         ref.invalidate(avatarProvider);
         state = ProfileActionState(cleanupPending: pending);

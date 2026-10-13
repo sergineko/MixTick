@@ -1,0 +1,25 @@
+test_01_private_public_private_including_all_relations (__main__.DatabaseApiTests.test_01_private_public_private_including_all_relations) ... ok
+test_02_nonowner_cannot_write_or_spoof_identity (__main__.DatabaseApiTests.test_02_nonowner_cannot_write_or_spoof_identity) ... ok
+test_03_recipe_create_update_roll_back_completely (__main__.DatabaseApiTests.test_03_recipe_create_update_roll_back_completely) ... ok
+test_04_acceptance_and_revocation_enforced_by_server (__main__.DatabaseApiTests.test_04_acceptance_and_revocation_enforced_by_server) ... ok
+test_05_recipient_only_and_concurrent_acceptance (__main__.DatabaseApiTests.test_05_recipient_only_and_concurrent_acceptance) ... ok
+test_06_duplicate_interactions_invites_and_foreign_keys (__main__.DatabaseApiTests.test_06_duplicate_interactions_invites_and_foreign_keys) ... ok
+test_07_concurrent_item_edits_require_matching_version (__main__.DatabaseApiTests.test_07_concurrent_item_edits_require_matching_version) ... ok
+test_08_import_idempotent_no_private_origin_leak (__main__.DatabaseApiTests.test_08_import_idempotent_no_private_origin_leak) ... ok
+test_09_import_invalid_selection_is_atomic (__main__.DatabaseApiTests.test_09_import_invalid_selection_is_atomic) ... ok
+test_10_catalog_uses_curated_ids_without_false_equivalence (__main__.DatabaseApiTests.test_10_catalog_uses_curated_ids_without_false_equivalence) ... ok
+test_11_storage_privacy_listing_upload_and_expiry (__main__.DatabaseApiTests.test_11_storage_privacy_listing_upload_and_expiry) ... ok
+test_12_anon_and_private_schema_denied (__main__.DatabaseApiTests.test_12_anon_and_private_schema_denied) ... ok
+test_13_cascades_delete_relationships_and_list_resources (__main__.DatabaseApiTests.test_13_cascades_delete_relationships_and_list_resources) ... ok
+test_14_block_and_report_validation (__main__.DatabaseApiTests.test_14_block_and_report_validation) ... ok
+test_15_complete_recipe_update_and_stale_version (__main__.DatabaseApiTests.test_15_complete_recipe_update_and_stale_version) ... ok
+test_16_comment_rate_limit_cannot_be_bypassed_by_direct_api (__main__.DatabaseApiTests.test_16_comment_rate_limit_cannot_be_bypassed_by_direct_api) ... ok
+test_17_blocked_and_rejected_invitations_never_grant_membership (__main__.DatabaseApiTests.test_17_blocked_and_rejected_invitations_never_grant_membership) ... ok
+test_18_deleted_recipe_enqueues_private_blob_cleanup (__main__.DatabaseApiTests.test_18_deleted_recipe_enqueues_private_blob_cleanup) ... ok
+test_19_nonmember_item_error_does_not_disclose_existence (__main__.DatabaseApiTests.test_19_nonmember_item_error_does_not_disclose_existence) ... ok
+test_20_known_free_text_is_saved_as_canonical_id (__main__.DatabaseApiTests.test_20_known_free_text_is_saved_as_canonical_id) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 8.170s
+
+OK

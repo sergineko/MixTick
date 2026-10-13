@@ -1,0 +1,75 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart
+lib/features/recipes/data/supabase_recipe_repository.dart:43:10: Error: 'ProfileFailure' isn't a type.
+    } on ProfileFailure {
+         ^^^^^^^^^^^^^^
+00:00 +0 -1: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart [E]
+  Failed to load "C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart":
+  Compilation failed for testPath=C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: lib/features/recipes/data/supabase_recipe_repository.dart:43:10: Error: 'ProfileFailure' isn't a type.
+      } on ProfileFailure {
+           ^^^^^^^^^^^^^^
+  .
+  Error: The Dart compiler exited unexpectedly.
+  package:flutter_tools/src/base/common.dart 34:3  throwToolExit
+  package:flutter_tools/src/compile.dart 1024:11   DefaultResidentCompiler._compile.<fn>
+  dart:async/zone_root.dart 48:47                  _rootRunUnary
+  dart:async/zone.dart 816:35                      _CustomZone.runUnary
+  dart:async/future_impl.dart 948:45               Future._propagateToListeners.handleValueCallback
+  dart:async/future_impl.dart 977:13               Future._propagateToListeners
+  dart:async/future_impl.dart 862:9                Future._propagateToListeners
+  dart:async/future_impl.dart 720:5                Future._completeWithValue
+  dart:async/future_impl.dart 804:7                Future._asyncCompleteWithValue.<fn>
+  dart:async/zone_root.dart 35:13                  _rootRun
+  dart:async/zone.dart 810:35                      _CustomZone.run
+  dart:async/zone.dart 702:7                       _CustomZone.runGuarded
+  dart:async/zone.dart 743:23                      _CustomZone.bindCallbackGuarded.<fn>
+  dart:async/schedule_microtask.dart 40:35         _microtaskLoop
+  dart:async/schedule_microtask.dart 49:5          _startMicrotaskLoop
+  dart:isolate-patch/isolate_patch.dart 127:13     _runPendingImmediateCallback
+  dart:isolate-patch/isolate_patch.dart 193:5      _RawReceivePort._handleMessage
+  
+lib/features/recipes/data/supabase_recipe_repository.dart:43:10: Error: 'ProfileFailure' isn't a type.
+    } on ProfileFailure {
+         ^^^^^^^^^^^^^^
+00:00 +0 -2: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart [E]
+  Failed to load "C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart":
+  Compilation failed for testPath=C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart: lib/features/recipes/data/supabase_recipe_repository.dart:43:10: Error: 'ProfileFailure' isn't a type.
+      } on ProfileFailure {
+           ^^^^^^^^^^^^^^
+  .
+00:00 +0 -2: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart [E]
+  Error: The Dart compiler exited unexpectedly.
+  package:flutter_tools/src/base/common.dart 34:3  throwToolExit
+  package:flutter_tools/src/compile.dart 1024:11   DefaultResidentCompiler._compile.<fn>
+  dart:async/zone_root.dart 48:47                  _rootRunUnary
+  dart:async/zone.dart 816:35                      _CustomZone.runUnary
+  dart:async/future_impl.dart 948:45               Future._propagateToListeners.handleValueCallback
+  dart:async/future_impl.dart 977:13               Future._propagateToListeners
+  dart:async/future_impl.dart 862:9                Future._propagateToListeners
+  dart:async/future_impl.dart 720:5                Future._completeWithValue
+  dart:async/future_impl.dart 804:7                Future._asyncCompleteWithValue.<fn>
+  dart:async/zone_root.dart 35:13                  _rootRun
+  dart:async/zone.dart 810:35                      _CustomZone.run
+  dart:async/zone.dart 702:7                       _CustomZone.runGuarded
+  dart:async/zone.dart 743:23                      _CustomZone.bindCallbackGuarded.<fn>
+  dart:async/schedule_microtask.dart 40:35         _microtaskLoop
+  dart:async/schedule_microtask.dart 49:5          _startMicrotaskLoop
+  dart:isolate-patch/isolate_patch.dart 127:13     _runPendingImmediateCallback
+  dart:isolate-patch/isolate_patch.dart 193:5      _RawReceivePort._handleMessage
+  
+00:00 +0 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/app_config_test.dart: Sin configuración no inicializa ni conecta con Supabase
+00:00 +1 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/app_config_test.dart: Acepta configuración pública HTTPS sin afirmar conectividad
+00:00 +2 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/app_config_test.dart: Rechaza URL insegura, parcial o con credenciales
+00:00 +3 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/app_config_test.dart: Rechaza claves administrativas y JWT malformados
+00:00 +4 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/app_config_test.dart: La clave JWT heredada solo admite el rol público anon
+00:00 +5 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:00 +6 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:00 +7 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:00 +8 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:00 +9 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:00 +10 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:00 +11 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cuerpo bloqueado sin devolver respuesta tardía
+00:00 +12 -2: Some tests failed.
+
+Failing tests:
+  C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart
+  C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart
