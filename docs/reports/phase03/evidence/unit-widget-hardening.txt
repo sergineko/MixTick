@@ -1,0 +1,63 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart
+00:00 +0: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: (setUpAll)
+00:00 +0: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +1: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +3: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +4: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +5: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +6: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +7: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +8: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +9: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +10: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +11: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +12: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +13: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +14: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +15: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +16: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart: A02 email inválido no llega al repositorio (mock)
+00:01 +17: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:01 +18: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:01 +19: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:01 +20: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:01 +21: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:01 +22: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:01 +23: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:01 +24: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:01 +25: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:01 +26: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:01 +27: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:01 +28: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:01 +29: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:01 +30: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:01 +31: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:01 +32: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:01 +33: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:01 +34: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:01 +35: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:01 +36: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:02 +37: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:02 +38: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:02 +39: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:02 +40: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:02 +41: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:02 +42: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:02 +43: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:02 +44: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:02 +45: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:02 +46: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:30 +46 -1: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía [E]
+  TimeoutException after 0:00:30.000000: Test timed out after 30 seconds. See https://pub.dev/packages/test#timeouts
+  dart:isolate  _RawReceivePort._handleMessage
+  
+00:30 +46 -1: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cuerpo bloqueado sin devolver respuesta tardía
+01:00 +46 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cuerpo bloqueado sin devolver respuesta tardía [E]
+  TimeoutException after 0:00:30.000000: Test timed out after 30 seconds. See https://pub.dev/packages/test#timeouts
+  dart:isolate  _RawReceivePort._handleMessage
+  
+01:00 +46 -2: Some tests failed.
+
+Failing tests:
+  C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+  C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cuerpo bloqueado sin devolver respuesta tardía

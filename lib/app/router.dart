@@ -7,9 +7,16 @@ import '../features/auth/presentation/access_page.dart';
 import '../features/auth/presentation/access_status_page.dart';
 import '../features/auth/presentation/auth_providers.dart';
 import '../features/auth/presentation/session_page.dart';
+import '../features/auth/presentation/auth_form_page.dart';
+import '../features/auth/presentation/confirmation_page.dart';
+import '../features/auth/presentation/session_scope.dart';
+import '../features/auth/presentation/auth_link_error_page.dart';
 import '../features/community/presentation/community_page.dart';
 import '../features/cook_today/presentation/cook_today_page.dart';
 import '../features/profile/presentation/profile_page.dart';
+import '../features/profile/presentation/profile_edit_page.dart';
+import '../features/profile/presentation/public_profile_page.dart';
+import '../features/profile/presentation/profile_lookup_page.dart';
 import '../features/recipes/presentation/recipes_page.dart';
 import '../features/shopping/presentation/shopping_page.dart';
 import '../shared/models/app_module.dart';
@@ -26,6 +33,18 @@ class _SessionRefresh extends ChangeNotifier {
 
 final routerProvider = Provider<GoRouter>((ref) {
   final refresh = _SessionRefresh();
+  String? pendingLocation;
+  bool isPublic(String path) =>
+      path == '/access' ||
+      path == '/access/status' ||
+      {
+        '/access/login',
+        '/access/register',
+        '/access/confirm',
+        '/access/recovery',
+        '/access/reset',
+        '/access/link-error',
+      }.contains(path);
   ref.listen(authSessionProvider, (_, _) => refresh.refresh());
   final router = GoRouter(
     initialLocation: ref.read(initialLocationProvider),
@@ -34,15 +53,77 @@ final routerProvider = Provider<GoRouter>((ref) {
       final session = ref.read(authSessionProvider);
       final path = state.uri.path;
       final public = path == '/access' || path == '/access/status';
-      if (session.isLoading) return path == '/session' ? null : '/session';
-      if (session.hasError || session.value == null) {
-        return public ? null : '/access';
+      final publicAuth =
+          public ||
+          {
+            '/access/login',
+            '/access/register',
+            '/access/confirm',
+            '/access/recovery',
+            '/access/reset',
+            '/access/link-error',
+          }.contains(path);
+      if (session.isLoading) {
+        if (path != '/session') pendingLocation = state.uri.toString();
+        return path == '/session' ? null : '/session';
       }
-      return public || path == '/session' ? AppModule.community.path : null;
+      if (session.hasError || session.value == null) {
+        if (path == '/session' && pendingLocation != null) {
+          final destination = pendingLocation!;
+          pendingLocation = null;
+          return isPublic(Uri.parse(destination).path)
+              ? destination
+              : '/access';
+        }
+        return publicAuth ? null : '/access';
+      }
+      if (session.value!.requiresPasswordChange) {
+        if (path == '/access/link-error') return null;
+        return path == '/access/reset' ? null : '/access/reset';
+      }
+      if (path == '/access/link-error') return null;
+      if (path == '/session' && pendingLocation != null) {
+        final destination = pendingLocation!;
+        pendingLocation = null;
+        return isPublic(Uri.parse(destination).path)
+            ? AppModule.community.path
+            : destination;
+      }
+      return publicAuth || path == '/session' ? AppModule.community.path : null;
     },
     routes: [
       GoRoute(path: '/session', builder: (_, _) => const SessionPage()),
       GoRoute(path: '/access', builder: (_, _) => const AccessPage()),
+      GoRoute(
+        path: '/access/link-error',
+        builder: (_, _) => const AuthLinkErrorPage(),
+      ),
+      GoRoute(
+        path: '/access/login',
+        builder: (_, _) =>
+            const SessionScope(child: AuthFormPage(mode: AuthFormMode.signIn)),
+      ),
+      GoRoute(
+        path: '/access/register',
+        builder: (_, _) =>
+            const SessionScope(child: AuthFormPage(mode: AuthFormMode.signUp)),
+      ),
+      GoRoute(
+        path: '/access/recovery',
+        builder: (_, _) => const SessionScope(
+          child: AuthFormPage(mode: AuthFormMode.recovery),
+        ),
+      ),
+      GoRoute(
+        path: '/access/reset',
+        builder: (_, _) => const SessionScope(
+          child: AuthFormPage(mode: AuthFormMode.password),
+        ),
+      ),
+      GoRoute(
+        path: '/access/confirm',
+        builder: (_, _) => const ConfirmationPage(),
+      ),
       GoRoute(
         path: '/access/status',
         builder: (_, _) => const AccessStatusPage(),
@@ -85,6 +166,25 @@ final routerProvider = Provider<GoRouter>((ref) {
         ],
       ),
       GoRoute(path: '/profile', builder: (_, _) => const ProfilePage()),
+      GoRoute(
+        path: '/profile/find',
+        builder: (_, _) => const SessionScope(child: ProfileLookupPage()),
+      ),
+      GoRoute(
+        path: '/profile/edit',
+        builder: (_, _) => const SessionScope(child: ProfileEditPage()),
+      ),
+      GoRoute(
+        path: '/people/:username',
+        builder: (_, state) =>
+            PublicProfilePage(username: state.pathParameters['username']!),
+      ),
+      GoRoute(
+        path: '/account/password',
+        builder: (_, _) => const SessionScope(
+          child: AuthFormPage(mode: AuthFormMode.password),
+        ),
+      ),
     ],
     errorBuilder: (context, state) {
       final strings = AppLocalizations.of(context);

@@ -1,19 +1,29 @@
 import 'dart:convert';
 
+import 'package:flutter/foundation.dart';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 enum ConfigStatus { missing, invalid, ready }
 
 /// Only public client configuration is permitted. This is not an RLS boundary.
 class AppConfig {
-  const AppConfig({required this.supabaseUrl, required this.publishableKey});
+  const AppConfig({
+    required this.supabaseUrl,
+    required this.publishableKey,
+    this.allowLocalBackend = false,
+  });
 
   const AppConfig.fromEnvironment()
     : supabaseUrl = const String.fromEnvironment('SUPABASE_URL'),
-      publishableKey = const String.fromEnvironment('SUPABASE_PUBLISHABLE_KEY');
+      publishableKey = const String.fromEnvironment('SUPABASE_PUBLISHABLE_KEY'),
+      allowLocalBackend = const bool.fromEnvironment(
+        'MIXTICK_ALLOW_LOCAL_BACKEND',
+      );
 
   final String supabaseUrl;
   final String publishableKey;
+  final bool allowLocalBackend;
 
   ConfigStatus get status {
     if (supabaseUrl.isEmpty && publishableKey.isEmpty) {
@@ -21,7 +31,12 @@ class AppConfig {
     }
     final uri = Uri.tryParse(supabaseUrl);
     if (uri == null ||
-        uri.scheme != 'https' ||
+        !(uri.scheme == 'https' ||
+            (!kReleaseMode &&
+                allowLocalBackend &&
+                uri.scheme == 'http' &&
+                uri.port == 54321 &&
+                {'127.0.0.1', 'localhost', '10.0.2.2'}.contains(uri.host))) ||
         uri.host.isEmpty ||
         uri.userInfo.isNotEmpty ||
         uri.hasQuery ||

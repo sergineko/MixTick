@@ -1,7 +1,8 @@
-# Backend MixTick — Fase 02
+# Backend MixTick — Fases 02–03
 
 Esquema real de PostgreSQL/Supabase con 16 tablas públicas y 3 técnicas privadas,
-RLS, catálogo español, Storage privado y RPC transaccionales. Las interfaces y
+RLS, catálogo español, Storage privado y RPC transaccionales. Fase 03 añade
+solo la séptima migración para avatares de perfil. Las interfaces y
 repositorios Flutter de negocio continúan pendientes de sus fases.
 
 Consulta `docs/14_DATABASE_IMPLEMENTATION.md`, `docs/15_STORAGE_SECURITY.md` y
@@ -50,17 +51,18 @@ Si arranca el stack con `-StartLocal`, lo apaga al finalizar, conservando sus
 volúmenes. `-KeepLocalRunning` permite mantenerlo para inspección explícita.
 No se apaga Docker Desktop ni se modifican otros proyectos.
 
-## Puertos: límite observado de la CLI
+## Puertos: incidencia histórica y solución de Fase 03
 
 Las peticiones de la suite se restringen a localhost y rechazan hosts remotos.
 Se crea la red Docker con host_binding_ipv4=127.0.0.1, pero esta versión de la
-CLI publica puertos en `0.0.0.0/[::]` a pesar de dicha opción. No se afirma
-que sus listeners estén ligados solo a loopback. Ejecutar únicamente en un
-entorno de confianza/restringido. El runner muestra los bindings y apaga el
-proyecto que arranca salvo que se solicite mantenerlo.
+CLI publicaba puertos en `0.0.0.0/[::]` a pesar de dicha opción en Fase 02.
+Fase 03 incorpora `scripts/start_isolated_supabase.ps1`: adapta únicamente los
+comandos Docker del proceso CLI e impone `127.0.0.1` antes de crear contenedores.
+`scripts/assert_local_isolation.ps1` verifica bindings, listeners y conexiones
+por otras interfaces. El runner anterior utiliza ahora estos helpers y rechaza
+exposición. No ejecutar `supabase start` directo para estas pruebas.
 
-No se cambiaron firewall, configuración global de Docker ni componentes del
-sistema para ocultar esta incidencia. Al cierre de la Fase 02 se comprobó que
+No se cambian firewall ni configuración global de Docker. Al cierre de la Fase 02 se comprobó que
 no quedaban contenedores ni puertos publicados de `mixtick-phase02`.
 
 ## Comandos manuales
@@ -69,8 +71,8 @@ La red debe existir y todas las operaciones locales deben recibir su ID completo
 
 ```powershell
 $networkId = docker network inspect mixtick-local-tests --format '{{.Id}}'
-.\.tooling\supabase\supabase.exe start --network-id $networkId -x studio,imgproxy,edge-runtime,logflare,vector,supavisor,postgres-meta
-.\.tooling\supabase\supabase.exe db reset --local --network-id $networkId
+.\scripts\start_isolated_supabase.ps1
+.\scripts\assert_local_isolation.ps1
 .\.tooling\supabase\supabase.exe test db --network-id $networkId
 .\.tooling\supabase\supabase.exe db lint --local --level warning --network-id $networkId
 python scripts/test_database_api.py --cli .tooling/supabase/supabase.exe
@@ -92,10 +94,12 @@ aleatorias, usa sus tokens reales y limpia solo sus cuentas/archivos al terminar
 La consulta SQL postgres se limita a estructura, cola y limpieza de fixtures.
 No se usan claves administrativas para probar lecturas/escrituras de producto.
 
-API Auth local permite signup sin confirmar email solo según configuración
-local. No se ha implementado el flujo de login/registro Flutter ni probado
-confirmación de email de producción. La configuración móvil de Foundation
-sigue exigiendo HTTPS y no se alteró para conectar a este endpoint HTTP local.
+Auth local conserva auto-confirmación para fixtures. La Fase 03 implementa
+login/registro/perfil reales y verifica también confirmación activada temporalmente
+con Mailpit. No se prueba entrega de correo de producción. HTTP móvil se admite
+solo con flag explícito y destinos locales en desarrollo; release exige HTTPS.
+Para reset seguro y la batería completa usar `scripts/verify_auth_profile.ps1
+-BackendChecks -ResetLocal -IncludeAndroidBuild`. Ver [Auth/perfiles](../docs/16_AUTH_PROFILE.md).
 
 RLS, Storage y concurrencia API se han verificado localmente. Producción,
 CDN/caché, clientes Realtime/reconexión y trabajador físico de limpieza de blobs

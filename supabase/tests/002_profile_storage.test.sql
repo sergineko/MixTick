@@ -1,0 +1,10 @@
+begin;
+select plan(6);
+select ok(exists(select 1 from storage.buckets where id='profile-avatars' and not public and file_size_limit=2097152), 'Avatar bucket is private and limited to 2 MiB');
+select ok(exists(select 1 from pg_constraint where conrelid='public.profiles'::regclass and conname='profile_avatar_owner'), 'Avatar reference must belong to profile owner');
+select ok(not has_function_privilege('anon','private.avatar_access(text,boolean)','EXECUTE'), 'Anon cannot execute avatar helper');
+select ok(has_function_privilege('authenticated','private.avatar_access(text,boolean)','EXECUTE'), 'Authenticated policies may evaluate avatar helper');
+select ok(exists(select 1 from pg_proc where oid='private.avatar_access(text,boolean)'::regprocedure and prosecdef and 'search_path=""'=any(proconfig)), 'Avatar helper has closed search path');
+select is((select count(*)::integer from pg_trigger where tgrelid='public.profiles'::regclass and tgname in ('profile_avatar_exists','replaced_profile_avatar','deleted_profile_avatars')),3,'Storage existence and cleanup triggers installed');
+select * from finish();
+rollback;

@@ -300,6 +300,438 @@ abstract class AppLocalizations {
   /// In es, this message translates to:
   /// **'Ir a Comunidad'**
   String get goHome;
+
+  /// No description provided for @signIn.
+  ///
+  /// In es, this message translates to:
+  /// **'Iniciar sesión'**
+  String get signIn;
+
+  /// No description provided for @signUp.
+  ///
+  /// In es, this message translates to:
+  /// **'Crear cuenta'**
+  String get signUp;
+
+  /// No description provided for @signOut.
+  ///
+  /// In es, this message translates to:
+  /// **'Cerrar sesión'**
+  String get signOut;
+
+  /// No description provided for @email.
+  ///
+  /// In es, this message translates to:
+  /// **'Correo electrónico'**
+  String get email;
+
+  /// No description provided for @password.
+  ///
+  /// In es, this message translates to:
+  /// **'Contraseña'**
+  String get password;
+
+  /// No description provided for @repeatPassword.
+  ///
+  /// In es, this message translates to:
+  /// **'Repite la contraseña'**
+  String get repeatPassword;
+
+  /// No description provided for @newPassword.
+  ///
+  /// In es, this message translates to:
+  /// **'Nueva contraseña'**
+  String get newPassword;
+
+  /// No description provided for @changePassword.
+  ///
+  /// In es, this message translates to:
+  /// **'Cambiar contraseña'**
+  String get changePassword;
+
+  /// No description provided for @savePassword.
+  ///
+  /// In es, this message translates to:
+  /// **'Guardar contraseña'**
+  String get savePassword;
+
+  /// No description provided for @showPassword.
+  ///
+  /// In es, this message translates to:
+  /// **'Mostrar contraseña'**
+  String get showPassword;
+
+  /// No description provided for @hidePassword.
+  ///
+  /// In es, this message translates to:
+  /// **'Ocultar contraseña'**
+  String get hidePassword;
+
+  /// No description provided for @invalidEmail.
+  ///
+  /// In es, this message translates to:
+  /// **'Introduce un correo electrónico válido.'**
+  String get invalidEmail;
+
+  /// No description provided for @invalidPassword.
+  ///
+  /// In es, this message translates to:
+  /// **'Usa entre 8 y 128 caracteres.'**
+  String get invalidPassword;
+
+  /// No description provided for @passwordHint.
+  ///
+  /// In es, this message translates to:
+  /// **'Al menos 8 caracteres. Evita contraseñas fáciles de adivinar.'**
+  String get passwordHint;
+
+  /// No description provided for @passwordMismatch.
+  ///
+  /// In es, this message translates to:
+  /// **'Las contraseñas no coinciden.'**
+  String get passwordMismatch;
+
+  /// No description provided for @requiredField.
+  ///
+  /// In es, this message translates to:
+  /// **'Completa este campo.'**
+  String get requiredField;
+
+  /// No description provided for @recoverPassword.
+  ///
+  /// In es, this message translates to:
+  /// **'Recuperar contraseña'**
+  String get recoverPassword;
+
+  /// No description provided for @forgotPassword.
+  ///
+  /// In es, this message translates to:
+  /// **'He olvidado mi contraseña'**
+  String get forgotPassword;
+
+  /// No description provided for @sendRecovery.
+  ///
+  /// In es, this message translates to:
+  /// **'Enviar instrucciones'**
+  String get sendRecovery;
+
+  /// No description provided for @recoveryDescription.
+  ///
+  /// In es, this message translates to:
+  /// **'Te enviaremos un enlace para elegir una nueva contraseña. Ábrelo en este mismo dispositivo.'**
+  String get recoveryDescription;
+
+  /// No description provided for @recoverySent.
+  ///
+  /// In es, this message translates to:
+  /// **'Si el correo corresponde a una cuenta, recibirás las instrucciones. Revisa también el correo no deseado.'**
+  String get recoverySent;
+
+  /// No description provided for @recoveryLinkNeeded.
+  ///
+  /// In es, this message translates to:
+  /// **'Abre el enlace de recuperación recibido en este dispositivo. Si ha caducado, solicita otro.'**
+  String get recoveryLinkNeeded;
+
+  /// No description provided for @registrationDescription.
+  ///
+  /// In es, this message translates to:
+  /// **'Crea tu cuenta. Si la confirmación de correo está activada, tendrás que verificarlo antes de entrar.'**
+  String get registrationDescription;
+
+  /// No description provided for @confirmEmail.
+  ///
+  /// In es, this message translates to:
+  /// **'Revisa tu correo'**
+  String get confirmEmail;
+
+  /// No description provided for @confirmationSent.
+  ///
+  /// In es, this message translates to:
+  /// **'Si el correo puede registrarse, recibirás un enlace de confirmación. Si ya tienes cuenta, inicia sesión o recupera la contraseña.'**
+  String get confirmationSent;
+
+  /// No description provided for @resendEmail.
+  ///
+  /// In es, this message translates to:
+  /// **'Reenviar confirmación'**
+  String get resendEmail;
+
+  /// No description provided for @confirmationNeeded.
+  ///
+  /// In es, this message translates to:
+  /// **'Confirma tu correo antes de iniciar sesión. Puedes revisar o reenviar la confirmación desde Crear cuenta.'**
+  String get confirmationNeeded;
+
+  /// No description provided for @passwordUpdated.
+  ///
+  /// In es, this message translates to:
+  /// **'Contraseña actualizada.'**
+  String get passwordUpdated;
+
+  /// No description provided for @processing.
+  ///
+  /// In es, this message translates to:
+  /// **'Procesando…'**
+  String get processing;
+
+  /// No description provided for @networkError.
+  ///
+  /// In es, this message translates to:
+  /// **'No pudimos conectar. Comprueba tu conexión e inténtalo de nuevo.'**
+  String get networkError;
+
+  /// No description provided for @credentialsError.
+  ///
+  /// In es, this message translates to:
+  /// **'No pudimos iniciar sesión con esos datos. Revisa el correo y la contraseña.'**
+  String get credentialsError;
+
+  /// No description provided for @passwordPolicyError.
+  ///
+  /// In es, this message translates to:
+  /// **'La contraseña no cumple la política del servicio. Elige una más segura.'**
+  String get passwordPolicyError;
+
+  /// No description provided for @rateLimitError.
+  ///
+  /// In es, this message translates to:
+  /// **'Hay demasiadas solicitudes. Espera un momento antes de volver a intentarlo.'**
+  String get rateLimitError;
+
+  /// No description provided for @expiredSession.
+  ///
+  /// In es, this message translates to:
+  /// **'Tu sesión ha caducado. Vuelve a iniciar sesión.'**
+  String get expiredSession;
+
+  /// No description provided for @invalidAuthLink.
+  ///
+  /// In es, this message translates to:
+  /// **'El enlace no es válido, ha caducado o pertenece a otro dispositivo. Solicita uno nuevo.'**
+  String get invalidAuthLink;
+
+  /// No description provided for @operationError.
+  ///
+  /// In es, this message translates to:
+  /// **'No pudimos completar la operación. Vuelve a intentarlo.'**
+  String get operationError;
+
+  /// No description provided for @loadingProfile.
+  ///
+  /// In es, this message translates to:
+  /// **'Cargando perfil…'**
+  String get loadingProfile;
+
+  /// No description provided for @completeProfile.
+  ///
+  /// In es, this message translates to:
+  /// **'Completa tu perfil público'**
+  String get completeProfile;
+
+  /// No description provided for @createProfile.
+  ///
+  /// In es, this message translates to:
+  /// **'Crear mi perfil'**
+  String get createProfile;
+
+  /// No description provided for @editProfile.
+  ///
+  /// In es, this message translates to:
+  /// **'Editar perfil'**
+  String get editProfile;
+
+  /// No description provided for @publicProfile.
+  ///
+  /// In es, this message translates to:
+  /// **'Perfil público'**
+  String get publicProfile;
+
+  /// No description provided for @viewPublicProfile.
+  ///
+  /// In es, this message translates to:
+  /// **'Ver mi perfil público'**
+  String get viewPublicProfile;
+
+  /// No description provided for @displayName.
+  ///
+  /// In es, this message translates to:
+  /// **'Nombre visible'**
+  String get displayName;
+
+  /// No description provided for @username.
+  ///
+  /// In es, this message translates to:
+  /// **'Nombre de usuario'**
+  String get username;
+
+  /// No description provided for @usernameHint.
+  ///
+  /// In es, this message translates to:
+  /// **'De 3 a 30 letras a–z, números o guion bajo. Se guarda en minúsculas.'**
+  String get usernameHint;
+
+  /// No description provided for @invalidUsername.
+  ///
+  /// In es, this message translates to:
+  /// **'Usa de 3 a 30 letras a–z, números o guion bajo.'**
+  String get invalidUsername;
+
+  /// No description provided for @invalidDisplayName.
+  ///
+  /// In es, this message translates to:
+  /// **'Introduce un nombre visible de 1 a 60 caracteres.'**
+  String get invalidDisplayName;
+
+  /// No description provided for @usernameTaken.
+  ///
+  /// In es, this message translates to:
+  /// **'Ese nombre de usuario no está disponible. Elige otro.'**
+  String get usernameTaken;
+
+  /// No description provided for @profileConflict.
+  ///
+  /// In es, this message translates to:
+  /// **'El perfil ha cambiado en otra sesión. Recárgalo antes de guardar.'**
+  String get profileConflict;
+
+  /// No description provided for @profileForbidden.
+  ///
+  /// In es, this message translates to:
+  /// **'No puedes editar este perfil. Comprueba tu sesión.'**
+  String get profileForbidden;
+
+  /// No description provided for @saveProfile.
+  ///
+  /// In es, this message translates to:
+  /// **'Guardar perfil'**
+  String get saveProfile;
+
+  /// No description provided for @reloadProfile.
+  ///
+  /// In es, this message translates to:
+  /// **'Recargar perfil'**
+  String get reloadProfile;
+
+  /// No description provided for @profileSaved.
+  ///
+  /// In es, this message translates to:
+  /// **'Perfil guardado.'**
+  String get profileSaved;
+
+  /// No description provided for @profileNotFound.
+  ///
+  /// In es, this message translates to:
+  /// **'Este perfil no está disponible.'**
+  String get profileNotFound;
+
+  /// No description provided for @profilePhoto.
+  ///
+  /// In es, this message translates to:
+  /// **'Foto de perfil'**
+  String get profilePhoto;
+
+  /// No description provided for @noPhoto.
+  ///
+  /// In es, this message translates to:
+  /// **'Perfil sin foto'**
+  String get noPhoto;
+
+  /// No description provided for @choosePhoto.
+  ///
+  /// In es, this message translates to:
+  /// **'Elegir foto'**
+  String get choosePhoto;
+
+  /// No description provided for @removePhoto.
+  ///
+  /// In es, this message translates to:
+  /// **'Quitar foto'**
+  String get removePhoto;
+
+  /// No description provided for @photoAfterProfile.
+  ///
+  /// In es, this message translates to:
+  /// **'Guarda primero tu perfil. Después podrás añadir una foto opcional.'**
+  String get photoAfterProfile;
+
+  /// No description provided for @invalidPhoto.
+  ///
+  /// In es, this message translates to:
+  /// **'Elige una imagen JPEG, PNG o WebP de hasta 2 MB.'**
+  String get invalidPhoto;
+
+  /// No description provided for @photoUnavailable.
+  ///
+  /// In es, this message translates to:
+  /// **'No pudimos cargar la foto.'**
+  String get photoUnavailable;
+
+  /// No description provided for @loadingPhoto.
+  ///
+  /// In es, this message translates to:
+  /// **'Cargando foto…'**
+  String get loadingPhoto;
+
+  /// No description provided for @photoCleanupPending.
+  ///
+  /// In es, this message translates to:
+  /// **'Perfil guardado. La foto anterior dejó de mostrarse; su eliminación está pendiente.'**
+  String get photoCleanupPending;
+
+  /// No description provided for @retry.
+  ///
+  /// In es, this message translates to:
+  /// **'Reintentar'**
+  String get retry;
+
+  /// No description provided for @account.
+  ///
+  /// In es, this message translates to:
+  /// **'Mi cuenta'**
+  String get account;
+
+  /// No description provided for @privateEmailLabel.
+  ///
+  /// In es, this message translates to:
+  /// **'Correo de tu cuenta · solo visible para ti'**
+  String get privateEmailLabel;
+
+  /// No description provided for @emailUnavailable.
+  ///
+  /// In es, this message translates to:
+  /// **'Correo no disponible'**
+  String get emailUnavailable;
+
+  /// No description provided for @accessConfigured.
+  ///
+  /// In es, this message translates to:
+  /// **'El acceso está configurado. Puedes iniciar sesión o crear una cuenta. Si falla, comprueba tu conexión y vuelve a intentarlo.'**
+  String get accessConfigured;
+
+  /// No description provided for @findProfile.
+  ///
+  /// In es, this message translates to:
+  /// **'Consultar un perfil'**
+  String get findProfile;
+
+  /// No description provided for @findProfileDescription.
+  ///
+  /// In es, this message translates to:
+  /// **'Introduce el nombre de usuario público de la persona que quieres consultar.'**
+  String get findProfileDescription;
+
+  /// No description provided for @viewProfile.
+  ///
+  /// In es, this message translates to:
+  /// **'Ver perfil'**
+  String get viewProfile;
+
+  /// No description provided for @signOutAndRecover.
+  ///
+  /// In es, this message translates to:
+  /// **'Cerrar sesión y recuperar contraseña'**
+  String get signOutAndRecover;
 }
 
 class _AppLocalizationsDelegate

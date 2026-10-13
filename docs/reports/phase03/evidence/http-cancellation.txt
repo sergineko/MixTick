@@ -1,0 +1,4 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart
+00:00 +0: HTTP real loopback: cancela cabeceras bloqueado sin devolver respuesta tardía
+00:00 +1: HTTP real loopback: cancela cuerpo bloqueado sin devolver respuesta tardía
+00:00 +2: All tests passed!

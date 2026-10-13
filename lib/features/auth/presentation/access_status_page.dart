@@ -17,7 +17,7 @@ class AccessStatusPage extends ConsumerWidget {
     final message = session.hasError
         ? strings.sessionError
         : backend.status == BackendStatus.initialized
-        ? strings.accessNotEnabled
+        ? strings.accessConfigured
         : strings.serviceUnavailable;
     return Scaffold(
       appBar: AppBar(title: Text(strings.accessStatusTitle)),

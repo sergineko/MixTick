@@ -462,12 +462,16 @@ class DatabaseApiTests(unittest.TestCase):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--cli', default=str(ROOT / '.tooling/supabase/supabase.exe'))
+    parser.add_argument('--evidence-dir', default=str(EVIDENCE))
     args = parser.parse_args()
     DatabaseApiTests.cli = Path(args.cli).resolve()
     suite = unittest.defaultTestLoader.loadTestsFromTestCase(DatabaseApiTests)
     result = unittest.TextTestRunner(verbosity=2).run(suite)
-    EVIDENCE.mkdir(parents=True, exist_ok=True)
-    (EVIDENCE / 'api-results.json').write_text(json.dumps({
+    evidence = Path(args.evidence_dir).resolve()
+    if not evidence.is_relative_to(ROOT / 'docs/reports'):
+        raise RuntimeError('Evidence must stay within docs/reports')
+    evidence.mkdir(parents=True, exist_ok=True)
+    (evidence / 'api-results.json').write_text(json.dumps({
         'tests_run': result.testsRun, 'failures': len(result.failures), 'errors': len(result.errors),
         'skipped': len(result.skipped), 'status': 'PASS' if result.wasSuccessful() else 'FAIL',
         'mode': 'real local Supabase Auth + PostgREST + Storage; no mock and no admin API key',

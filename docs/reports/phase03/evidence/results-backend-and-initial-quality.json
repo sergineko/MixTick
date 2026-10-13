@@ -1,0 +1,108 @@
+[
+  {
+    "name": "db-reset",
+    "executable": "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe",
+    "arguments": [
+      "db",
+      "reset",
+      "--local",
+      "--network-id",
+      "b19982ba9414278465857c0b14cf0dfeea11c68da24823533094ce2d91b86763"
+    ],
+    "started_at": "2026-10-13T06:40:32.6345946+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "sql-tests",
+    "executable": "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe",
+    "arguments": [
+      "test",
+      "db",
+      "--network-id",
+      "b19982ba9414278465857c0b14cf0dfeea11c68da24823533094ce2d91b86763"
+    ],
+    "started_at": "2026-10-13T06:41:09.9083863+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "db-lint",
+    "executable": "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe",
+    "arguments": [
+      "db",
+      "lint",
+      "--local",
+      "--level",
+      "warning",
+      "--network-id",
+      "b19982ba9414278465857c0b14cf0dfeea11c68da24823533094ce2d91b86763"
+    ],
+    "started_at": "2026-10-13T06:41:11.0726572+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "api-regression",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "arguments": [
+      "scripts/test_database_api.py",
+      "--cli",
+      "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe",
+      "--evidence-dir",
+      "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\docs\\reports\\phase03\\evidence\\regression-db"
+    ],
+    "started_at": "2026-10-13T06:41:11.3959369+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "auth-local-auto-confirm",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "test_support/auth_profile_local.dart",
+      "--dart-define-from-file=.tooling/phase03-client.local.json",
+      "--reporter",
+      "expanded"
+    ],
+    "started_at": "2026-10-13T06:41:19.2250629+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "auth-local-email-confirm",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "test_support/auth_profile_local.dart",
+      "--dart-define-from-file=.tooling/phase03-client.local.json",
+      "--dart-define=MIXTICK_TEST_CONFIRMATION=true",
+      "--reporter",
+      "expanded"
+    ],
+    "started_at": "2026-10-13T06:42:24.3545982+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "gen-l10n",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "gen-l10n"
+    ],
+    "started_at": "2026-10-13T06:42:50.8879949+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "flutter-analyze",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "analyze"
+    ],
+    "started_at": "2026-10-13T06:42:52.1247805+02:00",
+    "exit_code": 1,
+    "status": "FAIL"
+  }
+]

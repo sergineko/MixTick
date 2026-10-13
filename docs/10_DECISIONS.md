@@ -21,3 +21,5 @@ Ningún prompt debe contradecir estas decisiones sin aprobación expresa del pro
 - **ADR-015 / Foundation:** entorno estable verificado, navegación protegida de cuatro pestañas, cliente Supabase opcional con configuración pública, localización `es_ES` y pruebas reproducibles. Alcance y limitaciones en [ADR-015](adr/015_FOUNDATION.md).
 
 - **ADR-016 / Base de datos y seguridad:** esquema, RLS, Storage privado, RPC atómicas, control de versiones, catálogo canónico e idempotencia, probados en Supabase local con A/B/C. Detalles y límites en [ADR-016](adr/016_DATABASE_SECURITY.md).
+
+- **ADR-017 / Auth y perfil:** repositorios reales, sesión/verificador seguros, retorno PKCE exacto, perfil público mínimo y edición optimista, avatares privados y aislamiento local comprobable. [ADR-017](adr/017_AUTH_PROFILE.md).

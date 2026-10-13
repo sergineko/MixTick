@@ -1,0 +1,21 @@
+Analyzing MixTick...                                            
+
+   info - The import of 'dart:async' is unnecessary because all of the used elements are also provided by the import of 'package:flutter_test/flutter_test.dart'. Try removing the import directive - integration_test\native_test_helpers.dart:1:8 - unnecessary_import
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - integration_test\native_test_helpers.dart:71:5 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\auth\data\supabase_auth_repository.dart:61:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\auth\data\supabase_auth_repository.dart:217:9 - curly_braces_in_flow_control_structures
+   info - The import of 'dart:typed_data' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/foundation.dart'. Try removing the import directive - lib\features\profile\data\avatar_processor.dart:1:8 - unnecessary_import
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\profile\data\avatar_processor.dart:25:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\profile\data\avatar_processor.dart:50:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\profile\data\supabase_profile_repository.dart:127:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\profile\presentation\profile_lookup_page.dart:60:27 - curly_braces_in_flow_control_structures
+   info - The import of 'dart:async' is unnecessary because all of the used elements are also provided by the import of 'package:flutter_test/flutter_test.dart'. Try removing the import directive - test_support\auth_profile_local.dart:4:8 - unnecessary_import
+warning - Unused import: 'package:http/http.dart'. Try removing the import directive - test_support\auth_profile_local.dart:19:8 - unused_import
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - test_support\auth_profile_local.dart:78:5 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - test_support\auth_profile_local.dart:90:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - test_support\auth_profile_local.dart:122:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - test_support\auth_profile_local.dart:139:11 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - test_support\auth_profile_local.dart:233:13 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - test_support\auth_profile_local.dart:250:7 - curly_braces_in_flow_control_structures
+
+17 issues found. (ran in 9.0s)

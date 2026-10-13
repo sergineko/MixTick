@@ -1,0 +1,7 @@
+Analyzing MixTick...                                            
+
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\auth\presentation\auth_lifecycle.dart:66:11 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - test_support\auth_profile_local.dart:109:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - test_support\auth_profile_local.dart:520:11 - curly_braces_in_flow_control_structures
+
+3 issues found. (ran in 8.8s)

@@ -1,0 +1,46 @@
+{
+  "status": "VERIFIED_LOCAL",
+  "quality": [
+    "gen-l10n",
+    "flutter-analyze",
+    "flutter-test",
+    "format-check",
+    "identifiers",
+    "android-debug-build"
+  ],
+  "backend": [
+    "db-reset",
+    "sql-tests",
+    "db-lint",
+    "api-regression",
+    "auth-local-auto-confirm",
+    "auth-local-email-confirm",
+    "gen-l10n"
+  ],
+  "native": [
+    "native-seed",
+    "native-restore"
+  ],
+  "suites": {
+    "flutter_tests": 48,
+    "sql_checks": 25,
+    "phase02_api_regression": 20,
+    "client_cases_per_email_mode": 13,
+    "email_modes": 2,
+    "native_process_tests": 2
+  },
+  "fixture_cleanup": "PASS",
+  "local_stack_stopped": true,
+  "not_run": [
+    "iOS build/device",
+    "physical Android",
+    "interactive system gallery"
+  ],
+  "not_verified": [
+    "remote Supabase/email",
+    "Realtime collaborative clients",
+    "CDN",
+    "physical cleanup worker"
+  ],
+  "history": "Initial failures retained; combined runner backend passed but initial analyze failed, final quality passed"
+}

@@ -1,0 +1,13 @@
+Analyzing MixTick...                                            
+
+   info - The import of 'dart:async' is unnecessary because all of the used elements are also provided by the import of 'package:flutter_test/flutter_test.dart'. Try removing the import directive - integration_test\native_test_helpers.dart:1:8 - unnecessary_import
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - integration_test\native_test_helpers.dart:71:5 - curly_braces_in_flow_control_structures
+   info - The import of 'dart:async' is unnecessary because all of the used elements are also provided by the import of 'package:flutter_test/flutter_test.dart'. Try removing the import directive - test_support\auth_profile_local.dart:4:8 - unnecessary_import
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - test_support\auth_profile_local.dart:74:5 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - test_support\auth_profile_local.dart:86:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - test_support\auth_profile_local.dart:118:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - test_support\auth_profile_local.dart:135:11 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - test_support\auth_profile_local.dart:229:13 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - test_support\auth_profile_local.dart:246:7 - curly_braces_in_flow_control_structures
+
+9 issues found. (ran in 9.5s)

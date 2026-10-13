@@ -1,14 +1,15 @@
 # MixTick
 
-Base Flutter Android/iOS de la Fase 01 y backend SQL local de la Fase 02. Nombre técnico `mixtick`, organización
+Base Flutter Android/iOS, backend SQL y autenticación/perfiles de Fases 01–03. Nombre técnico `mixtick`, organización
 `es.sergiotech` e identificador fijo `es.sergiotech.mixtick` para ambas plataformas.
 El nombre comercial MixTick sigue pendiente de validación legal/comercial.
 
 La base incluye Riverpod, GoRouter, configuración opcional de Supabase, cuatro
 pestañas protegidas, perfil como soporte, temas claro/oscuro y español `es_ES`.
-Las pantallas de los módulos indican «Próximamente». No hay CRUD, datos de
-negocio en la app ni login ficticio. Hay esquema SQL probado localmente, sin backend remoto provisionado. El acceso real se implementará
-en su fase autorizada.
+Las pantallas de los cuatro módulos indican «Próximamente». Auth/perfiles tienen
+repositorios reales, formularios, retorno PKCE, sesión segura y avatar opcional.
+Hay esquema SQL probado localmente, sin backend remoto provisionado. El CRUD
+de recetas y demás módulos se implementará en sus fases autorizadas.
 
 ## Entorno
 
@@ -81,10 +82,22 @@ binario: solo deben contener configuración pública.
 
 La validación local es sintáctica; inicializar el SDK no verifica una conexión
 ni sustituye las políticas del servidor. En Fase 01 no se implementa inicio de
-sesión, registro, recuperación ni consultas a tablas. RLS y Storage se han probado en Fase 02 con Auth, PostgREST y Storage locales y
+sesión, registro, recuperación ni consultas a tablas (estado histórico de Foundation).
+Fase 03 implementa esos flujos de soporte reales. RLS y Storage se han probado con Auth, PostgREST y Storage locales y
 cuentas reales A/B/C. Realtime tiene configuración SQL preparada; clientes y
 reconexión quedan pendientes. Ver [backend](supabase/README.md) para reproducir
-las migraciones y pruebas sin modificar Supabase remoto.
+las migraciones y pruebas sin modificar Supabase remoto. Consulta el
+[contrato Auth/perfiles](docs/16_AUTH_PROFILE.md) para configuración local,
+retornos Android/iOS, Storage y pruebas de Fase 03.
+
+```powershell
+.\scripts\verify_auth_profile.ps1 -BackendChecks -ResetLocal -IncludeAndroidBuild
+```
+
+El reset es opt-in y borra exclusivamente el proyecto local de fixtures.
+Los servicios de pruebas se publican explícitamente en loopback, se comprueban
+sus listeners y se paran al finalizar. Para Android nativo se usa el emulador
+existente y `scripts/verify_native_auth.ps1`, siguiendo la documentación enlazada.
 
 ## Estructura
 
@@ -129,12 +142,15 @@ no son capturas de dispositivos ni conexiones externas.
 Consulta `docs/PROGRESS.md`, `docs/reports/PHASE_01_REPORT.md`,
 `docs/reports/PHASE_02_REPORT.md` y `docs/adr/` para resultados y limitaciones.
 
-Las Fases 01 y 02 están implementadas. La Fase 03 requiere revisión y autorización
-expresa del propietario.
+Las Fases 01, 02 y 03 están implementadas. La Fase 04 requiere revisión y autorización
+expresa del propietario. El informe y evidencias de Fase 03 quedan en
+`docs/reports/PHASE_03_REPORT.md` y `docs/reports/phase03/`.
 El propietario autorizó el commit y push del estado de Fase 01
 a [sergineko/MixTick](https://github.com/sergineko/MixTick) y, posteriormente,
-el commit y push del estado actual de Fase 02 el 2026-10-13. No hay autorización
-de despliegue ni de Fase 03. Los informes conservan el estado histórico al
-finalizar cada implementación, previo a su autorización de GitHub.
+el commit y push del estado actual de Fase 02 el 2026-10-13. Tras cerrar la
+Fase 03, autorizó también el commit y push de su estado actual a ese repositorio.
+La Fase 04, los despliegues y los cambios de Supabase remoto siguen sin
+autorización. Los informes conservan el estado histórico al finalizar cada
+implementación, previo a su autorización de GitHub.
 Los documentos, manifiesto y checksums del paquete original se conservan como
 referencia; los checksums originales no describen el proyecto modificado.

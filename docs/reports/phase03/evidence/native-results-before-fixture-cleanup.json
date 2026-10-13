@@ -1,0 +1,17 @@
+{
+  "name": "native-seed",
+  "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+  "arguments": [
+    "test",
+    "integration_test/auth_native_seed_test.dart",
+    "-d",
+    "emulator-5554",
+    "--no-uninstall",
+    "--dart-define-from-file=.tooling/phase03-android.local.json",
+    "--reporter",
+    "expanded"
+  ],
+  "started_at": "2026-10-13T06:49:03.2603334+02:00",
+  "exit_code": 1,
+  "status": "FAIL"
+}

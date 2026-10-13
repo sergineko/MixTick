@@ -1,14 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/localization/generated/app_localizations.dart';
+import 'auth_providers.dart';
+import 'auth_controller.dart';
+import 'auth_messages.dart';
 
-class AccessPage extends StatelessWidget {
+class AccessPage extends ConsumerWidget {
   const AccessPage({super.key});
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final strings = AppLocalizations.of(context);
     final theme = Theme.of(context);
+    final available = ref.watch(authRepositoryProvider) != null;
+    final action = ref.watch(authControllerProvider);
     return Scaffold(
       body: SafeArea(
         child: Center(
@@ -75,7 +81,25 @@ class AccessPage extends StatelessWidget {
                   const SizedBox(height: 32),
                   Text(strings.accessRequired),
                   const SizedBox(height: 8),
-                  Text(strings.accessPending),
+                  if (!available) Text(strings.accessPending),
+                  if (available) ...[
+                    const SizedBox(height: 24),
+                    FilledButton(
+                      onPressed: action.busy
+                          ? null
+                          : () => context.push('/access/login'),
+                      child: Text(strings.signIn),
+                    ),
+                    const SizedBox(height: 8),
+                    OutlinedButton(
+                      onPressed: action.busy
+                          ? null
+                          : () => context.push('/access/register'),
+                      child: Text(strings.signUp),
+                    ),
+                  ],
+                  if (action.failure != null)
+                    Text(authFailureMessage(strings, action.failure!)),
                   const SizedBox(height: 24),
                   FilledButton.icon(
                     onPressed: () => context.push('/access/status'),

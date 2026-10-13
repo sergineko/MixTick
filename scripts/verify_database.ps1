@@ -78,17 +78,29 @@ try {
     if (-not $networkId) { throw 'Local test network missing. Run with -StartLocal after starting Docker.' }
     if ($StartLocal) {
         $startedHere = $true
-        Invoke-Check 'local-start' $SupabaseExecutable @('start', '--network-id', $networkId, '-x',
-            'studio,imgproxy,edge-runtime,logflare,vector,supavisor,postgres-meta')
+        & (Join-Path $PSScriptRoot 'start_isolated_supabase.ps1') -SupabaseExecutable $SupabaseExecutable -DartExecutable $DartExecutable -EvidenceDirectory $evidenceDirectory
+        if ($LASTEXITCODE -ne 0) { throw 'Isolated startup failed' }
+        & (Join-Path $PSScriptRoot 'assert_local_isolation.ps1') -EvidenceDirectory $evidenceDirectory
         $ports = docker ps --filter name=mixtick-phase02 --format '{{.Names}} {{.Ports}}'
         $ports | Set-Content -LiteralPath (Join-Path $evidenceDirectory 'local-containers.txt')
         if ($ports -match '0\.0\.0\.0:|\[::\]:') {
-            Write-Warning 'This CLI publishes test ports on all interfaces. Run only in a trusted environment; the project stops after tests unless -KeepLocalRunning is explicitly set.'
+            throw 'Refusing an exposed test stack'
         }
     }
     # Reset is explicitly opt-in, scoped to this local fixture project only.
     if ($ResetLocal) {
+        # CLI reset may recreate the DB container: keep explicit loopback mapping.
+        $realDocker = (Get-Command docker -CommandType Application | Select-Object -First 1).Source
+        $adapterDirectory = Join-Path $projectRoot '.tooling/loopback-docker'
+        New-Item -ItemType Directory -Force -Path $adapterDirectory | Out-Null
+        & $DartExecutable compile exe "-DMIXTICK_REAL_DOCKER=$realDocker" scripts/loopback_docker.dart -o (Join-Path $adapterDirectory 'docker.exe')
+        if ($LASTEXITCODE -ne 0) { throw 'Isolation adapter failed' }
+        $beforeResetPath = $env:Path
+        $env:Path = $adapterDirectory + ';' + $env:Path
+        try {
         Invoke-Check 'db-reset' $SupabaseExecutable @('db', 'reset', '--local', '--network-id', $networkId)
+        } finally { $env:Path = $beforeResetPath }
+        & (Join-Path $PSScriptRoot 'assert_local_isolation.ps1') -EvidenceDirectory $evidenceDirectory
     }
     Invoke-Check 'sql-tests' $SupabaseExecutable @('test', 'db', '--network-id', $networkId)
     Invoke-Check 'db-lint' $SupabaseExecutable @('db', 'lint', '--local', '--level', 'warning', '--network-id', $networkId)

@@ -1,0 +1,17 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test_support/auth_profile_local.dart
+00:00 +0: (setUpAll)
+00:00 +0: A01/A11 real signup matches confirmation configuration and authenticated identity
+00:00 +1: A02/A03 real server rejects invalid email and short password
+00:00 +2: A04 duplicate signup has generic outcome and does not replace current user
+00:00 +3: A05/A06/A07 real login, incorrect password and effective local logout
+00:00 +4: P01/P02/P05 real profiles persist, normalize and have minimal public projection
+00:00 +5: P03/P04 real duplicate, foreign update and identity spoofing denied by database
+00:00 +6: P06 real private avatar bucket: current public photo, owner writes, foreign path denied
+00:00 +7: P02/P03 concurrency: one write wins, stale version cannot overwrite
+00:00 +8: A08/I04/I06 real server session recovery and independent users (memory persistence adapter)
+00:00 +9: A10 real local recovery email, PKCE return, password update and old password rejection
+00:01 +10: I05 session stream survives injected outage and recovers with real server sign-in
+00:13 +11: I05 actual refused loopback connection is a typed network failure
+00:16 +12: A09 real global revocation rejects refresh and closes restored session
+00:16 +13: (tearDownAll)
+00:16 +13: All tests passed!

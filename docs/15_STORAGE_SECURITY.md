@@ -55,3 +55,13 @@ API antes de borrar sus cuentas locales.
 Fuentes oficiales: [Storage/RLS](https://supabase.com/docs/guides/storage/security/access-control),
 [buckets privados](https://supabase.com/docs/guides/storage/buckets/fundamentals),
 [URLs firmadas y caché](https://supabase.com/docs/guides/storage/cdn/smart-cdn).
+
+## Avatares de perfil (Fase 03)
+
+La migración 007 incorpora `profile-avatars` privado, 2 MiB, con rutas propias
+y existencia/owner comprobados. Otros autenticados sin bloqueo leen únicamente
+el archivo actualmente referenciado por el perfil. Anon y escrituras ajenas se
+deniegan. Flutter reencodifica antes de subir y descarga con autorización;
+no emite URLs firmadas. Cambios/quitar foto intentan borrado real por API y
+encolan el anterior como respaldo. El trabajador de limpieza continúa pendiente.
+Detalles y pruebas en [Auth/perfiles](16_AUTH_PROFILE.md) y el informe de Fase 03.

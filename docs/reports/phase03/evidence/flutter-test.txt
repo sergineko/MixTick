@@ -1,0 +1,51 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart
+00:00 +0: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: (setUpAll)
+00:00 +0: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +1: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +3: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +4: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +5: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +6: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +7: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +8: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +9: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +10: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +11: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +12: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +13: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +14: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +15: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +16: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +17: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart: A02 email inválido no llega al repositorio (mock)
+00:00 +18: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cuerpo bloqueado sin devolver respuesta tardía
+00:00 +19: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cuerpo bloqueado sin devolver respuesta tardía
+00:01 +20: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cuerpo bloqueado sin devolver respuesta tardía
+00:01 +21: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cuerpo bloqueado sin devolver respuesta tardía
+00:01 +22: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cuerpo bloqueado sin devolver respuesta tardía
+00:01 +23: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cuerpo bloqueado sin devolver respuesta tardía
+00:01 +24: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/core/bounded_http_client_test.dart: HTTP real loopback: cancela cuerpo bloqueado sin devolver respuesta tardía
+00:01 +25: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart: A05/I02 doble envío deshabilitado y cuatro pestañas después de login (mock)
+00:01 +26: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart: A05/I02 doble envío deshabilitado y cuatro pestañas después de login (mock)
+00:01 +27: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart: A05/I02 doble envío deshabilitado y cuatro pestañas después de login (mock)
+00:01 +28: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Cambios de sesión abren el shell y vuelven a protegerlo
+00:01 +29: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart: A06/I05 error de conectividad comprensible y reintento (mock)
+00:01 +30: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Sin backend informa del acceso pendiente y permite volver
+00:01 +31: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart: A11 registro sin sesión lleva a confirmación genérica (mock)
+00:01 +32: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart: A11 registro sin sesión lleva a confirmación genérica (mock)
+00:01 +33: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Cuatro pestañas con texto grande y tema Brightness.dark
+00:01 +34: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Cuatro pestañas con texto grande y tema Brightness.dark
+00:01 +35: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart: Recuperación activa protege pestañas hasta actualizar (mock)
+00:01 +36: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Render móvil de acceso y pestañas en tema Brightness.dark
+00:01 +37: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart: P01/P02 perfil realista y validación de username (mock)
+00:01 +38: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart: P01/P02 perfil realista y validación de username (mock)
+00:01 +39: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Cuatro pestañas con texto grande y tema Brightness.light
+00:01 +40: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Cuatro pestañas con texto grande y tema Brightness.light
+00:01 +41: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart: P05 público muestra solo nombre, username y foto (mock)
+00:01 +42: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Render móvil de acceso y pestañas en tema Brightness.light
+00:02 +43: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart: I03 logout devuelve al acceso y limpia datos privados de UI (mock)
+00:02 +44: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart: I04 cambiar cuenta descarta el borrador privado del editor (mock)
+00:02 +45: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart: Un enlace de retorno espera la operación en curso, sin perderse (mock)
+00:02 +46: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart: Formularios a 200 % y 320 px, tema Brightness.dark (mock)
+00:02 +47: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart: Formularios a 200 % y 320 px, tema Brightness.light (mock)
+00:02 +48: All tests passed!

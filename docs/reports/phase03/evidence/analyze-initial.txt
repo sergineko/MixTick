@@ -1,0 +1,31 @@
+Analyzing MixTick...                                            
+
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\app\router.dart:55:9 - curly_braces_in_flow_control_structures
+   info - Use an initializing formal to assign a parameter to a field. Try using an initialing formal ('this._stateStorage') to initialize the field - lib\features\auth\data\supabase_auth_repository.dart:13:7 - prefer_initializing_formals
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\auth\data\supabase_auth_repository.dart:20:13 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\auth\data\supabase_auth_repository.dart:139:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\auth\data\supabase_auth_repository.dart:174:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\auth\data\supabase_auth_repository.dart:184:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\auth\presentation\auth_controller.dart:36:9 - curly_braces_in_flow_control_structures
+  error - Expected to find ';' - lib\features\auth\presentation\confirmation_page.dart:36:6 - expected_token
+warning - Dead code. Try removing the code, or fixing the code before it so that it can be reached - lib\features\auth\presentation\confirmation_page.dart:36:7 - dead_code
+  error - Expected an identifier - lib\features\auth\presentation\confirmation_page.dart:36:7 - missing_identifier
+  error - Unexpected text ';'. Try removing the text - lib\features\auth\presentation\confirmation_page.dart:36:7 - unexpected_token
+   info - Unnecessary empty statement. Try removing the empty statement or restructuring the code - lib\features\auth\presentation\confirmation_page.dart:36:8 - empty_statements
+  error - The name 'ProfileFailure' isn't a class. Try correcting the name to match an existing class - lib\features\profile\data\profile_photo_picker.dart:25:19 - creation_with_non_type
+  error - Undefined name 'ProfileFailureCode'. Try correcting the name to one that is defined, or defining the name - lib\features\profile\data\profile_photo_picker.dart:25:34 - undefined_identifier
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\profile\data\supabase_profile_repository.dart:71:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\profile\domain\profile_repository.dart:23:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\profile\domain\profile_repository.dart:28:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\profile\domain\profile_repository.dart:31:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\profile\domain\profile_repository.dart:35:7 - curly_braces_in_flow_control_structures
+   info - Use 'isNotEmpty' instead of 'length' to test whether the collection is empty. Try rewriting the expression to use 'isNotEmpty' - lib\features\profile\domain\user_profile.dart:41:7 - prefer_is_empty
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\profile\presentation\profile_edit_page.dart:107:45 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\profile\presentation\profile_edit_page.dart:113:45 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\profile\presentation\profile_edit_page.dart:118:45 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\profile\presentation\profile_edit_page.dart:205:41 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\profile\presentation\profile_providers.dart:21:5 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\profile\presentation\profile_providers.dart:28:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\profile\presentation\profile_widgets.dart:29:7 - curly_braces_in_flow_control_structures
+
+27 issues found. (ran in 8.1s)
