@@ -1,0 +1,37 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/integration_test/matching_native_test.dart
+Running Gradle task 'assembleDebug'...                          
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/C:/Users/Sergio/.gradle/wrapper/dists/gradle-9.3.1-all/9ot9r568e8zfvvd4mn8rbu1j0/gradle-9.3.1/lib/native-platform-0.22-milestone-29.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Running Gradle task 'assembleDebug'...                             22,1s
+√ Built build\app\outputs\flutter-apk\app-debug.apk
+Installing build\app\outputs\flutter-apk\app-debug.apk...        1.099ms
+00:00 +0: M32 Android real: alias/chips, exact/near, photos, original detail, privacy revalidation and account isolation
+P6_FIXTURE:[recorded locally for cleanup]
+P6_FIXTURE:[recorded locally for cleanup]
+P6_FIXTURE:[recorded locally for cleanup]
+P6_SELECT:Huevos catalog=50 loading=false error=false field=Huevos
+P6_SCREEN:matching-debug
+P6_SELECT:Patatas catalog=50 loading=false error=false field=Patatas
+P6_SCREEN:matching-debug
+P6_SELECT:AOVE catalog=50 loading=false error=false field=AOVE
+P6_SCREEN:matching-debug
+P6_SELECT:Sal catalog=50 loading=false error=false field=Sal
+P6_SCREEN:matching-debug
+P6_SELECT:huevo catalog=50 loading=false error=false field=huevo
+P6_SCREEN:matching-debug
+P6_SCREEN:matching-selection
+P6_SCREEN:matching-light
+P6_SCREEN:matching-dark
+P6_SELECT:huevo catalog=50 loading=false error=false field=huevo
+P6_SCREEN:matching-debug
+P6_SELECT:patata catalog=50 loading=false error=false field=patata
+P6_SCREEN:matching-debug
+P6_SELECT:AOVE catalog=50 loading=false error=false field=AOVE
+P6_SCREEN:matching-debug
+P6_SELECT:sal catalog=50 loading=false error=false field=sal
+P6_SCREEN:matching-debug
+00:38 +1: (tearDownAll)
+00:38 +1: All tests passed!

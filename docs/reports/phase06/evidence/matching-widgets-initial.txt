@@ -1,0 +1,17 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart
+00:00 +0: M03 M33 selection has bounded names and canonical set identity
+00:00 +1: M16 free names match only exact normalized key, no semantic substitutions
+00:00 +2: M25 M26 query is immutable and order independent
+00:00 +3: M18 transfer preserves recipe quantity and original line without home quantities
+00:00 +4: M17 empty selection causes no recipe search (mock)
+00:00 +5: M01 M02 M03 select alias, canonical chip, no duplicates, selector remains open (mock)
+00:01 +6: M04 M05 remove one ingredient then clear, no empty search (mock)
+00:01 +7: M06 unknown and ambiguous names remain literal instead of invented canonical IDs (mock)
+00:01 +8: M10 M28 full/near modes and original detail navigation (mock)
+00:01 +9: M27 error hides rows and manual retry restores server data (mock)
+00:02 +10: M25 pagination deduplicates overlapping server IDs (mock)
+00:02 +11: M24 M26 late response and selection discarded on account change (mock)
+00:02 +12: M29 selection shared only within cook screen, other four routes retained (mock)
+00:02 +13: M34 small 320x640 and 200% selection/results/keyboard Brightness.dark (mock)
+00:03 +14: M34 small 320x640 and 200% selection/results/keyboard Brightness.light (mock)
+00:03 +15: All tests passed!

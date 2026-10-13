@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\capture_matching_android.py", line 37, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\capture_matching_android.py", line 34, in main
+    raise RuntimeError('Integration test failed before all captures')
+RuntimeError: Integration test failed before all captures

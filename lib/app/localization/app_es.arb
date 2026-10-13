@@ -240,5 +240,76 @@
   "communitySavedTab": "Guardadas",
   "communityNeedsProfile": "Completa tu perfil para guardar recetas y participar en la comunidad.",
   "communityCommentsCount": "{count, plural, =1{1 comentario} other{{count} comentarios}}",
-  "@communityCommentsCount": {"placeholders": {"count": {"type": "int"}}}
+  "@communityCommentsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "matchIngredientSearch": "Busca un ingrediente",
+  "matchIngredientHint": "Por ejemplo: huevos",
+  "matchSelected": "{count, plural, =0{Ningún ingrediente seleccionado} =1{1 ingrediente seleccionado} other{{count} ingredientes seleccionados}}",
+  "matchClear": "Limpiar selección",
+  "matchRemove": "Quitar {name}",
+  "matchInputInvalid": "Introduce un nombre de 1 a 80 caracteres.",
+  "matchSelectionLimit": "Puedes seleccionar hasta 50 ingredientes.",
+  "matchDuplicate": "Este ingrediente ya está seleccionado.",
+  "matchResolving": "Comprobando ingrediente",
+  "matchCatalogLoading": "Cargando catálogo…",
+  "matchAddName": "Añadir este nombre",
+  "matchExactNameHint": "Los alias registrados se reconocen. Los nombres desconocidos solo coinciden por su nombre exacto; elige un ingrediente concreto si hay varias opciones.",
+  "matchExactMode": "Puedo cocinarlo",
+  "matchNearMode": "Me falta poco",
+  "matchResults": "Recetas compatibles",
+  "matchInitial": "Añade los ingredientes que tienes ahora para buscar recetas.",
+  "matchEmpty": "No hay coincidencias con esta selección. Prueba a añadir otro ingrediente o cambia de modo.",
+  "matchNoBackend": "La búsqueda necesita una conexión configurada. No hay recetas de ejemplo.",
+  "matchLoading": "Buscando…",
+  "matchMore": "Ver más recetas",
+  "matchTimeUnknown": "Tiempo no indicado",
+  "matchStatus": "{count, plural, =0{Puedes prepararla} =1{Te falta 1 ingrediente} other{Te faltan {count} ingredientes}}",
+  "matchCounts": "{matched} de {required} obligatorios coinciden · {missing} faltan",
+  "matchMissingNames": "Faltan: {names}",
+  "@matchSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@matchStatus": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@matchRemove": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@matchMissingNames": {
+    "placeholders": {
+      "names": {
+        "type": "String"
+      }
+    }
+  },
+  "@matchCounts": {
+    "placeholders": {
+      "matched": {
+        "type": "int"
+      },
+      "required": {
+        "type": "int"
+      },
+      "missing": {
+        "type": "int"
+      }
+    }
+  }
 }

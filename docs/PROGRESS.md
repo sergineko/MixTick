@@ -7,34 +7,35 @@
 | 03 Auth/Perfil | VERIFIED | 2026-10-13 | 7 migraciones desde cero; 25 pgTAP; 20 regresiones API; 13 escenarios cliente por cada modo de correo; 48 tests Flutter; 2 procesos Android reales; analyze/formato/IDs/APK; aislamiento real | iOS y galería interactiva NOT_RUN; remoto/CDN/Realtime/worker NOT_VERIFIED |
 | 04 Mi recetario | VERIFIED | 2026-10-13 | 8 migraciones desde cero; 35 pgTAP; 20 regresiones API; 16 casos cliente de recetas (1 híbrido); Auth 13 por modo; 66 tests Flutter; UI y galería Android reales; analyze/formato/IDs/APK; auditoría cero fixtures | iOS/físico NOT_RUN; remoto/CDN/Realtime/worker/eliminación completa de cuenta/moderación pendientes |
 | 05 Comunidad | VERIFIED | 2026-10-13 | 9 migraciones desde cero; 50 SQL; 20 API; recetas 16; Comunidad 30 (2 híbridos); Auth 13 por modo; 83 Flutter; 2 integraciones Android; formato/IDs/analyze/APK; auditoría cero fixtures | iOS/físico NOT_RUN; remoto/CDN/Realtime/worker/eliminación de cuenta/moderación operativa pendientes |
-| 06 ¿Qué cocino? | TODO | — | — | No autorizada |
+| 06 ¿Qué cocino? | VERIFIED | 2026-10-13 | 10 migraciones desde cero; 72 SQL; 20 API; recetas 16; Comunidad 30; matching 23 (2 híbridos); Auth 13 por modo; 99 Flutter; 2 Android; formato/IDs/analyze/APK; benchmark 6.000 recetas; cero fixtures | iOS/físico NOT_RUN; remoto/CDN/Realtime/worker/eliminación/moderación pendientes |
 | 07 Compra | TODO | — | — | No autorizada |
 | 08 Auditoría | TODO | — | — | No autorizada |
 
 ## Último cambio
 
-Fase 05 autorizada exclusivamente por el propietario: Comunidad y guardados,
-conservando los contratos aprobados de Fases 01–04. Las ocho migraciones
-históricas y evidencias previas se conservan. Baseline del workspace aprobado
-registrado en `.tooling/phase05-baseline/`; Fase 04 permanece sin commit.
-Prohibidos commits/push, deploy, remoto y avance a Fase 06.
+Fase 06 finalizada y verificada localmente: selección efímera, coincidencias
+PostgreSQL bajo RLS, catálogo/alias/texto libre, tarjetas paginadas, fotografías,
+detalle original y contrato tipado de faltantes. Solo se añade migración 010;
+001–009, implementaciones, tests e informes/evidencias aceptados intactos.
 
 Fecha: 2026-10-13 (Europe/Madrid).
-Motivo: cierre local de `prompts/05_COMMUNITY.md`, con Fases 01–04 aceptadas.
-Decisiones: [ADR-019](adr/019_COMMUNITY.md).
-Informe completo/evidencias: [Fase 05](reports/PHASE_05_REPORT.md).
-Contratos: [Comunidad](18_COMMUNITY.md), [Mi recetario](17_MY_RECIPES.md), [Auth/perfiles](16_AUTH_PROFILE.md).
-Informes anteriores: [Fase 04](reports/PHASE_04_REPORT.md), [Fase 03](reports/PHASE_03_REPORT.md),
-[Fase 02](reports/PHASE_02_REPORT.md) y [Fase 01](reports/PHASE_01_REPORT.md).
-Próximo paso autorizado: ninguno; esperar revisión. Sin commits, push, deploy
-ni proyectos Supabase remotos durante Fase 05. Fase 06 no autorizada.
+Motivo: cierre de `prompts/06_COOK_TODAY.md` autorizado por el propietario.
+Decisiones: [ADR-020](adr/020_COOK_TODAY.md).
+Informe completo/evidencias: [Fase 06](reports/PHASE_06_REPORT.md).
+Contratos: [Cook Today](19_COOK_TODAY.md), [algoritmo](06_MATCHING_ALGORITHM.md),
+[Comunidad](18_COMMUNITY.md), [Mi recetario](17_MY_RECIPES.md).
 
-`VERIFIED` se limita a las comprobaciones locales enumeradas. No representa una
-verificación de backend remoto, CDN, cliente Realtime, compilación iOS o
-publicación. Auth/perfiles Flutter y RLS/Storage se comprueban localmente en
-Fase 03, incluyendo restauración entre procesos y callback ACTION_VIEW Android.
-La implementación de la Fase 01 finalizó sin commits, push, despliegues ni
-cambios de backend remoto.
+Todas las comprobaciones finales enumeradas PASS; los FAIL iniciales se
+conservan, incluido el teclado Android y su corrección. Auditoría final cero
+fixtures/objetos/correos, catálogo 50/74 conservado. Backend local y emulador
+propio apagados. HEAD permanece `107d4fe3fda7b31d3dc826533833669d6f190765`;
+Fase 06 sin stage/commit/push, deploy o cambios de Supabase remoto.
+Próximo paso autorizado: ninguno; detener para revisión. Fase 07 NO autorizada.
+
+`VERIFIED` solo cubre las comprobaciones locales enlazadas: no representa
+backend remoto/CDN/Realtime, compilación iOS o preparación de publicación.
+Se mantienen los gates anteriores de worker, eliminación completa de cuenta
+y moderación operativa.
 
 ## Autorización posterior de GitHub
 
@@ -138,3 +139,37 @@ Auditoría final cero fixtures/objetos/correos; catálogo 50/74 conservado. Solo
 mixtick-phase02 y el emulador propio apagados. HEAD continúa
 `cc9be3972d6fc0297d56174b3dfdce69d9719504`, sin cambios staged/commit/push,
 remoto, deploy ni publicación. Fase 06 no autorizada; detener para revisión.
+
+## Autorización e inicio de Fase 06
+
+El propietario acepta Fases 01–05 y autoriza exclusivamente ¿Qué cocino hoy?.
+HEAD aprobado después del push solicitado: `107d4fe3fda7b31d3dc826533833669d6f190765`.
+Workspace limpio; baseline de 562 archivos en `.tooling/phase06-baseline/`.
+Selección efímera, comparación de presencia en PostgreSQL bajo RLS y contrato
+tipado de faltantes. Ninguna lista de compra funcional ni Fase 07.
+La autorización de Git anterior se limita al estado de Fases 04/05; esta fase
+prohíbe nuevamente commits/push, deploys y cambios de Supabase remoto.
+
+## Cierre de Fase 06
+
+99 Flutter (83 históricos intactos +16 nuevos), 72 SQL, regresiones API/Auth/
+recetas/Comunidad y 23 escenarios de cliente matching. Dos integraciones Android
+reales: matching y el flujo anterior de recetas/galería. Diez migraciones desde
+cero, APK estándar, formato e IDs aprobados. Benchmark SQL de 6.000 recetas en
+rollback, sin presentarlo como métrica de producción o signup Auth real.
+
+Resultado y límites en el informe. Selección/faltantes no generan inventario
+ni escriben compras. Fase 07 requiere autorización; no se continúa automáticamente.
+
+## Autorización posterior de GitHub para Fase 06
+
+Después del cierre, el propietario solicitó «realiza push». Esta autorización
+permite crear el commit del estado verificado de Fase 06 y subirlo a
+`https://github.com/sergineko/MixTick.git`, rama `main`. Incluye código, migración
+010, pruebas, documentación y evidencias; excluye secretos, configuración local,
+cachés y binarios conforme a `.gitignore`.
+
+Las afirmaciones anteriores sobre HEAD y ausencia de commit/push describen el
+cierre previo a esta autorización posterior. No se autoriza Fase 07, despliegue
+ni cambio de Supabase remoto. El push se verifica comparando HEAD con
+`refs/heads/main` de GitHub.

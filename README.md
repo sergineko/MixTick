@@ -1,6 +1,6 @@
 # MixTick
 
-Flutter Android/iOS, backend SQL, Auth/perfiles, Mi recetario y Comunidad de Fases 01–05. Nombre técnico `mixtick`, organización
+Flutter Android/iOS, backend SQL, Auth/perfiles, Mi recetario, Comunidad y ¿Qué cocino hoy? de Fases 01–06. Nombre técnico `mixtick`, organización
 `es.sergiotech` e identificador fijo `es.sergiotech.mixtick` para ambas plataformas.
 El nombre comercial MixTick sigue pendiente de validación legal/comercial.
 
@@ -9,7 +9,8 @@ pestañas protegidas, perfil como soporte, temas claro/oscuro y español `es_ES`
 Comunidad y Mi recetario tienen interfaces y repositorios reales. Auth/perfiles tienen
 repositorios reales, formularios, retorno PKCE, sesión segura y avatar opcional.
 Hay esquema SQL probado localmente, sin backend remoto provisionado. ¿Qué cocino
-hoy? y Lista de compra siguen en Foundation hasta sus fases autorizadas.
+hoy? añade selección temporal y coincidencias bajo RLS, verificadas localmente en Fase 06.
+Lista de compra sigue en Foundation hasta su fase autorizada.
 
 ## Entorno
 
@@ -148,7 +149,8 @@ fotografía privada y publicación explícita con Supabase real. Consulta
 `docs/17_MY_RECIPES.md`, `docs/reports/PHASE_04_REPORT.md` y `docs/reports/phase04/`
 para contratos, comandos, pruebas A/B/C y capturas Android reales. Comunidad y
 guardadas: `docs/18_COMMUNITY.md`, `docs/reports/PHASE_05_REPORT.md` y
-`docs/reports/phase05/`. La Fase 06 requiere autorización expresa del propietario.
+`docs/reports/phase05/`. La Fase 06 fue autorizada expresamente y se documenta
+en `docs/19_COOK_TODAY.md`, `docs/06_MATCHING_ALGORITHM.md` y su informe.
 El propietario autorizó el commit y push del estado de Fase 01
 a [sergineko/MixTick](https://github.com/sergineko/MixTick) y, posteriormente,
 el commit y push del estado actual de Fase 02 el 2026-10-13. Tras cerrar la
@@ -174,3 +176,21 @@ Verificación Fase 05: `scripts/verify_community.ps1 -BackendChecks -ResetLocal
 Sin `-IncludeNative` se omite integración Android; no se atribuye PASS a lo omitido.
 El runner conserva evidencias anteriores, valida aislamiento, retira sus
 fixtures, restaura Auth y apaga solo el backend del proyecto.
+
+## ¿Qué cocino hoy? — Fase 06
+
+Selección temporal de hasta 50 ingredientes, catálogo/alias y nombres libres
+exactos; dos modos por presencia, sin comprobar cantidades de casa. Recetas
+propias privadas/públicas y públicas accesibles, sin duplicar guardados.
+Migración 010 invoker con cursor de ranking, fotos/detalle existentes y faltantes
+tipados para Fase 07; ninguna lista funcional o botón de compra desconectado.
+
+```powershell
+.\scripts\verify_matching.ps1 -BackendChecks -ResetLocal -IncludeNative -IncludeAndroidBuild
+```
+
+PowerShell 7 y Pixel_10a iniciado para Android. Evidencias exclusivamente en
+`docs/reports/phase06/`. El push previo de Fases 04/05 quedó verificado en
+`107d4fe3fda7b31d3dc826533833669d6f190765`; Fase 06 prohíbe nuevos commits/push,
+despliegues, backend remoto y avance a Fase 07. Estado verificable y pendientes
+en [PROGRESS](docs/PROGRESS.md) y [informe Fase 06](docs/reports/PHASE_06_REPORT.md).

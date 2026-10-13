@@ -145,3 +145,22 @@ los tests anteriores y usa un directorio distinto mediante EvidenceDirectory.
 Las fixtures p5 se retiran con cleanup_community_fixtures.py: clave administrativa
 local solo en memoria del teardown, nunca en pruebas de permisos/Flutter.
 Se restaura confirmación local original y se apaga únicamente mixtick-phase02.
+
+## ¿Qué cocino hoy? — Fase 06
+
+010 añade `cook_today_page` invoker de lectura e índice de custom_key; conserva
+las nueve migraciones, tablas, catálogo/alias y RLS anteriores. Matching en
+servidor, cursor completo y respuesta limitada 8+1; no se descargan todas las
+recetas al móvil. Contrato: [Cook Today](../docs/19_COOK_TODAY.md).
+
+`scripts/verify_matching.ps1 -BackendChecks -ResetLocal -IncludeNative
+-IncludeAndroidBuild` escribe exclusivamente evidencias de Fase 06 y ejecuta
+las regresiones API/Auth/recetas/Comunidad y nuevas coincidencias. PowerShell 7.
+`integration_test/matching_native_test.dart` usa A/B/C reales, selección,
+modos, fotos, detalle original, privatización y cambio de identidad. No mocks
+como evidencia de RLS. `verify_native_matching.ps1` obtiene configuración
+pública local, captura pantalla real y limpia solo identidades/objetos propios.
+
+`benchmark_matching.sql` usa 6.000 recetas temporales en rollback y un rol
+SQL autenticado; no se presenta como Auth GoTrue ni rendimiento de producción.
+No hay lista de compra funcional, remoto, Git, deploy o Fase 07 autorizados.

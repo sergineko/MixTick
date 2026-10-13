@@ -1,0 +1,9 @@
+Analyzing MixTick...                                            
+
+  error - Invalid constant value - test\cook_today\matching_test.dart:37:21 - invalid_constant
+  error - The function 'RecipeIngredient' isn't defined. Try importing the library that defines 'RecipeIngredient', correcting the name to the name of an existing function, or defining a function named 'RecipeIngredient' - test\cook_today\matching_test.dart:37:21 - undefined_function
+  error - The argument type 'Iterable<MapEntry<String, Recipe>>' can't be assigned to the parameter type 'Map<String, Recipe>'.  - test\cook_today\matching_test.dart:76:26 - argument_type_not_assignable
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - test\cook_today\matching_test.dart:101:5 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - test_support\matching_local.dart:155:7 - curly_braces_in_flow_control_structures
+
+5 issues found. (ran in 5.0s)

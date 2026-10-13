@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "baseline_files": 562,
+  "protected_files": 552,
+  "changed_protected_files": [],
+  "historical_migrations": 9,
+  "head": "107d4fe3fda7b31d3dc826533833669d6f190765",
+  "staged_files": 0
+}

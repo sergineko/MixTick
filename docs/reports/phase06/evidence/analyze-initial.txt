@@ -1,0 +1,19 @@
+Analyzing MixTick...                                            
+
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\cook_today\data\supabase_matching_repository.dart:22:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\cook_today\data\supabase_matching_repository.dart:24:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\cook_today\data\supabase_matching_repository.dart:42:9 - curly_braces_in_flow_control_structures
+warning - The value of 'refresh' should be used. Try using the result by invoking a member, passing it to a function, or returning it from this function - lib\features\cook_today\presentation\cook_today_page.dart:69:17 - unused_result
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\cook_today\presentation\cook_today_page.dart:79:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\cook_today\presentation\cook_today_page.dart:121:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\cook_today\presentation\cook_today_page.dart:133:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\cook_today\presentation\cook_today_page.dart:213:15 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\cook_today\presentation\cook_today_page.dart:360:15 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\cook_today\presentation\cook_today_page.dart:369:15 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\cook_today\presentation\cook_today_page.dart:376:15 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\cook_today\presentation\matching_providers.dart:27:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\cook_today\presentation\matching_providers.dart:39:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\cook_today\presentation\matching_providers.dart:61:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\cook_today\presentation\matching_providers.dart:76:9 - curly_braces_in_flow_control_structures
+
+15 issues found. (ran in 5.1s)

@@ -66,3 +66,22 @@ mantiene su código original, captura en phase05/recipe-regression y retira
 su única fixture de MediaStore. No sobrescribir evidencias históricas.
 Scripts/apk/clientes se limitan a 127.0.0.1 o 10.0.2.2:54321. iOS, físico,
 remoto, CDN, Realtime, worker y distribución siguen pendientes.
+
+## ¿Qué cocino hoy? — Fase 06
+
+010 añade `cook_today_page` invoker de lectura e índice de custom_key; conserva
+las nueve migraciones, tablas, catálogo/alias y RLS anteriores. Matching en
+servidor, cursor completo y respuesta limitada 8+1; no se descargan todas las
+recetas al móvil. Contrato: [Cook Today](../docs/19_COOK_TODAY.md).
+
+`scripts/verify_matching.ps1 -BackendChecks -ResetLocal -IncludeNative
+-IncludeAndroidBuild` escribe exclusivamente evidencias de Fase 06 y ejecuta
+las regresiones API/Auth/recetas/Comunidad y nuevas coincidencias. PowerShell 7.
+`integration_test/matching_native_test.dart` usa A/B/C reales, selección,
+modos, fotos, detalle original, privatización y cambio de identidad. No mocks
+como evidencia de RLS. `verify_native_matching.ps1` obtiene configuración
+pública local, captura pantalla real y limpia solo identidades/objetos propios.
+
+`benchmark_matching.sql` usa 6.000 recetas temporales en rollback y un rol
+SQL autenticado; no se presenta como Auth GoTrue ni rendimiento de producción.
+No hay lista de compra funcional, remoto, Git, deploy o Fase 07 autorizados.

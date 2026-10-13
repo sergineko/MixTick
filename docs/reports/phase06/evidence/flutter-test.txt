@@ -1,0 +1,102 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart
+00:00 +0: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: (setUpAll)
+00:00 +0: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +1: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +3: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +4: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +5: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +6: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +7: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +8: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +9: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +10: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +11: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +12: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +13: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +14: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +15: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +16: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +17: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +18: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +19: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +20: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +21: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +22: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +23: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +24: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +25: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +26: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +27: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:02 +28: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:02 +29: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M26 pending ingredient resolution preserves newer typed text and keyboard focus (mock)
+00:02 +30: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M26 pending ingredient resolution preserves newer typed text and keyboard focus (mock)
+00:02 +31: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M26 pending ingredient resolution preserves newer typed text and keyboard focus (mock)
+00:02 +32: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M26 pending ingredient resolution preserves newer typed text and keyboard focus (mock)
+00:02 +33: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +34: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +35: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +36: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +37: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +38: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +39: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +40: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +41: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +42: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +43: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +44: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +45: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +46: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +47: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +48: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +49: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +50: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +51: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +52: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:03 +53: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:03 +54: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:03 +55: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:03 +56: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:03 +57: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:03 +58: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:03 +59: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:03 +60: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:03 +61: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C28 failed request hides rows and retry recovers (mock)
+00:03 +62: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C28 failed request hides rows and retry recovers (mock)
+00:03 +63: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C28 failed request hides rows and retry recovers (mock)
+00:03 +64: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C28 failed request hides rows and retry recovers (mock)
+00:03 +65: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C28 failed request hides rows and retry recovers (mock)
+00:03 +66: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C28 failed request hides rows and retry recovers (mock)
+00:03 +67: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R16 draft survives recoverable network failure (UI mock)
+00:03 +68: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R16 draft survives recoverable network failure (UI mock)
+00:03 +69: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R16 draft survives recoverable network failure (UI mock)
+00:04 +70: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R16 draft survives recoverable network failure (UI mock)
+00:04 +71: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C08 failed nonoptimistic write revalidates actual totals (mock)
+00:04 +72: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C08 failed nonoptimistic write revalidates actual totals (mock)
+00:04 +73: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C08 failed nonoptimistic write revalidates actual totals (mock)
+00:04 +74: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R06 editor reorders and removes steps (UI mock)
+00:04 +75: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M25 pagination deduplicates overlapping server IDs (mock)
+00:04 +76: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M25 pagination deduplicates overlapping server IDs (mock)
+00:04 +77: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R18 conflict retains local title and offers reload (UI mock)
+00:04 +78: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R18 conflict retains local title and offers reload (UI mock)
+00:04 +79: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R18 conflict retains local title and offers reload (UI mock)
+00:04 +80: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C24 report dialog closes when identity changes (mock)
+00:04 +81: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M29 selection shared only within cook screen, other four routes retained (mock)
+00:04 +82: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M29 selection shared only within cook screen, other four routes retained (mock)
+00:04 +83: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M29 selection shared only within cook screen, other four routes retained (mock)
+00:04 +84: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M29 selection shared only within cook screen, other four routes retained (mock)
+00:05 +85: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M29 selection shared only within cook screen, other four routes retained (mock)
+00:05 +86: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M29 selection shared only within cook screen, other four routes retained (mock)
+00:05 +87: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C31 social cards and saved tabs at 200% on 320x640 Brightness.dark (mock)
+00:05 +88: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C31 social cards and saved tabs at 200% on 320x640 Brightness.dark (mock)
+00:05 +89: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R12 filtering and saved section contains no fake saved recipes
+00:05 +90: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M34 small 320x640 and 200% selection/results/keyboard Brightness.light (mock)
+00:05 +91: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M34 small 320x640 and 200% selection/results/keyboard Brightness.light (mock)
+00:05 +92: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C31 social cards and saved tabs at 200% on 320x640 Brightness.light (mock)
+00:05 +93: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C31 social cards and saved tabs at 200% on 320x640 Brightness.light (mock)
+00:05 +94: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: Recipe editor 320x640 at 200% Brightness.light
+00:05 +95: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R17 retry lost creation response edits one recipe (controller mock)
+00:05 +96: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: Double submission blocked until operation finishes (controller mock)
+00:05 +97: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R15 photo failure preserves text and original reference (controller mock)
+00:05 +98: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R15 cancellation waits upload and never links it (controller mock)
+00:06 +99: All tests passed!

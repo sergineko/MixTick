@@ -1,0 +1,34 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test_support/community_local.dart
+00:00 +0: (setUpAll)
+00:00 +0: C02 private recipes excluded from feed, categories and ingredient search
+00:00 +1: C01 publishing appears in chronological public projection with safe author and image
+00:00 +2: C03 title search is accent normalized and treats wildcard syntax literally
+00:00 +3: C04 exact category filter never reveals private category
+00:00 +4: C05 canonical ingredient aliases and exact normalized free text, no invented equivalence
+00:00 +5: C06 keyset pagination 8+1 with stable publication and UUID, no duplicates
+00:00 +6: C07 public card UUID opens the original typed aggregate
+00:00 +7: C08 like and unlike use authoritative nonnegative counts
+00:00 +8: C09 concurrent repeated likes cannot duplicate or change another user
+00:00 +9: C10 real comment, author/date, retry-safe UUID and server count
+00:00 +10: C11 empty, excessive and direct API invalid comments rejected
+00:00 +11: C13 foreign deletion denied by repository and direct API policy
+00:00 +12: C12 own deletion persists and count returns to zero
+00:01 +13: C14 follow/unfollow, duplicate safety and visible counts
+00:01 +14: C15 self-follow rejected in domain and direct API
+00:01 +15: C16 C17 saves are original references and searchable from recetario query
+00:01 +16: C19 concurrent repeated saves stay unique and private to saver
+00:01 +17: C17 real saved search and pagination 8+1 without copies or duplicated IDs
+00:01 +18: C18 remove original saved reference without deleting recipe
+00:01 +19: C20 C26 privatization removes saved content, counts, search and authenticated photos
+00:01 +20: C21 private foreign interactions and spoofed user identities rejected
+00:01 +21: C22 C23 symmetric block hides author/feed/profile and denies interactions; unblock restores
+00:01 +22: C26 blocked third-party interactions are excluded from projected counts and comments
+00:01 +23: C24 recipe, comment and profile reports are valid, private and server-status controlled
+00:01 +24: C25 unauthorized/private/nonexistent/blocked and invalid reports rejected
+00:01 +25: C10 comments paginate 8+1 without duplicates; creation quota survives deletions
+00:01 +26: C28 hybrid one-shot network loss followed by REAL server recovery
+00:01 +27: C30 approved recipe CRUD/version/private contracts remain effective
+00:01 +28: C29 hybrid delayed REAL read cannot write after shared client switches B to C
+00:02 +29: C26 anonymous callers cannot use new projections or comments
+00:02 +30: (tearDownAll)
+00:02 +30: All tests passed!

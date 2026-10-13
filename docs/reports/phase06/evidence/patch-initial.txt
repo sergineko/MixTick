@@ -1,0 +1,2 @@
+FAIL: apply_patch rejected duplicate delete/add operations for cook_today_page.dart. No file modified by that call. Corrected using one Update File operation.
+FAIL: a multi-file Update patch used an outdated formatted context for matching_providers.dart and was rejected without changes. Read the actual lines and applied the corrected context.

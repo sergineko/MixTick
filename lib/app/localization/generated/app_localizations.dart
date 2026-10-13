@@ -1536,6 +1536,150 @@ abstract class AppLocalizations {
   /// In es, this message translates to:
   /// **'{count, plural, =1{1 comentario} other{{count} comentarios}}'**
   String communityCommentsCount(int count);
+
+  /// No description provided for @matchIngredientSearch.
+  ///
+  /// In es, this message translates to:
+  /// **'Busca un ingrediente'**
+  String get matchIngredientSearch;
+
+  /// No description provided for @matchIngredientHint.
+  ///
+  /// In es, this message translates to:
+  /// **'Por ejemplo: huevos'**
+  String get matchIngredientHint;
+
+  /// No description provided for @matchSelected.
+  ///
+  /// In es, this message translates to:
+  /// **'{count, plural, =0{Ningún ingrediente seleccionado} =1{1 ingrediente seleccionado} other{{count} ingredientes seleccionados}}'**
+  String matchSelected(int count);
+
+  /// No description provided for @matchClear.
+  ///
+  /// In es, this message translates to:
+  /// **'Limpiar selección'**
+  String get matchClear;
+
+  /// No description provided for @matchRemove.
+  ///
+  /// In es, this message translates to:
+  /// **'Quitar {name}'**
+  String matchRemove(String name);
+
+  /// No description provided for @matchInputInvalid.
+  ///
+  /// In es, this message translates to:
+  /// **'Introduce un nombre de 1 a 80 caracteres.'**
+  String get matchInputInvalid;
+
+  /// No description provided for @matchSelectionLimit.
+  ///
+  /// In es, this message translates to:
+  /// **'Puedes seleccionar hasta 50 ingredientes.'**
+  String get matchSelectionLimit;
+
+  /// No description provided for @matchDuplicate.
+  ///
+  /// In es, this message translates to:
+  /// **'Este ingrediente ya está seleccionado.'**
+  String get matchDuplicate;
+
+  /// No description provided for @matchResolving.
+  ///
+  /// In es, this message translates to:
+  /// **'Comprobando ingrediente'**
+  String get matchResolving;
+
+  /// No description provided for @matchCatalogLoading.
+  ///
+  /// In es, this message translates to:
+  /// **'Cargando catálogo…'**
+  String get matchCatalogLoading;
+
+  /// No description provided for @matchAddName.
+  ///
+  /// In es, this message translates to:
+  /// **'Añadir este nombre'**
+  String get matchAddName;
+
+  /// No description provided for @matchExactNameHint.
+  ///
+  /// In es, this message translates to:
+  /// **'Los alias registrados se reconocen. Los nombres desconocidos solo coinciden por su nombre exacto; elige un ingrediente concreto si hay varias opciones.'**
+  String get matchExactNameHint;
+
+  /// No description provided for @matchExactMode.
+  ///
+  /// In es, this message translates to:
+  /// **'Puedo cocinarlo'**
+  String get matchExactMode;
+
+  /// No description provided for @matchNearMode.
+  ///
+  /// In es, this message translates to:
+  /// **'Me falta poco'**
+  String get matchNearMode;
+
+  /// No description provided for @matchResults.
+  ///
+  /// In es, this message translates to:
+  /// **'Recetas compatibles'**
+  String get matchResults;
+
+  /// No description provided for @matchInitial.
+  ///
+  /// In es, this message translates to:
+  /// **'Añade los ingredientes que tienes ahora para buscar recetas.'**
+  String get matchInitial;
+
+  /// No description provided for @matchEmpty.
+  ///
+  /// In es, this message translates to:
+  /// **'No hay coincidencias con esta selección. Prueba a añadir otro ingrediente o cambia de modo.'**
+  String get matchEmpty;
+
+  /// No description provided for @matchNoBackend.
+  ///
+  /// In es, this message translates to:
+  /// **'La búsqueda necesita una conexión configurada. No hay recetas de ejemplo.'**
+  String get matchNoBackend;
+
+  /// No description provided for @matchLoading.
+  ///
+  /// In es, this message translates to:
+  /// **'Buscando…'**
+  String get matchLoading;
+
+  /// No description provided for @matchMore.
+  ///
+  /// In es, this message translates to:
+  /// **'Ver más recetas'**
+  String get matchMore;
+
+  /// No description provided for @matchTimeUnknown.
+  ///
+  /// In es, this message translates to:
+  /// **'Tiempo no indicado'**
+  String get matchTimeUnknown;
+
+  /// No description provided for @matchStatus.
+  ///
+  /// In es, this message translates to:
+  /// **'{count, plural, =0{Puedes prepararla} =1{Te falta 1 ingrediente} other{Te faltan {count} ingredientes}}'**
+  String matchStatus(int count);
+
+  /// No description provided for @matchCounts.
+  ///
+  /// In es, this message translates to:
+  /// **'{matched} de {required} obligatorios coinciden · {missing} faltan'**
+  String matchCounts(int matched, int required, int missing);
+
+  /// No description provided for @matchMissingNames.
+  ///
+  /// In es, this message translates to:
+  /// **'Faltan: {names}'**
+  String matchMissingNames(String names);
 }
 
 class _AppLocalizationsDelegate

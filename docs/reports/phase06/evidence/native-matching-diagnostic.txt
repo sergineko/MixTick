@@ -1,0 +1,55 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/integration_test/matching_native_test.dart
+Running Gradle task 'assembleDebug'...                          
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/C:/Users/Sergio/.gradle/wrapper/dists/gradle-9.3.1-all/9ot9r568e8zfvvd4mn8rbu1j0/gradle-9.3.1/lib/native-platform-0.22-milestone-29.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Running Gradle task 'assembleDebug'...                             23,5s
+√ Built build\app\outputs\flutter-apk\app-debug.apk
+Installing build\app\outputs\flutter-apk\app-debug.apk...        1.415ms
+00:00 +0: M32 Android real: alias/chips, exact/near, photos, original detail, privacy revalidation and account isolation
+P6_FIXTURE:[recorded locally for cleanup]
+P6_FIXTURE:[recorded locally for cleanup]
+P6_FIXTURE:[recorded locally for cleanup]
+P6_SELECT:Huevos catalog=50 loading=false error=false field=Huevos
+P6_SCREEN:matching-debug
+P6_SELECT:Patatas catalog=50 loading=false error=false field=Patatas
+P6_SCREEN:matching-debug
+P6_SELECT:AOVE catalog=50 loading=false error=false field=
+P6_SCREEN:matching-debug
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: true
+  Actual: <false>
+Native operation did not reach expected state
+
+When the exception was thrown, this was the stack:
+#4      until (file:///C:/Users/Sergio/Desktop/Proyectos/MixTick/integration_test/native_test_helpers.dart:17:3)
+<asynchronous suspension>
+#5      nativeSelect (file:///C:/Users/Sergio/Desktop/Proyectos/MixTick/integration_test/matching_native_test.dart:50:3)
+<asynchronous suspension>
+#6      main.<anonymous closure> (file:///C:/Users/Sergio/Desktop/Proyectos/MixTick/integration_test/matching_native_test.dart:230:9)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///C:/Users/Sergio/Desktop/Proyectos/MixTick/integration_test/native_test_helpers.dart line 17
+The test description was:
+  M32 Android real: alias/chips, exact/near, photos, original detail, privacy revalidation and
+  account isolation
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:39 +0 -1: M32 Android real: alias/chips, exact/near, photos, original detail, privacy revalidation and account isolation [E]
+  Test failed. See exception logs above.
+  The test description was: M32 Android real: alias/chips, exact/near, photos, original detail, privacy revalidation and account isolation
+  
+00:39 +0 -1: (tearDownAll)
+00:39 +0 -1: Some tests failed.
+
+Failing tests:
+  C:/Users/Sergio/Desktop/Proyectos/MixTick/integration_test/matching_native_test.dart: M32 Android real: alias/chips, exact/near, photos, original detail, privacy revalidation and account isolation

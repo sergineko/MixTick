@@ -1,0 +1,4 @@
+PASS: actual Android screenshot matching-debug
+PASS: actual Android screenshot matching-selection
+PASS: actual Android screenshot matching-light
+PASS: actual Android screenshot matching-dark

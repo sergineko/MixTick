@@ -813,6 +813,106 @@ class AppLocalizationsEs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get matchIngredientSearch => 'Busca un ingrediente';
+
+  @override
+  String get matchIngredientHint => 'Por ejemplo: huevos';
+
+  @override
+  String matchSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ingredientes seleccionados',
+      one: '1 ingrediente seleccionado',
+      zero: 'Ningún ingrediente seleccionado',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get matchClear => 'Limpiar selección';
+
+  @override
+  String matchRemove(String name) {
+    return 'Quitar $name';
+  }
+
+  @override
+  String get matchInputInvalid => 'Introduce un nombre de 1 a 80 caracteres.';
+
+  @override
+  String get matchSelectionLimit => 'Puedes seleccionar hasta 50 ingredientes.';
+
+  @override
+  String get matchDuplicate => 'Este ingrediente ya está seleccionado.';
+
+  @override
+  String get matchResolving => 'Comprobando ingrediente';
+
+  @override
+  String get matchCatalogLoading => 'Cargando catálogo…';
+
+  @override
+  String get matchAddName => 'Añadir este nombre';
+
+  @override
+  String get matchExactNameHint =>
+      'Los alias registrados se reconocen. Los nombres desconocidos solo coinciden por su nombre exacto; elige un ingrediente concreto si hay varias opciones.';
+
+  @override
+  String get matchExactMode => 'Puedo cocinarlo';
+
+  @override
+  String get matchNearMode => 'Me falta poco';
+
+  @override
+  String get matchResults => 'Recetas compatibles';
+
+  @override
+  String get matchInitial =>
+      'Añade los ingredientes que tienes ahora para buscar recetas.';
+
+  @override
+  String get matchEmpty =>
+      'No hay coincidencias con esta selección. Prueba a añadir otro ingrediente o cambia de modo.';
+
+  @override
+  String get matchNoBackend =>
+      'La búsqueda necesita una conexión configurada. No hay recetas de ejemplo.';
+
+  @override
+  String get matchLoading => 'Buscando…';
+
+  @override
+  String get matchMore => 'Ver más recetas';
+
+  @override
+  String get matchTimeUnknown => 'Tiempo no indicado';
+
+  @override
+  String matchStatus(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Te faltan $count ingredientes',
+      one: 'Te falta 1 ingrediente',
+      zero: 'Puedes prepararla',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String matchCounts(int matched, int required, int missing) {
+    return '$matched de $required obligatorios coinciden · $missing faltan';
+  }
+
+  @override
+  String matchMissingNames(String names) {
+    return 'Faltan: $names';
+  }
 }
 
 /// The translations for Spanish Castilian, as used in Spain (`es_ES`).

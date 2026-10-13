@@ -1,0 +1,27 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test_support/matching_local.dart
+00:00 +0: (setUpAll)
+00:00 +0: M07 M08 exact required subset, optional absent allowed
+00:00 +1: M09 exact excludes missing required ingredients
+00:00 +2: M10 missing one retains original identifier, ordinal, quantity and unit
+00:00 +3: M11 missing two never includes optional ingredients
+00:00 +4: M12 M13 three missing and no required overlap excluded
+00:00 +5: M14 near missing count precedes match count and time; stable repeat
+00:00 +6: M14 exact optional overlap precedes time; absent time goes last
+00:00 +7: M02 server resolves full explicit aliases and deduplicates canonical IDs
+00:00 +8: M06 no substring, semantic, ambiguous oil or milk/cream substitution
+00:00 +9: M16 free ingredient exact normalization, no partial/color substitution
+00:00 +10: M17 empty and optional-only recipes do not match universally
+00:00 +11: M18 required quantity never compared to home availability
+00:00 +12: M19 own private included for A and B
+00:00 +13: M20 M23 foreign private title, identifier, children and counts not exposed
+00:00 +14: M15 saved public references never duplicate recipes
+00:00 +15: M21 symmetric author block excludes matching and photo; C remains authorized
+00:01 +16: M22 saved marker cannot retain recipe/children/photo after privatization
+00:01 +17: M25 multiple pages have no duplicates across own/public/saved sources
+00:01 +18: M30 edits and deletion reconcile new matches while community still reads original
+00:01 +19: M33 server rejects excessive inputs, null, unknown UUID, invalid mode/limit/cursor
+00:01 +20: M33 anonymous RPC denied
+00:01 +21: M27 hybrid one-shot transport failure then real server recovery
+00:01 +22: M24 hybrid real response held during real B to C identity change is discarded
+00:01 +23: (tearDownAll)
+00:01 +23: All tests passed!

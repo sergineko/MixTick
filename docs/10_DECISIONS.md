@@ -27,3 +27,5 @@ Ningún prompt debe contradecir estas decisiones sin aprobación expresa del pro
 - **ADR-018 / Mi recetario:** agregado real/versionado, creación idempotente, fotografías privadas por referencia actual y cola diferida, estado aislado por cuenta y pruebas de servidor/Android separadas. [ADR-018](adr/018_MY_RECIPES.md).
 
 - **ADR-019 / Comunidad:** proyecciones invoker bajo RLS, referencias guardadas, cursor de publicación, búsqueda explícita, interacciones reconciliadas y comentarios idempotentes por actor. [ADR-019](adr/019_COMMUNITY.md).
+
+- **ADR-020 / ¿Qué cocino hoy?:** selección efímera y comparación de presencia en PostgreSQL bajo RLS, nombres/alias explícitos, faltantes tipados y paginación por ranking/UUID. [ADR-020](adr/020_COOK_TODAY.md).

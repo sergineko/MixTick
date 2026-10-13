@@ -1,0 +1,17 @@
+{
+  "name": "native-matching",
+  "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+  "arguments": [
+    "test",
+    "integration_test/matching_native_test.dart",
+    "-d",
+    "emulator-5554",
+    "--no-uninstall",
+    "--dart-define-from-file=.tooling/phase06-android.local.json",
+    "--reporter",
+    "expanded"
+  ],
+  "started_at": "2026-10-13T21:13:43.0809339+02:00",
+  "exit_code": 1,
+  "status": "FAIL"
+}

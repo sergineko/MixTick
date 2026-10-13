@@ -1,0 +1,7 @@
+{
+  "exit_code": 0,
+  "status": "PASS",
+  "ingredients": 18000,
+  "recipes": 6000,
+  "name": "matching-benchmark"
+}

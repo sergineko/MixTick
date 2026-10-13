@@ -1,0 +1,5 @@
+PASS: cancelled the actual Android Photo Picker
+PASS: selected the unique controlled image in the actual Android Photo Picker
+PASS: actual Android screenshot editor-gallery
+PASS: actual Android screenshot detail-light
+PASS: actual Android screenshot detail-dark

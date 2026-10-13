@@ -1,0 +1,28 @@
+ M README.md
+ M docs/06_MATCHING_ALGORITHM.md
+ M docs/10_DECISIONS.md
+ M docs/PROGRESS.md
+ M integration_test/README.md
+ M lib/app/localization/app_es.arb
+ M lib/app/localization/generated/app_localizations.dart
+ M lib/app/localization/generated/app_localizations_es.dart
+ M lib/features/cook_today/presentation/cook_today_page.dart
+ M supabase/README.md
+?? docs/19_COOK_TODAY.md
+?? docs/adr/020_COOK_TODAY.md
+?? docs/reports/PHASE_06_REPORT.md
+?? docs/reports/phase06/
+?? integration_test/matching_native_test.dart
+?? lib/features/cook_today/data/supabase_matching_repository.dart
+?? lib/features/cook_today/domain/matching.dart
+?? lib/features/cook_today/presentation/matching_providers.dart
+?? scripts/audit_local_matching_database.sql
+?? scripts/benchmark_matching.sql
+?? scripts/capture_matching_android.py
+?? scripts/cleanup_matching_fixtures.py
+?? scripts/verify_matching.ps1
+?? scripts/verify_native_matching.ps1
+?? supabase/migrations/20261013001000_cook_today_matching.sql
+?? supabase/tests/005_matching.test.sql
+?? test/cook_today/
+?? test_support/matching_local.dart

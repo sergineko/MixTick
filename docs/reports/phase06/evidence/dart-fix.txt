@@ -1,0 +1,13 @@
+Computing fixes in cook_today...
+Applying fixes...
+
+data\supabase_matching_repository.dart
+  curly_braces_in_flow_control_structures - 3 fixes
+
+presentation\cook_today_page.dart
+  curly_braces_in_flow_control_structures - 7 fixes
+
+presentation\matching_providers.dart
+  curly_braces_in_flow_control_structures - 4 fixes
+
+14 fixes made in 3 files.
