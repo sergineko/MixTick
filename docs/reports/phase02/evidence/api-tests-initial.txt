@@ -1,0 +1,96 @@
+test_01_private_public_private_including_all_relations (__main__.DatabaseApiTests.test_01_private_public_private_including_all_relations) ... ok
+test_02_nonowner_cannot_write_or_spoof_identity (__main__.DatabaseApiTests.test_02_nonowner_cannot_write_or_spoof_identity) ... ok
+test_03_recipe_create_update_roll_back_completely (__main__.DatabaseApiTests.test_03_recipe_create_update_roll_back_completely) ... ok
+test_04_acceptance_and_revocation_enforced_by_server (__main__.DatabaseApiTests.test_04_acceptance_and_revocation_enforced_by_server) ... FAIL
+test_05_recipient_only_and_concurrent_acceptance (__main__.DatabaseApiTests.test_05_recipient_only_and_concurrent_acceptance) ... FAIL
+test_06_duplicate_interactions_invites_and_foreign_keys (__main__.DatabaseApiTests.test_06_duplicate_interactions_invites_and_foreign_keys) ... FAIL
+test_07_concurrent_item_edits_require_matching_version (__main__.DatabaseApiTests.test_07_concurrent_item_edits_require_matching_version) ... FAIL
+test_08_import_idempotent_no_private_origin_leak (__main__.DatabaseApiTests.test_08_import_idempotent_no_private_origin_leak) ... FAIL
+test_09_import_invalid_selection_is_atomic (__main__.DatabaseApiTests.test_09_import_invalid_selection_is_atomic) ... FAIL
+test_10_catalog_uses_curated_ids_without_false_equivalence (__main__.DatabaseApiTests.test_10_catalog_uses_curated_ids_without_false_equivalence) ... ok
+test_11_storage_privacy_listing_upload_and_expiry (__main__.DatabaseApiTests.test_11_storage_privacy_listing_upload_and_expiry) ... ok
+test_12_anon_and_private_schema_denied (__main__.DatabaseApiTests.test_12_anon_and_private_schema_denied) ... ok
+test_13_cascades_delete_relationships_and_list_resources (__main__.DatabaseApiTests.test_13_cascades_delete_relationships_and_list_resources) ... FAIL
+test_14_block_and_report_validation (__main__.DatabaseApiTests.test_14_block_and_report_validation) ... ok
+
+======================================================================
+FAIL: test_04_acceptance_and_revocation_enforced_by_server (__main__.DatabaseApiTests.test_04_acceptance_and_revocation_enforced_by_server)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_database_api.py", line 204, in test_04_acceptance_and_revocation_enforced_by_server
+    list_id = self.shopping_list()
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_database_api.py", line 135, in shopping_list
+    self.assertEqual(code, 201)
+AssertionError: 403 != 201
+
+======================================================================
+FAIL: test_05_recipient_only_and_concurrent_acceptance (__main__.DatabaseApiTests.test_05_recipient_only_and_concurrent_acceptance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_database_api.py", line 226, in test_05_recipient_only_and_concurrent_acceptance
+    list_id = self.shopping_list()
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_database_api.py", line 135, in shopping_list
+    self.assertEqual(code, 201)
+AssertionError: 403 != 201
+
+======================================================================
+FAIL: test_06_duplicate_interactions_invites_and_foreign_keys (__main__.DatabaseApiTests.test_06_duplicate_interactions_invites_and_foreign_keys)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_database_api.py", line 247, in test_06_duplicate_interactions_invites_and_foreign_keys
+    list_id = self.shopping_list()
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_database_api.py", line 135, in shopping_list
+    self.assertEqual(code, 201)
+AssertionError: 403 != 201
+
+======================================================================
+FAIL: test_07_concurrent_item_edits_require_matching_version (__main__.DatabaseApiTests.test_07_concurrent_item_edits_require_matching_version)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_database_api.py", line 256, in test_07_concurrent_item_edits_require_matching_version
+    list_id = self.shopping_list()
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_database_api.py", line 135, in shopping_list
+    self.assertEqual(code, 201)
+AssertionError: 403 != 201
+
+======================================================================
+FAIL: test_08_import_idempotent_no_private_origin_leak (__main__.DatabaseApiTests.test_08_import_idempotent_no_private_origin_leak)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_database_api.py", line 270, in test_08_import_idempotent_no_private_origin_leak
+    list_id = self.shopping_list()
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_database_api.py", line 135, in shopping_list
+    self.assertEqual(code, 201)
+AssertionError: 403 != 201
+
+======================================================================
+FAIL: test_09_import_invalid_selection_is_atomic (__main__.DatabaseApiTests.test_09_import_invalid_selection_is_atomic)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_database_api.py", line 291, in test_09_import_invalid_selection_is_atomic
+    list_id = self.shopping_list()
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_database_api.py", line 135, in shopping_list
+    self.assertEqual(code, 201)
+AssertionError: 403 != 201
+
+======================================================================
+FAIL: test_13_cascades_delete_relationships_and_list_resources (__main__.DatabaseApiTests.test_13_cascades_delete_relationships_and_list_resources)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_database_api.py", line 353, in test_13_cascades_delete_relationships_and_list_resources
+    list_id = self.shopping_list()
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_database_api.py", line 135, in shopping_list
+    self.assertEqual(code, 201)
+AssertionError: 403 != 201
+
+----------------------------------------------------------------------
+Ran 14 tests in 6.539s
+
+FAILED (failures=7)

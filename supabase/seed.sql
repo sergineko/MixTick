@@ -1,2 +1,3 @@
--- Fase 01: sin esquema ni datos de negocio.
--- La semilla reproducible se implementará con autorización de la Fase 02.
+-- Local reset seed: the versioned catalog is in migration 20261013000500.
+-- Deliberately no accounts, recipes or lists in the seed. Tests create isolated
+-- fictitious Auth identities and clean them up. Never seed production users.

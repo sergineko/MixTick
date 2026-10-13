@@ -1,0 +1,79 @@
+[
+  {
+    "name": "cli-version",
+    "executable": "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe",
+    "arguments": [
+      "--version"
+    ],
+    "started_at": "2026-10-13T04:07:43.1622736+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "docker-version",
+    "executable": "docker",
+    "arguments": [
+      "version",
+      "--format",
+      "{{.Server.Version}}"
+    ],
+    "started_at": "2026-10-13T04:07:43.4092294+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "db-reset",
+    "executable": "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe",
+    "arguments": [
+      "db",
+      "reset",
+      "--local",
+      "--network-id",
+      "b19982ba9414278465857c0b14cf0dfeea11c68da24823533094ce2d91b86763"
+    ],
+    "started_at": "2026-10-13T04:07:43.7272201+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "sql-tests",
+    "executable": "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe",
+    "arguments": [
+      "test",
+      "db",
+      "--network-id",
+      "b19982ba9414278465857c0b14cf0dfeea11c68da24823533094ce2d91b86763"
+    ],
+    "started_at": "2026-10-13T04:08:13.2849350+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "db-lint",
+    "executable": "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe",
+    "arguments": [
+      "db",
+      "lint",
+      "--local",
+      "--level",
+      "warning",
+      "--network-id",
+      "b19982ba9414278465857c0b14cf0dfeea11c68da24823533094ce2d91b86763"
+    ],
+    "started_at": "2026-10-13T04:08:14.3979720+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "api-tests",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "arguments": [
+      "scripts/test_database_api.py",
+      "--cli",
+      "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe"
+    ],
+    "started_at": "2026-10-13T04:08:14.7026648+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  }
+]

@@ -1,0 +1,113 @@
+[
+  {
+    "name": "cli-version",
+    "executable": "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe",
+    "arguments": [
+      "--version"
+    ],
+    "started_at": "2026-10-13T04:04:04.623119+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "docker-version",
+    "executable": "docker",
+    "arguments": [
+      "version",
+      "--format",
+      "{{.Server.Version}}"
+    ],
+    "started_at": "2026-10-13T04:04:04.8756056+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "sql-tests",
+    "executable": "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe",
+    "arguments": [
+      "test",
+      "db",
+      "--network-id",
+      "b19982ba9414278465857c0b14cf0dfeea11c68da24823533094ce2d91b86763"
+    ],
+    "started_at": "2026-10-13T04:04:05.1998067+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "db-lint",
+    "executable": "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe",
+    "arguments": [
+      "db",
+      "lint",
+      "--local",
+      "--level",
+      "warning",
+      "--network-id",
+      "b19982ba9414278465857c0b14cf0dfeea11c68da24823533094ce2d91b86763"
+    ],
+    "started_at": "2026-10-13T04:04:06.333855+02:00",
+    "exit_code": 0,
+    "status": "FAIL",
+    "assessment_note": "CLI returned 0 with two warnings. Corrected and rerun; final db-lint.txt has an empty results array."
+  },
+  {
+    "name": "api-tests",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "arguments": [
+      "scripts/test_database_api.py",
+      "--cli",
+      "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe"
+    ],
+    "started_at": "2026-10-13T04:04:06.6341858+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "flutter-analyze",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "analyze"
+    ],
+    "started_at": "2026-10-13T04:04:13.8813672+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "flutter-test",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "--reporter",
+      "expanded"
+    ],
+    "started_at": "2026-10-13T04:04:23.9252609+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "format-check",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\dart.bat",
+    "arguments": [
+      "format",
+      "--output=none",
+      "--set-exit-if-changed",
+      "lib",
+      "test"
+    ],
+    "started_at": "2026-10-13T04:04:28.7647347+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "identifiers",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "arguments": [
+      "scripts/check_identifiers.py",
+      "--strict"
+    ],
+    "started_at": "2026-10-13T04:04:29.4639396+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  }
+]

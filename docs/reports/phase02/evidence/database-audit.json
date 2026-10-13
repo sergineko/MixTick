@@ -1,0 +1,23 @@
+{
+    "aliases": 74,
+    "migrations": [
+        "20261013000100",
+        "20261013000200",
+        "20261013000300",
+        "20261013000400",
+        "20261013000500",
+        "20261013000600"
+    ],
+    "ingredients": 50,
+    "public_tables": 16,
+    "private_tables": 3,
+    "postgres_version": "17.11",
+    "lists_after_cleanup": 0,
+    "recipes_after_cleanup": 0,
+    "profiles_after_cleanup": 0,
+    "auth_users_after_cleanup": 0,
+    "cleanup_queue_after_tests": 0,
+    "import_ledger_after_cleanup": 0,
+    "quota_windows_after_cleanup": 0,
+    "recipe_objects_after_cleanup": 0
+}

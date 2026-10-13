@@ -1,13 +1,13 @@
 # MixTick
 
-Base Flutter Android/iOS de la Fase 01. Nombre técnico `mixtick`, organización
+Base Flutter Android/iOS de la Fase 01 y backend SQL local de la Fase 02. Nombre técnico `mixtick`, organización
 `es.sergiotech` e identificador fijo `es.sergiotech.mixtick` para ambas plataformas.
 El nombre comercial MixTick sigue pendiente de validación legal/comercial.
 
 La base incluye Riverpod, GoRouter, configuración opcional de Supabase, cuatro
 pestañas protegidas, perfil como soporte, temas claro/oscuro y español `es_ES`.
 Las pantallas de los módulos indican «Próximamente». No hay CRUD, datos de
-negocio, login ficticio ni backend provisionado. El acceso real se implementará
+negocio en la app ni login ficticio. Hay esquema SQL probado localmente, sin backend remoto provisionado. El acceso real se implementará
 en su fase autorizada.
 
 ## Entorno
@@ -81,8 +81,10 @@ binario: solo deben contener configuración pública.
 
 La validación local es sintáctica; inicializar el SDK no verifica una conexión
 ni sustituye las políticas del servidor. En Fase 01 no se implementa inicio de
-sesión, registro, recuperación ni consultas a tablas. RLS, Storage privado,
-Realtime y pruebas con usuarios reales corresponden a las fases posteriores.
+sesión, registro, recuperación ni consultas a tablas. RLS y Storage se han probado en Fase 02 con Auth, PostgREST y Storage locales y
+cuentas reales A/B/C. Realtime tiene configuración SQL preparada; clientes y
+reconexión quedan pendientes. Ver [backend](supabase/README.md) para reproducir
+las migraciones y pruebas sin modificar Supabase remoto.
 
 ## Estructura
 
@@ -98,7 +100,7 @@ lib/
     cook_today/    ¿Qué cocino hoy?
     shopping/      Lista de compra
   shared/          Modelos y widgets compartidos
-supabase/          Estructura reservada; sin migraciones ni datos ejecutados
+supabase/          Seis migraciones, catálogo, RLS, Storage privado y tests reales
 assets/            Imágenes e iconos futuros
 integration_test/  Pendiente de flujos reales y entorno de dispositivo
 scripts/           Verificador de identificadores y checks de Foundation
@@ -124,15 +126,15 @@ no son capturas de dispositivos ni conexiones externas.
 
 ## Estado y siguientes pasos
 
-Consulta `docs/PROGRESS.md`, `docs/reports/PHASE_01_REPORT.md` y
-`docs/adr/015_FOUNDATION.md` para resultados, alcance y limitaciones.
+Consulta `docs/PROGRESS.md`, `docs/reports/PHASE_01_REPORT.md`,
+`docs/reports/PHASE_02_REPORT.md` y `docs/adr/` para resultados y limitaciones.
 
-Solo está autorizada la Fase 01. La Fase 02 requiere revisión y autorización
+Las Fases 01 y 02 están implementadas. La Fase 03 requiere revisión y autorización
 expresa del propietario.
-El propietario ha autorizado posteriormente el commit y push del estado actual
-a [sergineko/MixTick](https://github.com/sergineko/MixTick). Esta autorización
-solo corresponde a publicar el código y la documentación en GitHub; la Fase 02
-y los despliegues siguen sin autorizar. El informe de Fase 01 conserva el
-estado histórico al finalizar la implementación.
+El propietario autorizó el commit y push del estado de Fase 01
+a [sergineko/MixTick](https://github.com/sergineko/MixTick) y, posteriormente,
+el commit y push del estado actual de Fase 02 el 2026-10-13. No hay autorización
+de despliegue ni de Fase 03. Los informes conservan el estado histórico al
+finalizar cada implementación, previo a su autorización de GitHub.
 Los documentos, manifiesto y checksums del paquete original se conservan como
 referencia; los checksums originales no describen el proyecto modificado.

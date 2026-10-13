@@ -19,3 +19,5 @@ Ningún prompt debe contradecir estas decisiones sin aprobación expresa del pro
 - **ADR-014 / Identificador técnico obligatorio:** prefijo global Sergiotech `es.sergiotech.`; para MixTick: Android `applicationId`/`namespace` e iOS bundle ID = `es.sergiotech.mixtick`. Proyecto Flutter `mixtick` y organización `es.sergiotech`. Esta regla prevalece sobre placeholders, plantillas o ejemplos de Flutter. No renombrar los identificadores tras la creación sin decisión explícita del propietario.
 
 - **ADR-015 / Foundation:** entorno estable verificado, navegación protegida de cuatro pestañas, cliente Supabase opcional con configuración pública, localización `es_ES` y pruebas reproducibles. Alcance y limitaciones en [ADR-015](adr/015_FOUNDATION.md).
+
+- **ADR-016 / Base de datos y seguridad:** esquema, RLS, Storage privado, RPC atómicas, control de versiones, catálogo canónico e idempotencia, probados en Supabase local con A/B/C. Detalles y límites en [ADR-016](adr/016_DATABASE_SECURITY.md).

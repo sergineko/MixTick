@@ -1,0 +1,2 @@
+PASS PowerShell syntax: scripts/verify_database.ps1
+PASS PowerShell syntax: scripts/install_supabase_cli.ps1

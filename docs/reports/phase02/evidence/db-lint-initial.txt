@@ -1,0 +1,5 @@
+Connecting to local database...
+Linting schema: extensions
+Linting schema: private
+Linting schema: public
+{"results":[{"function":"private.invite_to_list","issues":[{"level":"warning extra","message":"never read variable \"v_list\"","sqlState":"00000"}]},{"function":"private.import_recipe_ingredients","issues":[{"level":"warning","message":"target type is different type than source type","statement":{"lineNumber":"4","text":"statement block"},"hint":"The input expression type does not have an assignment cast to the target type.","detail":"cast \"text\" value to \"uuid[]\" type","context":"during statement block local variable \"v_ids\" initialization on line 2","sqlState":"42804"}]}],"message":"db lint"}

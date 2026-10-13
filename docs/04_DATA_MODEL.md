@@ -1,6 +1,10 @@
-# Modelo de datos conceptual (fase 2 lo implementará como SQL real)
+# Modelo de datos — especificación y esquema SQL
 
-**Esta es una especificación, no una migración SQL ejecutable.** Toda tabla expuesta debe habilitar RLS.
+La especificación conceptual se conserva a continuación. La Fase 02 la implementa
+en seis migraciones SQL de `supabase/migrations/`. Toda tabla de producto expuesta
+y toda tabla técnica tiene RLS activada. Véase [esquema implementado](14_DATABASE_IMPLEMENTATION.md)
+para columnas definitivas, RPC, grants, cascadas y límites; las migraciones son
+la fuente ejecutable. La evidencia local está en el [informe de Fase 02](reports/PHASE_02_REPORT.md).
 
 | Tabla | Campos de referencia | Restricción crucial |
 |---|---|---|
