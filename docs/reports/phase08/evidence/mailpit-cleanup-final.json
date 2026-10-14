@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "scoped_native_messages_removed": 1,
+  "remaining_messages": 0,
+  "scope": "Exact recipient from current native recovery marker only; no credential, callback or email in evidence"
+}

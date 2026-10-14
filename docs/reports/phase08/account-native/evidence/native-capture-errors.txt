@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\capture_release_account.py", line 32, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\capture_release_account.py", line 29, in main
+    if 'Some tests failed' in log or 'Test failed' in log:raise RuntimeError('Native test failed')
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Native test failed

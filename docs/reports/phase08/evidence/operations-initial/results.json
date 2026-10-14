@@ -1,0 +1,14 @@
+[
+  {
+    "id": "S01",
+    "title": "ordinary user/anon cannot consume jobs or invoke administrative deletion",
+    "status": "PASS",
+    "ms": 50.846
+  },
+  {
+    "id": "F11",
+    "title": "queued job is physically present; pre-grace worker preserves it",
+    "status": "FAIL",
+    "failure_type": "CalledProcessError"
+  }
+]

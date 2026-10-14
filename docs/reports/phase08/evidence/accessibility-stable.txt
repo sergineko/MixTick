@@ -1,0 +1,51 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test/release/account_deletion_test.dart
+00:00 +0: D01 explicit consequences/list confirmation/password required (UI mock)
+00:00 +1: D10 retry after ambiguous failure preserves request and credentials (UI mock)
+00:01 +2: D12 late acceptance from A must not sign out B or retain fields (UI mock)
+00:01 +3: Account deletion 320x640 text200 Brightness.dark (UI mock)
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+A SemanticsHandle was active at the end of the test.
+All SemanticsHandle instances must be disposed by calling dispose() on the SemanticsHandle.
+
+When the exception was thrown, this was the stack:
+#0      WidgetTester._verifySemanticsHandlesWereDisposed (package:flutter_test/src/widget_tester.dart:1074:7)
+#1      WidgetTester._endOfTestVerifications (package:flutter_test/src/widget_tester.dart:1063:5)
+#2      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1969:22)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  Account deletion 320x640 text200 Brightness.dark (UI mock)
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:01 +3 -1: Account deletion 320x640 text200 Brightness.dark (UI mock) [E]
+  Test failed. See exception logs above.
+  The test description was: Account deletion 320x640 text200 Brightness.dark (UI mock)
+  
+00:01 +3 -1: Account deletion 320x640 text200 Brightness.light (UI mock)
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+A SemanticsHandle was active at the end of the test.
+All SemanticsHandle instances must be disposed by calling dispose() on the SemanticsHandle.
+
+When the exception was thrown, this was the stack:
+#0      WidgetTester._verifySemanticsHandlesWereDisposed (package:flutter_test/src/widget_tester.dart:1074:7)
+#1      WidgetTester._endOfTestVerifications (package:flutter_test/src/widget_tester.dart:1063:5)
+#2      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1969:22)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  Account deletion 320x640 text200 Brightness.light (UI mock)
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:01 +3 -2: Account deletion 320x640 text200 Brightness.light (UI mock) [E]
+  Test failed. See exception logs above.
+  The test description was: Account deletion 320x640 text200 Brightness.light (UI mock)
+  
+00:01 +3 -2: Some tests failed.
+
+Failing tests:
+  C:/Users/Sergio/Desktop/Proyectos/MixTick/test/release/account_deletion_test.dart: Account deletion 320x640 text200 Brightness.dark (UI mock)
+  C:/Users/Sergio/Desktop/Proyectos/MixTick/test/release/account_deletion_test.dart: Account deletion 320x640 text200 Brightness.light (UI mock)

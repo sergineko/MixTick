@@ -1,0 +1,11 @@
+{
+  "owned_emulator": "Pixel_10a",
+  "docker_global_stopped": false,
+  "emulator_stop_exit": 0,
+  "project_port_listeners": 0,
+  "night_mode_before_stop": "Night mode: no",
+  "project": "mixtick-phase02",
+  "status": "PASS",
+  "owned_function_processes_stopped": 0,
+  "running_project_containers": 0
+}

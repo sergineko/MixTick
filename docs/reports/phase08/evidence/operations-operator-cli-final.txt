@@ -1,0 +1,36 @@
+S01: PASS � ordinary user/anon cannot consume jobs or invoke administrative deletion
+F11: PASS � queued job is physically present; pre-grace worker preserves it
+F01: PASS � eligible unreferenced photo physically removed through server worker
+F02: PASS � current active reference survives an eligible poison job
+F03: PASS � reappearing reference preserved; link after committed deletion fence rejected
+F04: PASS � replacement retires old physical file and preserves the new one
+F05: PASS � recipe deletion queues and physically removes its folder image
+F06: PASS � removed avatar physically deleted by the same worker
+F07: PASS � expired abandoned lease recovered; stale completion cannot overwrite newer result
+F08: PASS � independent concurrent claimers obtain exactly one lease
+F09: PASS � path traversal and forged queue owner fail closed, without crossed removal
+F10: PASS � real Storage outage retries five times, dead-letters, then explicitly recovers
+F07b: PASS � already absent object completes idempotently without losing the job
+F12: PASS � unrelated active B file survives every worker scenario
+D02: PASS � foreign UID, wrong password and unconfirmed owned-list policy rejected
+D01a: PASS � authenticated reauthentication accepts one durable self-deletion request
+D04: PASS � private recipe and profile withdrawn atomically before physical cleanup
+D06-D07: PASS � old JWT loses memberships/invitations and cannot recreate a profile
+D08: PASS � owned shared list/products removed while foreign list remains
+D10: PASS � real Auth outage after acceptance reconciles without crossed deletion
+D05: PASS � recipe photograph and avatar physically absent after account worker
+D03: PASS � refresh and live Auth validation fail; unexpired JWT cannot read app rows
+D09: PASS � B identity/private content and other owned list untouched
+D11: PASS � personal product rows removed; only private minimized thirty-day operation trace remains
+D01: PASS � Auth identity permanently removed by product server operation
+D13: PASS � concurrent real upload and deletion leave no orphan or revived account
+O01: PASS � ordinary account and forged user metadata cannot administer reports
+O02: PASS � authorized report listing redacts private contents and reporter identity
+O07: PASS � real operator CLI lists redacted reports, acts with audit and denies ordinary JWT
+O03: PASS � operator action audited; author cannot bypass hide; authorized restore stays explicit
+O04: PASS � moderation removes only the reported comment and records action
+O05: PASS � reported profile restriction prevents participation; only operator can restore
+O06: PASS � operator state conflicts and unbounded reads rejected
+S02: PASS � active foreign photo still intact after account deletion and moderation tests
+PASS: scoped fixture teardown completed; not product evidence
+PASS: 34 real local operation cases

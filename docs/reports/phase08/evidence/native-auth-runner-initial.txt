@@ -1,0 +1,4 @@
+PASS: explicit loopback bindings/listeners; 18 other-interface probes, 0 connections
+Stopped services: [supabase_imgproxy_mixtick-phase02 supabase_pg_meta_mixtick-phase02 supabase_studio_mixtick-phase02 supabase_analytics_mixtick-phase02 supabase_vector_mixtick-phase02 supabase_pooler_mixtick-phase02]
+native-seed : exit=0
+native-restore : exit=0

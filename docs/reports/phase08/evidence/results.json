@@ -1,0 +1,62 @@
+[
+  {
+    "name": "gen-l10n",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "gen-l10n"
+    ],
+    "started_at": "2026-10-14T17:16:35.8247035+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "flutter-analyze",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "analyze"
+    ],
+    "started_at": "2026-10-14T17:16:37.1120642+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "flutter-test",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "--reporter",
+      "expanded"
+    ],
+    "started_at": "2026-10-14T17:16:47.1412418+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "format-check",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\dart.bat",
+    "arguments": [
+      "format",
+      "--output=none",
+      "--set-exit-if-changed",
+      "lib",
+      "test",
+      "test_support",
+      "integration_test",
+      "scripts/loopback_docker.dart"
+    ],
+    "started_at": "2026-10-14T17:16:56.7597011+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "identifiers",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "arguments": [
+      "scripts/check_identifiers.py",
+      "--strict"
+    ],
+    "started_at": "2026-10-14T17:16:57.6760183+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  }
+]

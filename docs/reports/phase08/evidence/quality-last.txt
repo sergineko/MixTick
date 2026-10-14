@@ -1,0 +1,4 @@
+gen-l10n : PASS (exit=0)
+flutter-analyze : PASS (exit=0)
+flutter-test : PASS (exit=0)
+format-check : FAIL (exit=1)

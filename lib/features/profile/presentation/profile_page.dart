@@ -118,6 +118,14 @@ class ProfilePage extends ConsumerWidget {
                             action.busy ? strings.processing : strings.signOut,
                           ),
                         ),
+                        TextButton.icon(
+                          key: const ValueKey('account-deletion'),
+                          onPressed: action.busy
+                              ? null
+                              : () => context.push('/account/delete'),
+                          icon: const Icon(Icons.delete_forever_outlined),
+                          label: Text(strings.deleteAccount),
+                        ),
                         if (action.failure != null)
                           Text(authFailureMessage(strings, action.failure!)),
                       ],

@@ -1,0 +1,1 @@
+{"applied":["C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\supabase\\migrations\\20261014001200_matching_rls_sets.sql"],"message":"Migrations applied"}

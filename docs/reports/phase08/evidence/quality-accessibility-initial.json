@@ -1,0 +1,34 @@
+[
+  {
+    "name": "gen-l10n",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "gen-l10n"
+    ],
+    "started_at": "2026-10-14T17:01:37.2510550+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "flutter-analyze",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "analyze"
+    ],
+    "started_at": "2026-10-14T17:01:38.2274785+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "flutter-test",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "--reporter",
+      "expanded"
+    ],
+    "started_at": "2026-10-14T17:01:43.2903110+02:00",
+    "exit_code": 1,
+    "status": "FAIL"
+  }
+]

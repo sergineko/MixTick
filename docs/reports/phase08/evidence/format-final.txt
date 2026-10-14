@@ -1,0 +1,3 @@
+Formatted test\release\public_build_test.dart
+Formatted test_support/release_e2e_local.dart
+Formatted 97 files (2 changed) in 0.39 seconds.

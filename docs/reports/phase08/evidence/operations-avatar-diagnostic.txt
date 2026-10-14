@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_release_operations.py", line 328, in <module>
+    suite=Suite(args.label)
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_release_operations.py", line 26, in __init__
+    status = json.loads(subprocess.run([str(ROOT/'.tooling/supabase/supabase.exe'),'status','-o','json'],cwd=ROOT,env=dict(os.environ,DO_NOT_TRACK='1'),capture_output=True,text=True,check=True).stdout)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sergio\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe', 'status', '-o', 'json']' returned non-zero exit status 1.

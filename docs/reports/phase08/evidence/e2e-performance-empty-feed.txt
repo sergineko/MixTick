@@ -1,0 +1,32 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test_support/release_e2e_local.dart
+00:00 +0: (setUpAll)
+00:00 +0: X01 complete four-module E2E with image, concurrent edits, revoke and real account worker
+P8_E2E:{"step":1,"status":"PASS","name":"A/B/C register through real GoTrue"}
+P8_E2E:{"step":2,"status":"PASS","name":"new recipe private and foreign UUID denied"}
+P8_E2E:{"step":3,"status":"PASS","name":"original ingredient quantities and processed photo persisted"}
+P8_E2E:{"step":4,"status":"PASS","name":"A explicitly publishes"}
+P8_E2E:{"step":5,"status":"PASS","name":"B finds original in Community"}
+P8_E2E:{"step":6,"status":"PASS","name":"B saves reference"}
+P8_E2E:{"step":7,"status":"PASS","name":"B searches cook-today through server"}
+P8_E2E:{"step":8,"status":"PASS","name":"selection resolves full Huevos alias"}
+P8_E2E:{"step":9,"status":"PASS","name":"one mandatory missing with original 0.5 kg"}
+P8_E2E:{"step":10,"status":"PASS","name":"B creates owned list"}
+P8_E2E:{"step":11,"status":"PASS","name":"explicit invitation to A"}
+P8_E2E:{"step":12,"status":"PASS","name":"A accepts; C still unauthorized"}
+P8_E2E:{"step":13,"status":"PASS","name":"B confirms checked missing-only import"}
+P8_E2E:{"step":14,"status":"PASS","name":"independent A socket sees imported line"}
+P8_E2E:{"step":15,"status":"PASS","name":"A marks purchased"}
+P8_E2E:{"step":16,"status":"PASS","name":"independent B socket and read see purchased"}
+P8_E2E:{"step":17,"status":"PASS","name":"two sessions edit identical expected version"}
+P8_E2E:{"step":18,"status":"PASS","name":"one winner and one explicit conflict, no silent overwrite"}
+P8_E2E:{"step":19,"status":"PASS","name":"B withdraws its own recipe and direct C access disappears"}
+P8_E2E:{"step":20,"status":"PASS","name":"owner B revokes A"}
+P8_E2E:{"step":21,"status":"PASS","name":"old JWT and old invitation cannot recover list"}
+P8_E2E:{"step":22,"status":"PASS","name":"A requests authenticated self-deletion"}
+P8_E2E:{"step":23,"status":"PASS","name":"worker deletes physical photo/Auth; foreign list survives and local session closes"}
+00:04 +1: Realtime full-list deletion: real socket + authoritative 15s probe clears state/channel without extra subscriptions
+P8_REALTIME:full_list_delete real RLS probe <=20s; one channel; snapshot reads=5; hide_ms=14358
+00:19 +2: P8 repeated real HTTP + parsing and image isolate performance, not device UI
+P8_PERFORMANCE:20 measured samples + 1 excluded warmup per operation; general-performance.json
+00:23 +3: (tearDownAll)
+00:23 +3: All tests passed!

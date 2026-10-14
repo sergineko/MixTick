@@ -1,0 +1,21 @@
+S01: PASS � ordinary user/anon cannot consume jobs or invoke administrative deletion
+F11: FAIL (CalledProcessError; no sensitive payload)
+PASS: scoped fixture teardown completed; not product evidence
+Traceback (most recent call last):
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_release_operations.py", line 326, in <module>
+    try:run(suite)
+        ^^^^^^^^^^
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_release_operations.py", line 144, in run
+    s.case('F11','queued job is physically present; pre-grace worker preserves it',queued)
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_release_operations.py", line 86, in case
+    try: fn(); result={'id':id,'title':title,'status':'PASS','ms':round((time.perf_counter()-started)*1000,3)}
+         ^^^^
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_release_operations.py", line 142, in queued
+    assert s.state(orphan)=='queued';assert s.exists('recipe-photos',orphan);assert s.physical('recipe-photos',orphan)>0
+                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_release_operations.py", line 81, in physical
+    run=subprocess.run(['docker','exec','supabase_storage_mixtick-phase02','find','/var/lib/storage','-type','f'],capture_output=True,text=True,check=True)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sergio\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['docker', 'exec', 'supabase_storage_mixtick-phase02', 'find', '/var/lib/storage', '-type', 'f']' returned non-zero exit status 1.

@@ -1,0 +1,9 @@
+/Users/Sergio/Desktop/Proyectos/MixTick/supabase/tests/001_structure.test.sql ........ ok
+/Users/Sergio/Desktop/Proyectos/MixTick/supabase/tests/002_profile_storage.test.sql .. ok
+/Users/Sergio/Desktop/Proyectos/MixTick/supabase/tests/003_recipe_editor.test.sql .... ok
+/Users/Sergio/Desktop/Proyectos/MixTick/supabase/tests/004_community.test.sql ........ ok
+/Users/Sergio/Desktop/Proyectos/MixTick/supabase/tests/005_matching.test.sql ......... ok
+/Users/Sergio/Desktop/Proyectos/MixTick/supabase/tests/006_shopping.test.sql ......... ok
+All tests successful.
+Files=6, Tests=84,  0 wallclock secs ( 0.03 usr  0.00 sys +  0.02 cusr  0.01 csys =  0.06 CPU)
+Result: PASS

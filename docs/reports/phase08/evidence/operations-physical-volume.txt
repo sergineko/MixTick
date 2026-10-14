@@ -1,0 +1,21 @@
+S01: PASS — ordinary user/anon cannot consume jobs or invoke administrative deletion
+F11: PASS — queued job is physically present; pre-grace worker preserves it
+F01: PASS — eligible unreferenced photo physically removed through server worker
+F02: PASS — current active reference survives an eligible poison job
+F03: PASS — reappearing reference preserved; link after committed deletion fence rejected
+F04: PASS — replacement retires old physical file and preserves the new one
+F05: PASS — recipe deletion queues and physically removes its folder image
+PASS: scoped fixture teardown completed; not product evidence
+Traceback (most recent call last):
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_release_operations.py", line 326, in <module>
+    try:run(suite)
+        ^^^^^^^^^^
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_release_operations.py", line 169, in run
+    avatar=s.photo('a',bucket='profile-avatars')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_release_operations.py", line 70, in photo
+    self.expect_http('POST','/storage/v1/object/'+bucket+'/'+path,user,raw=PNG)
+  File "C:\Users\Sergio\Desktop\Proyectos\MixTick\scripts\test_release_operations.py", line 52, in expect_http
+    if code not in codes: raise AssertionError(f'Unexpected HTTP {code}; expected {codes}; payload redacted')
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Unexpected HTTP 400; expected (200, 204); payload redacted

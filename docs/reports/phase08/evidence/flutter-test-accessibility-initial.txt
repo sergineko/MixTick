@@ -1,0 +1,202 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart
+00:00 +0: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: (setUpAll)
+00:00 +0: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/auth/auth_profile_test.dart: A02/A03 validación local rechaza email, espacios y contraseña débil
+00:00 +1: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +3: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +4: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +5: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +6: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +7: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +8: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +9: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +10: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +11: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +12: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:00 +13: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +14: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +15: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +16: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +17: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +18: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +19: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +20: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +21: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +22: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +23: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +24: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +25: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +26: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +27: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +28: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +29: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/app/foundation_test.dart: Exactamente cuatro pestañas navegan y perfil no añade otra
+00:01 +30: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M26 pending ingredient resolution preserves newer typed text and keyboard focus (mock)
+00:02 +31: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +32: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +33: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +34: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +35: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +36: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +37: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +38: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +39: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +40: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +41: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +42: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +43: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +44: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +45: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +46: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +47: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +48: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +49: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +50: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +51: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +52: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +53: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +54: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +55: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:02 +56: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:03 +57: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:03 +58: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:03 +59: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:03 +60: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:03 +61: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:03 +62: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R01 R02 R03 editor saves canonical recipe privately (UI mock)
+00:03 +63: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/shopping/shopping_test.dart: L48 reload retries an initial failed read (mock)
+00:03 +64: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C28 failed request hides rows and retry recovers (mock)
+00:03 +65: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C28 failed request hides rows and retry recovers (mock)
+00:03 +66: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C28 failed request hides rows and retry recovers (mock)
+00:03 +67: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C28 failed request hides rows and retry recovers (mock)
+00:03 +68: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C28 failed request hides rows and retry recovers (mock)
+00:03 +69: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C28 failed request hides rows and retry recovers (mock)
+00:03 +70: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C28 failed request hides rows and retry recovers (mock)
+00:03 +71: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C28 failed request hides rows and retry recovers (mock)
+00:03 +72: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R16 draft survives recoverable network failure (UI mock)
+00:03 +73: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R16 draft survives recoverable network failure (UI mock)
+00:03 +74: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R16 draft survives recoverable network failure (UI mock)
+00:03 +75: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R16 draft survives recoverable network failure (UI mock)
+00:04 +75: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/release/account_deletion_test.dart: Account deletion 320x640 text200 Brightness.dark (UI mock)
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: Text contrast should follow WCAG guidelines
+  Actual: <Instance of 'WidgetTester'>
+   Which: SemanticsNode#22(Rect.fromLTRB(0.0, 0.0, 272.0, 152.0), actions: [tap], flags: [isButton,
+hasEnabledState, isEnabled], label: "Eliminar cuenta", textDirection: ltr):
+          Expected contrast ratio of at least 4.5 but found 1.10 for a font size of 14.0.
+          The computed colors was:
+          light - Color(alpha: 1.0000, red: 0.9490, green: 0.7765, blue: 0.7490, colorSpace:
+ColorSpace.sRGB), dark - Color(alpha: 1.0000, red: 1.0000, green: 0.7059, blue: 0.6706, colorSpace:
+ColorSpace.sRGB)
+          See also: https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html
+
+When the exception was thrown, this was the stack:
+#0      fail (package:matcher/src/expect/expect.dart:187:31)
+#1      _expect.<anonymous closure> (package:matcher/src/expect/expect.dart:155:13)
+<asynchronous suspension>
+<asynchronous suspension>
+#8      expectLater.<anonymous closure> (package:flutter_test/src/widget_tester.dart:508:19)
+<asynchronous suspension>
+#9      main.<anonymous closure> (file:///C:/Users/Sergio/Desktop/Proyectos/MixTick/test/release/account_deletion_test.dart:198:7)
+<asynchronous suspension>
+#10     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#11     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 7 frames from dart:async and package:stack_trace)
+
+The test description was:
+  Account deletion 320x640 text200 Brightness.dark (UI mock)
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:04 +75 -1: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R16 draft survives recoverable network failure (UI mock)
+00:04 +75 -1: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/release/account_deletion_test.dart: Account deletion 320x640 text200 Brightness.dark (UI mock) [E]
+  Test failed. See exception logs above.
+  The test description was: Account deletion 320x640 text200 Brightness.dark (UI mock)
+  
+00:04 +76 -1: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M10 M28 full/near modes and original detail navigation (mock)
+00:04 +77 -1: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/shopping/shopping_test.dart: L04 own list deletion requires confirmation; cancelling preserves it (mock)
+00:04 +78 -1: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/shopping/shopping_test.dart: L04 own list deletion requires confirmation; cancelling preserves it (mock)
+00:04 +79 -1: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C08 failed nonoptimistic write revalidates actual totals (mock)
+00:04 +80 -1: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C08 failed nonoptimistic write revalidates actual totals (mock)
+00:04 +81 -1: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C08 failed nonoptimistic write revalidates actual totals (mock)
+00:04 +81 -1: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/release/account_deletion_test.dart: Account deletion 320x640 text200 Brightness.light (UI mock)
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: Text contrast should follow WCAG guidelines
+  Actual: <Instance of 'WidgetTester'>
+   Which: SemanticsNode#22(Rect.fromLTRB(0.0, 0.0, 272.0, 152.0), actions: [tap], flags: [isButton,
+hasEnabledState, isEnabled], label: "Eliminar cuenta", textDirection: ltr):
+          Expected contrast ratio of at least 4.5 but found 1.60 for a font size of 14.0.
+          The computed colors was:
+          light - Color(alpha: 1.0000, red: 0.7294, green: 0.1020, blue: 0.1020, colorSpace:
+ColorSpace.sRGB), dark - Color(alpha: 1.0000, red: 0.4863, green: 0.1059, blue: 0.1020, colorSpace:
+ColorSpace.sRGB)
+          See also: https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html
+
+When the exception was thrown, this was the stack:
+#0      fail (package:matcher/src/expect/expect.dart:187:31)
+#1      _expect.<anonymous closure> (package:matcher/src/expect/expect.dart:155:13)
+<asynchronous suspension>
+<asynchronous suspension>
+#8      expectLater.<anonymous closure> (package:flutter_test/src/widget_tester.dart:508:19)
+<asynchronous suspension>
+#9      main.<anonymous closure> (file:///C:/Users/Sergio/Desktop/Proyectos/MixTick/test/release/account_deletion_test.dart:198:7)
+<asynchronous suspension>
+#10     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#11     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 7 frames from dart:async and package:stack_trace)
+
+The test description was:
+  Account deletion 320x640 text200 Brightness.light (UI mock)
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:04 +81 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C08 failed nonoptimistic write revalidates actual totals (mock)
+00:04 +81 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/release/account_deletion_test.dart: Account deletion 320x640 text200 Brightness.light (UI mock) [E]
+  Test failed. See exception logs above.
+  The test description was: Account deletion 320x640 text200 Brightness.light (UI mock)
+  
+00:04 +82 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C08 failed nonoptimistic write revalidates actual totals (mock)
+00:04 +83 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C08 failed nonoptimistic write revalidates actual totals (mock)
+00:04 +84 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C08 failed nonoptimistic write revalidates actual totals (mock)
+00:04 +85 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C08 failed nonoptimistic write revalidates actual totals (mock)
+00:04 +86 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M25 pagination deduplicates overlapping server IDs (mock)
+00:04 +87 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M25 pagination deduplicates overlapping server IDs (mock)
+00:04 +88 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R18 conflict retains local title and offers reload (UI mock)
+00:04 +89 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R18 conflict retains local title and offers reload (UI mock)
+00:04 +90 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/shopping/shopping_test.dart: L48 quick draft survives network failure, exact retry keeps request UUID (mock)
+00:05 +91 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/shopping/shopping_test.dart: L48 quick draft survives network failure, exact retry keeps request UUID (mock)
+00:05 +92 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/shopping/shopping_test.dart: L48 quick draft survives network failure, exact retry keeps request UUID (mock)
+00:05 +93 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R19 change of authenticated account discards form (UI mock)
+00:05 +94 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M29 selection shared only within cook screen, other four routes retained (mock)
+00:05 +95 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M29 selection shared only within cook screen, other four routes retained (mock)
+00:05 +96 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M29 selection shared only within cook screen, other four routes retained (mock)
+00:05 +97 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M29 selection shared only within cook screen, other four routes retained (mock)
+00:05 +98 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M29 selection shared only within cook screen, other four routes retained (mock)
+00:05 +99 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M29 selection shared only within cook screen, other four routes retained (mock)
+00:05 +100 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M29 selection shared only within cook screen, other four routes retained (mock)
+00:05 +101 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/shopping/shopping_test.dart: L27 session switch closes stream and drops draft/modal (mock)
+00:05 +102 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R12 filtering and saved section contains no fake saved recipes
+00:05 +103 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R12 filtering and saved section contains no fake saved recipes
+00:05 +104 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R12 filtering and saved section contains no fake saved recipes
+00:05 +105 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R12 filtering and saved section contains no fake saved recipes
+00:05 +106 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C31 social cards and saved tabs at 200% on 320x640 Brightness.dark (mock)
+00:06 +107 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C31 social cards and saved tabs at 200% on 320x640 Brightness.dark (mock)
+00:06 +108 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/shopping/shopping_test.dart: L41/48 shopping accessible 320px 200% light (mock)
+00:06 +109 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/cook_today/matching_test.dart: M34 small 320x640 and 200% selection/results/keyboard Brightness.light (mock)
+00:06 +110 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: Recipe editor 320x640 at 200% Brightness.dark
+00:06 +111 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C31 social cards and saved tabs at 200% on 320x640 Brightness.light (mock)
+00:06 +112 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C31 social cards and saved tabs at 200% on 320x640 Brightness.light (mock)
+00:06 +113 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C31 social cards and saved tabs at 200% on 320x640 Brightness.light (mock)
+00:06 +114 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/community/community_test.dart: C31 social cards and saved tabs at 200% on 320x640 Brightness.light (mock)
+00:06 +115 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R17 retry lost creation response edits one recipe (controller mock)
+00:06 +116 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: Double submission blocked until operation finishes (controller mock)
+00:06 +117 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R15 photo failure preserves text and original reference (controller mock)
+00:06 +118 -2: C:/Users/Sergio/Desktop/Proyectos/MixTick/test/recipes/recipe_test.dart: R15 cancellation waits upload and never links it (controller mock)
+00:06 +119 -2: Some tests failed.
+
+Failing tests:
+  C:/Users/Sergio/Desktop/Proyectos/MixTick/test/release/account_deletion_test.dart: Account deletion 320x640 text200 Brightness.dark (UI mock)
+  C:/Users/Sergio/Desktop/Proyectos/MixTick/test/release/account_deletion_test.dart: Account deletion 320x640 text200 Brightness.light (UI mock)

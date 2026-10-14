@@ -1,0 +1,21 @@
+{
+  "docker_version": "29.8.1",
+  "docker_bindings": "127.0.0.1 only",
+  "host_listeners": [
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 54324
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 54322
+    },
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 54321
+    }
+  ],
+  "non_loopback_attempts": 18,
+  "non_loopback_connections": 0,
+  "status": "PASS"
+}

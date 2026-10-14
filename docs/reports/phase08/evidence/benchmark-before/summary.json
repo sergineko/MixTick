@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "original_fixture_sha256": "a5eae0488bfe99d49afa08a4393fad2514f634731064f0013e218f9bf519dbb0",
+  "samples_per_mode": 30,
+  "warmups_per_mode": 2,
+  "metrics": {
+    "exact": {
+      "median_ms": 1793.397,
+      "p95_ms": 1831.877,
+      "min_ms": 1777.432,
+      "max_ms": 1839.981
+    },
+    "near": {
+      "median_ms": 1969.7035,
+      "p95_ms": 2000.719,
+      "min_ms": 1927.031,
+      "max_ms": 2000.948
+    },
+    "next": {
+      "median_ms": 1819.411,
+      "p95_ms": 1861.981,
+      "min_ms": 1786.889,
+      "max_ms": 1867.488
+    }
+  }
+}

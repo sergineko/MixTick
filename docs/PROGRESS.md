@@ -1,6 +1,6 @@
 # PROGRESS — MixTick
 
-| Fase | Estado (TODO/IN_PROGRESS/VERIFIED/BLOCKED) | Fecha | Pruebas verificadas | Bloqueos |
+| Fase | Estado histórico / resultado local | Fecha | Pruebas verificadas | Bloqueos |
 |---|---|---|---|---|
 | 01 Base | VERIFIED | 2026-10-13 | Analyze sin incidencias; 21 tests; formato; IDs estrictos; APK debug Android e identidad del binario | iOS y ejecución en dispositivos NOT_RUN; Supabase real pendiente, previsto fuera de esta fase |
 | 02 BD y permisos | VERIFIED | 2026-10-13 | 6 migraciones desde cero; 19 checks pgTAP; 20 escenarios reales Auth/API/Storage; lint limpio; analyze, 21 tests Flutter y IDs estrictos | Entorno remoto y clientes Realtime NOT_VERIFIED; trabajador de limpieza pendiente |
@@ -9,9 +9,39 @@
 | 05 Comunidad | VERIFIED | 2026-10-13 | 9 migraciones desde cero; 50 SQL; 20 API; recetas 16; Comunidad 30 (2 híbridos); Auth 13 por modo; 83 Flutter; 2 integraciones Android; formato/IDs/analyze/APK; auditoría cero fixtures | iOS/físico NOT_RUN; remoto/CDN/Realtime/worker/eliminación de cuenta/moderación operativa pendientes |
 | 06 ¿Qué cocino? | VERIFIED | 2026-10-13 | 10 migraciones desde cero; 72 SQL; 20 API; recetas 16; Comunidad 30; matching 23 (2 híbridos); Auth 13 por modo; 99 Flutter; 2 Android; formato/IDs/analyze/APK; benchmark 6.000 recetas; cero fixtures | iOS/físico NOT_RUN; remoto/CDN/Realtime/worker/eliminación/moderación pendientes |
 | 07 Compra | VERIFIED | 2026-10-14 | 11 migraciones desde cero; 84 SQL; 20 API; recetas 16; Comunidad 30; matching 23; compra 16 (2 híbridos); Auth 13 por modo; 114 Flutter; WebSockets A/B reales; 2 Android; formato/IDs/analyze/APK; cero fixtures | iOS/físico y dos Android simultáneos NOT_RUN; remoto/CDN/worker/eliminación/moderación/optimización de matching pendientes |
-| 08 Auditoría | TODO | — | — | No autorizada |
+| 08 Auditoría | PASS — LOCAL READY | 2026-10-14 | 121 Flutter; 108 SQL; API20/Auth13 por modo/recetas16/Comunidad30/matching23/compra16; 34 operaciones reales; E2E23 pasos; siete procesos/test Android; benchmark p95 ≤143,092 ms; Profile/debug/release unsigned; IDs/formato/analyze; cero fixtures | RELEASE READY: NOT_VERIFIED. Remoto, Xcode/iOS, físicos, firma real, recursos finales, privacidad/URL web y operación de moderación pendientes |
 
 ## Último cambio
+
+2026-10-15: el propietario autoriza crear el commit y hacer push del estado
+actual de Fase 08 a `origin/main` (`sergineko/MixTick`). Esta autorización
+posterior se limita a Git; no autoriza despliegues, firma de distribución,
+tiendas, cambios de infraestructura ni una nueva fase. Las verificaciones
+técnicas que siguen corresponden al cierre local del 2026-10-14.
+
+Fase 08 terminada exclusivamente en local el 2026-10-14. **LOCAL READY: PASS;
+RELEASE READY: NOT_VERIFIED.** Informe completo según plantilla:
+[Fase08](reports/PHASE_08_REPORT.md). Contrato operativo:
+[worker/cuenta/moderación](21_RELEASE_OPERATIONS.md); decisión [ADR022](adr/022_RELEASE_AUDIT.md).
+
+Cuatro módulos e identificadores aprobados conservados. Matching: reducción de
+mediana 92,946–93,348 % con las mismas fixtures/RLS/hashes. Worker físico real,
+eliminación de cuenta con recuperación, moderación técnica y negativos A/B/C
+verificados. Los fallos iniciales y límites de pruebas están documentados;
+no se atribuye PASS a iOS o servicios remotos.
+
+Baseline de 788 archivos; 545 entradas históricas protegidas sin cambios.
+Migraciones 001–011, tests/evidencias 01–07 y dependencias intactos. HEAD sigue
+`2e126f04112b93e2005b6c4b414ae965e9d3dd9f`, sin stage/commit/push/deploy.
+Quince migraciones locales, 16 tablas públicas/11 privadas; catálogo 50/74.
+Cero fixtures, archivos físicos y correos; stack/funciones/emulador propios
+apagados y puertos cerrados. Docker global conservado.
+
+Detenido para revisión. **Siguiente fase o publicación: NO autorizadas.** Las
+afirmaciones siguientes sobre no autorización de Fase08 describen cierres
+históricos, anteriores a la autorización actual.
+
+## Histórico anterior a Fase 08
 
 Fase 07 finalizada y verificada localmente: listas propias/compartidas, productos,
 invitaciones explícitas, Realtime y receta/faltantes con confirmación versionada

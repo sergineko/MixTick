@@ -1,0 +1,8 @@
+Analyzing MixTick...                                            
+
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - test_support\release_e2e_local.dart:73:7 - curly_braces_in_flow_control_structures
+   info - Don't invoke 'print' in production code. Try using a logging framework - test_support\release_e2e_local.dart:91:37 - avoid_print
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - test_support\release_e2e_local.dart:96:7 - curly_braces_in_flow_control_structures
+   info - Don't invoke 'print' in production code. Try using a logging framework - test_support\release_e2e_local.dart:332:7 - avoid_print
+
+4 issues found. (ran in 2.7s)

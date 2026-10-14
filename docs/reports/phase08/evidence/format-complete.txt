@@ -1,0 +1,2 @@
+Formatted integration_test\release_native_test.dart
+Formatted 111 files (1 changed) in 0.46 seconds.

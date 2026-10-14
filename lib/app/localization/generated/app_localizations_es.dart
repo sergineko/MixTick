@@ -1124,6 +1124,44 @@ class AppLocalizationsEs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get deleteAccount => 'Eliminar cuenta';
+
+  @override
+  String get accountDeletionConsequences =>
+      'Esta acción es irreversible. Se retirarán tu perfil, recetas, comentarios, guardados, seguimientos y bloqueos. Se eliminará tu acceso y tus archivos se retirarán mediante un proceso del servidor. Las copias que otras personas ya descargaron no se pueden recuperar.';
+
+  @override
+  String get accountDeletionLists =>
+      'Entiendo que mis listas propias, incluidos sus productos compartidos, desaparecerán también para sus miembros. Las listas de otros propietarios se conservarán; perderé mis membresías e invitaciones.';
+
+  @override
+  String get accountDeletionType => 'Escribe ELIMINAR para confirmar';
+
+  @override
+  String get accountDeletionProcessing =>
+      'Retirando tus datos y solicitando la eliminación. Espera la respuesta.';
+
+  @override
+  String get accountDeletionAccepted =>
+      'Eliminación aceptada. Se ha cerrado tu sesión. El servidor completará la retirada de tus archivos.';
+
+  @override
+  String get accountDeletionCredentials =>
+      'La contraseña no es correcta. Confirma tu contraseña actual para continuar.';
+
+  @override
+  String get accountDeletionSession =>
+      'La sesión ya no permite esta operación. Revisa el acceso a tu cuenta.';
+
+  @override
+  String get accountDeletionRetry =>
+      'No hay una respuesta confirmada. La solicitud podría haberse aceptado; vuelve a intentarlo para comprobarla. Los reintentos no duplican la eliminación.';
+
+  @override
+  String get accountDeletionConsent =>
+      'Acepto la eliminación de mis listas compartidas.';
 }
 
 /// The translations for Spanish Castilian, as used in Spain (`es_ES`).

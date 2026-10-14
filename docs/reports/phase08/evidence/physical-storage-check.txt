@@ -1,0 +1,6 @@
+Recorded from the actual tool execution before stopping the local stack.
+Command: docker exec supabase_storage_mixtick-phase02 find /mnt -type f
+The host captured stdout in memory and counted its lines, without publishing paths.
+Observed result: {"physical_storage_files": 0}
+Status: PASS
+Scope: actual local file backend, after suite/host teardown; not remote/CDN/backups.

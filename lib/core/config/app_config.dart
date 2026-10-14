@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 
@@ -38,6 +39,7 @@ class AppConfig {
                 uri.port == 54321 &&
                 {'127.0.0.1', 'localhost', '10.0.2.2'}.contains(uri.host))) ||
         uri.host.isEmpty ||
+        (kReleaseMode && (allowLocalBackend || !_productionHost(uri.host))) ||
         uri.userInfo.isNotEmpty ||
         uri.hasQuery ||
         uri.hasFragment ||
@@ -47,6 +49,21 @@ class AppConfig {
     }
     return ConfigStatus.ready;
   }
+
+  /// A public build must use a DNS HTTPS endpoint and no local-development flag.
+  /// Syntax validation does not verify the remote project or its permissions.
+  bool get publicBuildEligible =>
+      status == ConfigStatus.ready &&
+      !allowLocalBackend &&
+      Uri.parse(supabaseUrl).scheme == 'https' &&
+      _productionHost(Uri.parse(supabaseUrl).host);
+
+  static bool _productionHost(String host) =>
+      host.contains('.') &&
+      host != 'localhost' &&
+      !host.endsWith('.localhost') &&
+      !host.endsWith('.local') &&
+      InternetAddress.tryParse(host) == null;
 
   static bool _isPublicKey(String key) {
     if (key.startsWith('sb_publishable_') &&

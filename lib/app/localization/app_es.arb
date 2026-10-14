@@ -312,7 +312,7 @@
       }
     }
   },
-"shopIntro": "Organiza tus compras y comparte una lista mediante invitación.",
+  "shopIntro": "Organiza tus compras y comparte una lista mediante invitación.",
   "shopCreate": "Crear lista",
   "shopRename": "Renombrar lista",
   "shopTitle": "Título de la lista",
@@ -380,5 +380,15 @@
         "type": "int"
       }
     }
-  }
+  },
+  "deleteAccount": "Eliminar cuenta",
+  "accountDeletionConsequences": "Esta acción es irreversible. Se retirarán tu perfil, recetas, comentarios, guardados, seguimientos y bloqueos. Se eliminará tu acceso y tus archivos se retirarán mediante un proceso del servidor. Las copias que otras personas ya descargaron no se pueden recuperar.",
+  "accountDeletionLists": "Entiendo que mis listas propias, incluidos sus productos compartidos, desaparecerán también para sus miembros. Las listas de otros propietarios se conservarán; perderé mis membresías e invitaciones.",
+  "accountDeletionType": "Escribe ELIMINAR para confirmar",
+  "accountDeletionProcessing": "Retirando tus datos y solicitando la eliminación. Espera la respuesta.",
+  "accountDeletionAccepted": "Eliminación aceptada. Se ha cerrado tu sesión. El servidor completará la retirada de tus archivos.",
+  "accountDeletionCredentials": "La contraseña no es correcta. Confirma tu contraseña actual para continuar.",
+  "accountDeletionSession": "La sesión ya no permite esta operación. Revisa el acceso a tu cuenta.",
+  "accountDeletionRetry": "No hay una respuesta confirmada. La solicitud podría haberse aceptado; vuelve a intentarlo para comprobarla. Los reintentos no duplican la eliminación.",
+  "accountDeletionConsent": "Acepto la eliminación de mis listas compartidas."
 }

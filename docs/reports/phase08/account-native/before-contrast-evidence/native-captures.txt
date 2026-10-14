@@ -1,0 +1,4 @@
+PASS actual Android screenshot account-delete-light
+PASS actual Android screenshot account-delete-dark
+{"storage": {"removed": 1, "retried": 0}, "accounts": {"completed": 1, "retried": 0}, "health": {"storage_failed": 0, "accounts_failed": 0, "storage_pending": 0, "accounts_pending": 0}}
+PASS actual Android screenshot account-deleted-session

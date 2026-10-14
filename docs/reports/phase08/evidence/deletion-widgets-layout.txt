@@ -1,0 +1,7 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test/release/account_deletion_test.dart
+00:00 +0: D01 explicit consequences/list confirmation/password required (UI mock)
+00:00 +1: D10 retry after ambiguous failure preserves request and credentials (UI mock)
+00:01 +2: D12 late acceptance from A must not sign out B or retain fields (UI mock)
+00:01 +3: Account deletion 320x640 text200 Brightness.dark (UI mock)
+00:01 +4: Account deletion 320x640 text200 Brightness.light (UI mock)
+00:01 +5: All tests passed!

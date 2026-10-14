@@ -195,3 +195,28 @@ PowerShell 7 y Pixel_10a iniciado para Android. Evidencias exclusivamente en
 `107d4fe3fda7b31d3dc826533833669d6f190765`; Fase 06 prohíbe nuevos commits/push,
 despliegues, backend remoto y avance a Fase 07. Estado verificable y pendientes
 en [PROGRESS](docs/PROGRESS.md) y [informe Fase 06](docs/reports/PHASE_06_REPORT.md).
+
+## Auditoría local — Fase 08
+
+La fase autorizada actual es exclusivamente 08. El texto de cierres anteriores
+describe su momento histórico. Se conservan los cuatro módulos. Se incorporan
+optimización RLS del matching, worker físico de imágenes, eliminación de cuenta
+desde Mi perfil y operaciones mínimas de moderación del servidor.
+
+Contrato, recuperación y retención: [operaciones](docs/21_RELEASE_OPERATIONS.md).
+Resultados verificables y límites: [informe Fase08](docs/reports/PHASE_08_REPORT.md),
+[seguridad](docs/reports/phase08/SECURITY_AUDIT.md) y
+[matriz de lanzamiento](docs/reports/phase08/LAUNCH_MATRIX.md).
+
+Calidad local: `scripts/verify_release.ps1`. Regresiones del backend aislado:
+`scripts/verify_release.ps1 -BackendChecks -BackendOnly -ResetLocal`.
+El reset requiere proyecto local sin cuentas; el runner no toca remoto y restaura
+la configuración Auth. Las pruebas del worker necesitan servir las funciones
+localmente en un proceso separado mediante `scripts/serve_release_functions.ps1`.
+Las instrucciones exactas, adaptadores Android y pruebas adicionales están en
+[reproducción](docs/reports/phase08/REPRODUCE.md).
+
+La Fase 08 se cerró sin operaciones Git remotas. El 2026-10-15 el propietario
+autorizó el commit y push de ese estado; despliegues y publicación siguen sin
+autorizar. Una build de validación local no demuestra preparación de distribución
+ni de iOS.

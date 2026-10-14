@@ -1,0 +1,2 @@
+Formatted test\release\account_deletion_test.dart
+Formatted 15 files (1 changed) in 0.05 seconds.

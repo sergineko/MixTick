@@ -1,0 +1,44 @@
+[
+  {
+    "id": "S01",
+    "title": "ordinary user/anon cannot consume jobs or invoke administrative deletion",
+    "status": "PASS",
+    "ms": 108.928
+  },
+  {
+    "id": "F11",
+    "title": "queued job is physically present; pre-grace worker preserves it",
+    "status": "PASS",
+    "ms": 394.912
+  },
+  {
+    "id": "F01",
+    "title": "eligible unreferenced photo physically removed through server worker",
+    "status": "PASS",
+    "ms": 548.236
+  },
+  {
+    "id": "F02",
+    "title": "current active reference survives an eligible poison job",
+    "status": "PASS",
+    "ms": 350.045
+  },
+  {
+    "id": "F03",
+    "title": "reappearing reference preserved; link after committed deletion fence rejected",
+    "status": "PASS",
+    "ms": 966.744
+  },
+  {
+    "id": "F04",
+    "title": "replacement retires old physical file and preserves the new one",
+    "status": "PASS",
+    "ms": 573.806
+  },
+  {
+    "id": "F05",
+    "title": "recipe deletion queues and physically removes its folder image",
+    "status": "PASS",
+    "ms": 526.961
+  }
+]

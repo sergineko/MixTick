@@ -124,9 +124,18 @@ class ProfileController extends Notifier<ProfileActionState> {
       }
       return true;
     } catch (error) {
-      if (uploaded != null) {
+      if (uploaded != null &&
+          ref.mounted &&
+          ref.read(authSessionProvider).value?.userId == actor) {
         try {
-          await repo.removeAvatar(uploaded);
+          // A lost UPDATE response can already have linked this file. Re-read
+          // before cleanup; an unreadable/ambiguous state goes to the worker.
+          final actual = await repo.loadOwn();
+          if (ref.mounted &&
+              ref.read(authSessionProvider).value?.userId == actor &&
+              actual?.avatarPath != uploaded) {
+            await repo.removeAvatar(uploaded);
+          }
         } catch (_) {}
       }
       if (ref.mounted && ref.read(authSessionProvider).value?.userId == actor) {

@@ -22,7 +22,12 @@ class SupabaseProfileRepository implements ProfileRepository {
       (throw const ProfileFailure(ProfileFailureCode.forbidden));
   Future<T> _run<T>(Future<T> Function() operation) async {
     try {
-      return await operation();
+      final actor = _userId;
+      final result = await operation();
+      if (_userId != actor) {
+        throw const ProfileFailure(ProfileFailureCode.forbidden);
+      }
+      return result;
     } on ProfileFailure {
       rethrow;
     } on SocketException {

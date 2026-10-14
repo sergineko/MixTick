@@ -1,0 +1,5 @@
+Analyzing MixTick...                                            
+
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\profile\presentation\account_deletion_page.dart:43:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\profile\presentation\account_deletion_page.dart:54:9 - curly_braces_in_flow_control_structures
+

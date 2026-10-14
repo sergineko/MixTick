@@ -1,0 +1,43 @@
+BEGIN
+DO
+INSERT 0 3
+INSERT 0 3
+INSERT 0 6000
+INSERT 0 18000
+INSERT 0 6000
+ANALYZE
+ANALYZE
+SET
+                              set_config                               
+-----------------------------------------------------------------------
+ {"sub":"60000000-0000-4000-8000-000000000002","role":"authenticated"}
+(1 row)
+
+Timing is on.
+                          jsonb_build_object                          
+----------------------------------------------------------------------
+ {"mode": "exact", "complete": true, "no_steps": true, "returned": 9}
+(1 row)
+
+Time: 1839.799 ms (00:01.840)
+                    jsonb_build_object                     
+-----------------------------------------------------------
+ {"mode": "near", "returned": 9, "required_overlap": true}
+(1 row)
+
+Time: 1966.982 ms (00:01.967)
+                 jsonb_build_object                  
+-----------------------------------------------------
+ {"mode": "next", "returned": 9, "no_overlap": true}
+(1 row)
+
+Time: 1793.131 ms (00:01.793)
+DO
+Time: 1799.055 ms (00:01.799)
+Timing is off.
+ROLLBACK
+                   jsonb_build_object                   
+--------------------------------------------------------
+ {"remaining_recipes": 0, "remaining_fixture_users": 0}
+(1 row)
+

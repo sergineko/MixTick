@@ -1,0 +1,17 @@
+{
+  "name": "native-account",
+  "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+  "arguments": [
+    "test",
+    "integration_test/release_native_test.dart",
+    "-d",
+    "emulator-5554",
+    "--no-uninstall",
+    "--dart-define-from-file=.tooling/phase08-account-android.local.json",
+    "--reporter",
+    "expanded"
+  ],
+  "started_at": "2026-10-14T17:06:06.7885053+02:00",
+  "exit_code": 0,
+  "status": "PASS"
+}

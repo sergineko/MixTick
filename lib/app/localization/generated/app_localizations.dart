@@ -2052,6 +2052,66 @@ abstract class AppLocalizations {
   /// In es, this message translates to:
   /// **'{count, plural, =1{Se ha confirmado 1 ingrediente.} other{Se han confirmado {count} ingredientes.}}'**
   String shopImported(int count);
+
+  /// No description provided for @deleteAccount.
+  ///
+  /// In es, this message translates to:
+  /// **'Eliminar cuenta'**
+  String get deleteAccount;
+
+  /// No description provided for @accountDeletionConsequences.
+  ///
+  /// In es, this message translates to:
+  /// **'Esta acción es irreversible. Se retirarán tu perfil, recetas, comentarios, guardados, seguimientos y bloqueos. Se eliminará tu acceso y tus archivos se retirarán mediante un proceso del servidor. Las copias que otras personas ya descargaron no se pueden recuperar.'**
+  String get accountDeletionConsequences;
+
+  /// No description provided for @accountDeletionLists.
+  ///
+  /// In es, this message translates to:
+  /// **'Entiendo que mis listas propias, incluidos sus productos compartidos, desaparecerán también para sus miembros. Las listas de otros propietarios se conservarán; perderé mis membresías e invitaciones.'**
+  String get accountDeletionLists;
+
+  /// No description provided for @accountDeletionType.
+  ///
+  /// In es, this message translates to:
+  /// **'Escribe ELIMINAR para confirmar'**
+  String get accountDeletionType;
+
+  /// No description provided for @accountDeletionProcessing.
+  ///
+  /// In es, this message translates to:
+  /// **'Retirando tus datos y solicitando la eliminación. Espera la respuesta.'**
+  String get accountDeletionProcessing;
+
+  /// No description provided for @accountDeletionAccepted.
+  ///
+  /// In es, this message translates to:
+  /// **'Eliminación aceptada. Se ha cerrado tu sesión. El servidor completará la retirada de tus archivos.'**
+  String get accountDeletionAccepted;
+
+  /// No description provided for @accountDeletionCredentials.
+  ///
+  /// In es, this message translates to:
+  /// **'La contraseña no es correcta. Confirma tu contraseña actual para continuar.'**
+  String get accountDeletionCredentials;
+
+  /// No description provided for @accountDeletionSession.
+  ///
+  /// In es, this message translates to:
+  /// **'La sesión ya no permite esta operación. Revisa el acceso a tu cuenta.'**
+  String get accountDeletionSession;
+
+  /// No description provided for @accountDeletionRetry.
+  ///
+  /// In es, this message translates to:
+  /// **'No hay una respuesta confirmada. La solicitud podría haberse aceptado; vuelve a intentarlo para comprobarla. Los reintentos no duplican la eliminación.'**
+  String get accountDeletionRetry;
+
+  /// No description provided for @accountDeletionConsent.
+  ///
+  /// In es, this message translates to:
+  /// **'Acepto la eliminación de mis listas compartidas.'**
+  String get accountDeletionConsent;
 }
 
 class _AppLocalizationsDelegate

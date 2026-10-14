@@ -1,0 +1,194 @@
+[
+  {
+    "id": "S01",
+    "title": "ordinary user/anon cannot consume jobs or invoke administrative deletion",
+    "status": "PASS",
+    "ms": 47.067
+  },
+  {
+    "id": "F11",
+    "title": "queued job is physically present; pre-grace worker preserves it",
+    "status": "PASS",
+    "ms": 369.888
+  },
+  {
+    "id": "F01",
+    "title": "eligible unreferenced photo physically removed through server worker",
+    "status": "PASS",
+    "ms": 531.358
+  },
+  {
+    "id": "F02",
+    "title": "current active reference survives an eligible poison job",
+    "status": "PASS",
+    "ms": 358.319
+  },
+  {
+    "id": "F03",
+    "title": "reappearing reference preserved; link after committed deletion fence rejected",
+    "status": "PASS",
+    "ms": 1020.464
+  },
+  {
+    "id": "F04",
+    "title": "replacement retires old physical file and preserves the new one",
+    "status": "PASS",
+    "ms": 584.088
+  },
+  {
+    "id": "F05",
+    "title": "recipe deletion queues and physically removes its folder image",
+    "status": "PASS",
+    "ms": 561.895
+  },
+  {
+    "id": "F06",
+    "title": "removed avatar physically deleted by the same worker",
+    "status": "PASS",
+    "ms": 536.614
+  },
+  {
+    "id": "F07",
+    "title": "expired abandoned lease recovered; stale completion cannot overwrite newer result",
+    "status": "PASS",
+    "ms": 872.945
+  },
+  {
+    "id": "F08",
+    "title": "independent concurrent claimers obtain exactly one lease",
+    "status": "PASS",
+    "ms": 717.066
+  },
+  {
+    "id": "F09",
+    "title": "path traversal and forged queue owner fail closed, without crossed removal",
+    "status": "PASS",
+    "ms": 1233.264
+  },
+  {
+    "id": "F10",
+    "title": "real Storage outage retries five times, dead-letters, then explicitly recovers",
+    "status": "PASS",
+    "ms": 27839.195
+  },
+  {
+    "id": "F07b",
+    "title": "already absent object completes idempotently without losing the job",
+    "status": "PASS",
+    "ms": 531.847
+  },
+  {
+    "id": "F12",
+    "title": "unrelated active B file survives every worker scenario",
+    "status": "PASS",
+    "ms": 177.596
+  },
+  {
+    "id": "D02",
+    "title": "foreign UID, wrong password and unconfirmed owned-list policy rejected",
+    "status": "PASS",
+    "ms": 276.335
+  },
+  {
+    "id": "D01a",
+    "title": "authenticated reauthentication accepts one durable self-deletion request",
+    "status": "PASS",
+    "ms": 342.967
+  },
+  {
+    "id": "D04",
+    "title": "private recipe and profile withdrawn atomically before physical cleanup",
+    "status": "PASS",
+    "ms": 32.856
+  },
+  {
+    "id": "D06-D07",
+    "title": "old JWT loses memberships/invitations and cannot recreate a profile",
+    "status": "PASS",
+    "ms": 39.021
+  },
+  {
+    "id": "D08",
+    "title": "owned shared list/products removed while foreign list remains",
+    "status": "PASS",
+    "ms": 25.528
+  },
+  {
+    "id": "D10",
+    "title": "real Auth outage after acceptance reconciles without crossed deletion",
+    "status": "PASS",
+    "ms": 21751.534
+  },
+  {
+    "id": "D05",
+    "title": "recipe photograph and avatar physically absent after account worker",
+    "status": "PASS",
+    "ms": 328.496
+  },
+  {
+    "id": "D03",
+    "title": "refresh and live Auth validation fail; unexpired JWT cannot read app rows",
+    "status": "PASS",
+    "ms": 45.715
+  },
+  {
+    "id": "D09",
+    "title": "B identity/private content and other owned list untouched",
+    "status": "PASS",
+    "ms": 183.306
+  },
+  {
+    "id": "D11",
+    "title": "personal product rows removed; only private minimized thirty-day operation trace remains",
+    "status": "PASS",
+    "ms": 1342.949
+  },
+  {
+    "id": "D01",
+    "title": "Auth identity permanently removed by product server operation",
+    "status": "PASS",
+    "ms": 162.934
+  },
+  {
+    "id": "O01",
+    "title": "ordinary account and forged user metadata cannot administer reports",
+    "status": "PASS",
+    "ms": 40.83
+  },
+  {
+    "id": "O02",
+    "title": "authorized report listing redacts private contents and reporter identity",
+    "status": "PASS",
+    "ms": 3.778
+  },
+  {
+    "id": "O03",
+    "title": "operator action audited; author cannot bypass hide; authorized restore stays explicit",
+    "status": "PASS",
+    "ms": 247.246
+  },
+  {
+    "id": "O04",
+    "title": "moderation removes only the reported comment and records action",
+    "status": "PASS",
+    "ms": 64.411
+  },
+  {
+    "id": "O05",
+    "title": "reported profile restriction prevents participation; only operator can restore",
+    "status": "PASS",
+    "ms": 21.92
+  },
+  {
+    "id": "O06",
+    "title": "operator state conflicts and unbounded reads rejected",
+    "status": "PASS",
+    "ms": 5.016
+  },
+  {
+    "id": "S02",
+    "title": "active foreign photo still intact after account deletion and moderation tests",
+    "status": "PASS",
+    "ms": 16.317
+  }
+]

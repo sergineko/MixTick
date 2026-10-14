@@ -1,0 +1,36 @@
+[
+  {
+    "name": "native-seed",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "integration_test/auth_native_seed_test.dart",
+      "-d",
+      "emulator-5554",
+      "--no-uninstall",
+      "--dart-define-from-file=.tooling/phase08-auth-android.local.json",
+      "--reporter",
+      "expanded"
+    ],
+    "started_at": "2026-10-14T16:48:14.6186696+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "native-restore",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "integration_test/auth_native_restore_test.dart",
+      "-d",
+      "emulator-5554",
+      "--no-uninstall",
+      "--dart-define-from-file=.tooling/phase08-auth-android.local.json",
+      "--reporter",
+      "expanded"
+    ],
+    "started_at": "2026-10-14T16:49:18.8014806+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  }
+]

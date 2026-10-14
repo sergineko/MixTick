@@ -1,0 +1,6 @@
+Formatted lib/features/profile/domain/account_deletion_repository.dart
+Formatted lib/features/profile/data/supabase_account_deletion_repository.dart
+Formatted lib/features/profile/presentation/account_deletion_page.dart
+Formatted lib/features/profile/presentation/profile_page.dart
+Formatted lib/app/router.dart
+Formatted 5 files (5 changed) in 0.03 seconds.

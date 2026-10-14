@@ -1,0 +1,6 @@
+Recorded from actual tool output, not a repeated execution.
+Initial stop removed functions/project, then failed before emulator shutdown.
+Exception calling Parse: String '10/14/2026 16:46:12' was not recognized as a valid DateTime.
+Cause: ConvertFrom-Json already deserialized the ISO timestamp as DateTime.
+Correction: direct DateTime conversion and idempotent handling of an already stopped project.
+Final execution: local-stop-final.json PASS.

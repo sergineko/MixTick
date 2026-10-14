@@ -1,0 +1,40 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/integration_test/release_native_test.dart
+Running Gradle task 'assembleDebug'...                          
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/C:/Users/Sergio/.gradle/wrapper/dists/gradle-9.3.1-all/9ot9r568e8zfvvd4mn8rbu1j0/gradle-9.3.1/lib/native-platform-0.22-milestone-29.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Running Gradle task 'assembleDebug'...                             18,9s
+√ Built build\app\outputs\flutter-apk\app-debug.apk
+Installing build\app\outputs\flutter-apk\app-debug.apk...          695ms
+00:00 +0: D12 Android: explicit account deletion, real physical worker and encrypted session cleared
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+You need to provide asyncStorage to perform pkce flow.
+'package:gotrue/src/gotrue_client.dart':
+Failed assertion: line 478 pos 7: '_asyncStorage != null'
+
+When the exception was thrown, this was the stack:
+#2      GoTrueClient._generatePKCECodeChallenge (package:gotrue/src/gotrue_client.dart:478:7)
+#3      GoTrueClient.signUp (package:gotrue/src/gotrue_client.dart:301:35)
+#4      main.<anonymous closure> (file:///C:/Users/Sergio/Desktop/Proyectos/MixTick/integration_test/release_native_test.dart:54:45)
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:29)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 3 frames from class _AssertionError and package:stack_trace)
+
+The test description was:
+  D12 Android: explicit account deletion, real physical worker and encrypted session cleared
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:00 +0 -1: D12 Android: explicit account deletion, real physical worker and encrypted session cleared [E]
+  Test failed. See exception logs above.
+  The test description was: D12 Android: explicit account deletion, real physical worker and encrypted session cleared
+  
+00:00 +0 -1: (tearDownAll)
+00:00 +0 -1: Some tests failed.
+
+Failing tests:
+  C:/Users/Sergio/Desktop/Proyectos/MixTick/integration_test/release_native_test.dart: D12 Android: explicit account deletion, real physical worker and encrypted session cleared

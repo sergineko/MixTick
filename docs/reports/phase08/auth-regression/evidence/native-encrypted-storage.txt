@@ -1,0 +1,1 @@
+PASS: native preferences contain encrypted values; no plaintext fixture email/JWT/session JSON; raw file not retained

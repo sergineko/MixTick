@@ -1,0 +1,9 @@
+{
+  "tests_run": 20,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "status": "PASS",
+  "mode": "real local Supabase Auth + PostgREST + Storage; no mock and no admin API key",
+  "fixture_accounts_removed": true
+}

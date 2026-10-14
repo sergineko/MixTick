@@ -1,0 +1,21 @@
+PASS: explicit loopback bindings/listeners; 18 other-interface probes, 0 connections
+Stopped services: [supabase_imgproxy_mixtick-phase02 supabase_pg_meta_mixtick-phase02 supabase_studio_mixtick-phase02 supabase_analytics_mixtick-phase02 supabase_vector_mixtick-phase02 supabase_pooler_mixtick-phase02]
+db-reset : PASS (exit=0)
+PASS: explicit loopback bindings/listeners; 18 other-interface probes, 0 connections
+sql-tests : PASS (exit=0)
+db-lint : PASS (exit=0)
+api-regression : PASS (exit=0)
+recipes-real-client : PASS (exit=0)
+client-fixture-cleanup : PASS (exit=0)
+community-real-client : PASS (exit=0)
+community-fixture-cleanup : PASS (exit=0)
+matching-real-client : PASS (exit=0)
+matching-fixture-cleanup : PASS (exit=0)
+shopping-real-client : PASS (exit=0)
+shopping-fixture-cleanup : PASS (exit=0)
+auth-regression-auto-confirm : PASS (exit=0)
+Generated: c:\users\sergio\desktop\proyectos\mixtick\.tooling\loopback-docker\docker.exe
+PASS: every published project port explicitly bound to 127.0.0.1; no wildcard/IPv6 binding
+PASS: explicit loopback bindings/listeners; 18 other-interface probes, 0 connections
+Stopped services: [supabase_imgproxy_mixtick-phase02 supabase_pg_meta_mixtick-phase02 supabase_studio_mixtick-phase02 supabase_edge_runtime_mixtick-phase02 supabase_analytics_mixtick-phase02 supabase_vector_mixtick-phase02 supabase_pooler_mixtick-phase02]
+auth-regression-email-confirm : PASS (exit=0)

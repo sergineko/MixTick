@@ -17,6 +17,7 @@ import '../features/community/presentation/comments_page.dart';
 import '../features/community/presentation/blocked_authors_page.dart';
 import '../features/cook_today/presentation/cook_today_page.dart';
 import '../features/profile/presentation/profile_page.dart';
+import '../features/profile/presentation/account_deletion_page.dart';
 import '../features/profile/presentation/profile_edit_page.dart';
 import '../features/profile/presentation/public_profile_page.dart';
 import '../features/profile/presentation/profile_lookup_page.dart';
@@ -223,6 +224,10 @@ final routerProvider = Provider<GoRouter>((ref) {
         ),
       ),
       GoRoute(path: '/profile', builder: (_, _) => const ProfilePage()),
+      GoRoute(
+        path: '/account/delete',
+        builder: (_, _) => const SessionScope(child: AccountDeletionPage()),
+      ),
       GoRoute(
         path: '/profile/find',
         builder: (_, _) => const SessionScope(child: ProfileLookupPage()),

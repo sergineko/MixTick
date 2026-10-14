@@ -1,0 +1,695 @@
+{
+  "exact": {
+    "status": "PASS",
+    "identical_result_hashes": true,
+    "samples_per_stage": 32,
+    "before": {
+      "median_ms": 1793.397,
+      "p95_ms": 1831.877,
+      "min_ms": 1777.432,
+      "max_ms": 1839.981
+    },
+    "after": {
+      "median_ms": 123.63650000000001,
+      "p95_ms": 131.979,
+      "min_ms": 119.479,
+      "max_ms": 132.417
+    },
+    "plans": {
+      "before": {
+        "execution_ms": 1838.512,
+        "root_shared_hits": 175415,
+        "root_shared_reads": 0,
+        "max_reported_node_memory_kb": 3625,
+        "indexes": [
+          "ingredient_alias_prefix",
+          "ingredients_pkey",
+          "profiles_pkey",
+          "recipe_ingredients_recipe_id_sort_order_key",
+          "recipes_pkey"
+        ],
+        "largest_repeated_nodes": [
+          {
+            "node": "Index Scan",
+            "relation": "ingredient_aliases",
+            "loops": 15600,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.0
+          },
+          {
+            "node": "Memoize",
+            "relation": null,
+            "loops": 15600,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.0
+          },
+          {
+            "node": "Index Scan",
+            "relation": "recipe_ingredients",
+            "loops": 5200,
+            "rows_per_loop": 3,
+            "total_time_per_loop_ms": 0.168
+          },
+          {
+            "node": "Index Scan",
+            "relation": "recipes",
+            "loops": 3600,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.043
+          },
+          {
+            "node": "Index Scan",
+            "relation": "profiles",
+            "loops": 3600,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.006
+          },
+          {
+            "node": "Aggregate",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.939
+          },
+          {
+            "node": "Sort",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.939
+          },
+          {
+            "node": "CTE Scan",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.937
+          }
+        ]
+      },
+      "after-012": {
+        "execution_ms": 49.634,
+        "root_shared_hits": 18736,
+        "root_shared_reads": 1,
+        "max_reported_node_memory_kb": 3617,
+        "indexes": [
+          "ingredients_pkey",
+          "profiles_pkey",
+          "recipes_pkey"
+        ],
+        "largest_repeated_nodes": [
+          {
+            "node": "Memoize",
+            "relation": null,
+            "loops": 15600,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.0
+          },
+          {
+            "node": "Index Scan",
+            "relation": "recipes",
+            "loops": 3600,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.001
+          },
+          {
+            "node": "Index Scan",
+            "relation": "profiles",
+            "loops": 3600,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.0
+          },
+          {
+            "node": "Aggregate",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.952
+          },
+          {
+            "node": "Sort",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.951
+          },
+          {
+            "node": "CTE Scan",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.95
+          },
+          {
+            "node": "Index Scan",
+            "relation": "ingredients",
+            "loops": 3,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.003
+          },
+          {
+            "node": "Sort",
+            "relation": null,
+            "loops": 1,
+            "rows_per_loop": 9,
+            "total_time_per_loop_ms": 49.168
+          }
+        ]
+      },
+      "after-015": {
+        "execution_ms": 137.112,
+        "root_shared_hits": 41334,
+        "root_shared_reads": 0,
+        "max_reported_node_memory_kb": 3625,
+        "indexes": [
+          "ingredient_alias_prefix",
+          "ingredients_pkey",
+          "profiles_pkey",
+          "recipes_pkey"
+        ],
+        "largest_repeated_nodes": [
+          {
+            "node": "Memoize",
+            "relation": null,
+            "loops": 15600,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.0
+          },
+          {
+            "node": "Memoize",
+            "relation": null,
+            "loops": 15600,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.0
+          },
+          {
+            "node": "Index Scan",
+            "relation": "recipes",
+            "loops": 3600,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.005
+          },
+          {
+            "node": "Index Scan",
+            "relation": "profiles",
+            "loops": 3600,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.004
+          },
+          {
+            "node": "Aggregate",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.989
+          },
+          {
+            "node": "Sort",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.988
+          },
+          {
+            "node": "CTE Scan",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.985
+          },
+          {
+            "node": "Index Scan",
+            "relation": "ingredients",
+            "loops": 3,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.094
+          }
+        ]
+      }
+    },
+    "median_reduction_pct": 93.106,
+    "p95_reduction_pct": 92.795
+  },
+  "near": {
+    "status": "PASS",
+    "identical_result_hashes": true,
+    "samples_per_stage": 32,
+    "before": {
+      "median_ms": 1969.7035,
+      "p95_ms": 2000.719,
+      "min_ms": 1927.031,
+      "max_ms": 2000.948
+    },
+    "after": {
+      "median_ms": 138.94,
+      "p95_ms": 143.092,
+      "min_ms": 136.414,
+      "max_ms": 146.233
+    },
+    "plans": {
+      "before": {
+        "execution_ms": 2022.221,
+        "root_shared_hits": 194537,
+        "root_shared_reads": 0,
+        "max_reported_node_memory_kb": 3625,
+        "indexes": [
+          "ingredient_alias_prefix",
+          "ingredients_pkey",
+          "profiles_pkey",
+          "recipe_ingredients_recipe_id_sort_order_key",
+          "recipes_pkey"
+        ],
+        "largest_repeated_nodes": [
+          {
+            "node": "Index Scan",
+            "relation": "ingredient_aliases",
+            "loops": 15600,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.0
+          },
+          {
+            "node": "Memoize",
+            "relation": null,
+            "loops": 15600,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.0
+          },
+          {
+            "node": "Index Scan",
+            "relation": "recipe_ingredients",
+            "loops": 5200,
+            "rows_per_loop": 3,
+            "total_time_per_loop_ms": 0.172
+          },
+          {
+            "node": "Index Scan",
+            "relation": "recipes",
+            "loops": 5200,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.06
+          },
+          {
+            "node": "Index Scan",
+            "relation": "profiles",
+            "loops": 5200,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.008
+          },
+          {
+            "node": "Aggregate",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.966
+          },
+          {
+            "node": "Sort",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.965
+          },
+          {
+            "node": "CTE Scan",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.963
+          }
+        ]
+      },
+      "after-012": {
+        "execution_ms": 49.203,
+        "root_shared_hits": 26650,
+        "root_shared_reads": 0,
+        "max_reported_node_memory_kb": 3617,
+        "indexes": [
+          "ingredients_pkey",
+          "profiles_pkey",
+          "recipes_pkey"
+        ],
+        "largest_repeated_nodes": [
+          {
+            "node": "Memoize",
+            "relation": null,
+            "loops": 15600,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.0
+          },
+          {
+            "node": "Index Scan",
+            "relation": "recipes",
+            "loops": 5200,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.001
+          },
+          {
+            "node": "Index Scan",
+            "relation": "profiles",
+            "loops": 5200,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.0
+          },
+          {
+            "node": "Aggregate",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.931
+          },
+          {
+            "node": "Sort",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.93
+          },
+          {
+            "node": "CTE Scan",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.929
+          },
+          {
+            "node": "Index Scan",
+            "relation": "ingredients",
+            "loops": 3,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.002
+          },
+          {
+            "node": "CTE Scan",
+            "relation": null,
+            "loops": 1,
+            "rows_per_loop": 9,
+            "total_time_per_loop_ms": 48.806
+          }
+        ]
+      },
+      "after-015": {
+        "execution_ms": 148.684,
+        "root_shared_hits": 55573,
+        "root_shared_reads": 0,
+        "max_reported_node_memory_kb": 3625,
+        "indexes": [
+          "ingredient_alias_prefix",
+          "ingredients_pkey",
+          "profiles_pkey",
+          "recipes_pkey"
+        ],
+        "largest_repeated_nodes": [
+          {
+            "node": "Memoize",
+            "relation": null,
+            "loops": 15600,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.0
+          },
+          {
+            "node": "Memoize",
+            "relation": null,
+            "loops": 15600,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.0
+          },
+          {
+            "node": "Index Scan",
+            "relation": "recipes",
+            "loops": 5200,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.005
+          },
+          {
+            "node": "Index Scan",
+            "relation": "profiles",
+            "loops": 5200,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.005
+          },
+          {
+            "node": "Aggregate",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.933
+          },
+          {
+            "node": "Sort",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.932
+          },
+          {
+            "node": "CTE Scan",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.931
+          },
+          {
+            "node": "Index Scan",
+            "relation": "ingredients",
+            "loops": 3,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.086
+          }
+        ]
+      }
+    },
+    "median_reduction_pct": 92.946,
+    "p95_reduction_pct": 92.848
+  },
+  "next": {
+    "status": "PASS",
+    "identical_result_hashes": true,
+    "samples_per_stage": 32,
+    "before": {
+      "median_ms": 1819.411,
+      "p95_ms": 1861.981,
+      "min_ms": 1786.889,
+      "max_ms": 1867.488
+    },
+    "after": {
+      "median_ms": 121.0265,
+      "p95_ms": 125.869,
+      "min_ms": 118.648,
+      "max_ms": 126.517
+    },
+    "plans": {
+      "before": {
+        "execution_ms": 1827.819,
+        "root_shared_hits": 175311,
+        "root_shared_reads": 0,
+        "max_reported_node_memory_kb": 3625,
+        "indexes": [
+          "ingredient_alias_prefix",
+          "ingredients_pkey",
+          "profiles_pkey",
+          "recipe_ingredients_recipe_id_sort_order_key",
+          "recipes_pkey"
+        ],
+        "largest_repeated_nodes": [
+          {
+            "node": "Index Scan",
+            "relation": "ingredient_aliases",
+            "loops": 15600,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.0
+          },
+          {
+            "node": "Memoize",
+            "relation": null,
+            "loops": 15600,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.0
+          },
+          {
+            "node": "Index Scan",
+            "relation": "recipe_ingredients",
+            "loops": 5200,
+            "rows_per_loop": 3,
+            "total_time_per_loop_ms": 0.168
+          },
+          {
+            "node": "Index Scan",
+            "relation": "recipes",
+            "loops": 3600,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.043
+          },
+          {
+            "node": "Index Scan",
+            "relation": "profiles",
+            "loops": 3591,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.006
+          },
+          {
+            "node": "Aggregate",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.956
+          },
+          {
+            "node": "Sort",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.955
+          },
+          {
+            "node": "CTE Scan",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.954
+          }
+        ]
+      },
+      "after-012": {
+        "execution_ms": 46.197,
+        "root_shared_hits": 18632,
+        "root_shared_reads": 0,
+        "max_reported_node_memory_kb": 3617,
+        "indexes": [
+          "ingredients_pkey",
+          "profiles_pkey",
+          "recipes_pkey"
+        ],
+        "largest_repeated_nodes": [
+          {
+            "node": "Memoize",
+            "relation": null,
+            "loops": 15600,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.0
+          },
+          {
+            "node": "Index Scan",
+            "relation": "recipes",
+            "loops": 3600,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.001
+          },
+          {
+            "node": "Index Scan",
+            "relation": "profiles",
+            "loops": 3591,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.0
+          },
+          {
+            "node": "Aggregate",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.928
+          },
+          {
+            "node": "Sort",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.928
+          },
+          {
+            "node": "CTE Scan",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.927
+          },
+          {
+            "node": "Index Scan",
+            "relation": "ingredients",
+            "loops": 3,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.001
+          },
+          {
+            "node": "Sort",
+            "relation": null,
+            "loops": 1,
+            "rows_per_loop": 9,
+            "total_time_per_loop_ms": 45.778
+          }
+        ]
+      },
+      "after-015": {
+        "execution_ms": 129.557,
+        "root_shared_hits": 41147,
+        "root_shared_reads": 0,
+        "max_reported_node_memory_kb": 3625,
+        "indexes": [
+          "ingredient_alias_prefix",
+          "ingredients_pkey",
+          "profiles_pkey",
+          "recipes_pkey"
+        ],
+        "largest_repeated_nodes": [
+          {
+            "node": "Memoize",
+            "relation": null,
+            "loops": 15600,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.0
+          },
+          {
+            "node": "Memoize",
+            "relation": null,
+            "loops": 15600,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.0
+          },
+          {
+            "node": "Index Scan",
+            "relation": "recipes",
+            "loops": 3600,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.005
+          },
+          {
+            "node": "Index Scan",
+            "relation": "profiles",
+            "loops": 3591,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.004
+          },
+          {
+            "node": "Aggregate",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.959
+          },
+          {
+            "node": "Sort",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.958
+          },
+          {
+            "node": "CTE Scan",
+            "relation": null,
+            "loops": 9,
+            "rows_per_loop": 0,
+            "total_time_per_loop_ms": 0.956
+          },
+          {
+            "node": "Index Scan",
+            "relation": "ingredients",
+            "loops": 3,
+            "rows_per_loop": 1,
+            "total_time_per_loop_ms": 0.065
+          }
+        ]
+      }
+    },
+    "median_reduction_pct": 93.348,
+    "p95_reduction_pct": 93.24
+  }
+}

@@ -383,6 +383,14 @@ inspector_port = 8083
 # The Deno major version to use.
 deno_version = 2
 
+# Internal worker verifies a dedicated server secret itself. End-user JWTs do
+# not authorize this endpoint. Account deletion keeps platform JWT validation.
+[functions.cleanup-storage]
+verify_jwt = false
+
+[functions.delete-account]
+verify_jwt = true
+
 # [edge_runtime.secrets]
 # secret_key = "env(SECRET_VALUE)"
 

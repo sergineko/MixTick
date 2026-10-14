@@ -1,0 +1,5 @@
+{
+  "release_expected_unsigned": true,
+  "debug_verify_exit": 0,
+  "release_verify_exit": 1
+}

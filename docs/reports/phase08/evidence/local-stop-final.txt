@@ -1,0 +1,1 @@
+PASS: owned stack/functions/emulator stopped; no project ports; Docker global preserved

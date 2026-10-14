@@ -31,9 +31,9 @@ android {
 
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            // Phase08 local validation is unsigned. Real distribution signing
+            // requires the owner's separate authorization and protected keys.
+            signingConfig = null
         }
     }
 }
