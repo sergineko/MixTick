@@ -1,0 +1,74 @@
+[
+  {
+    "name": "gen-l10n",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "gen-l10n"
+    ],
+    "started_at": "2026-10-14T02:34:13.1824645+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "flutter-analyze",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "analyze"
+    ],
+    "started_at": "2026-10-14T02:34:14.6506161+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "flutter-test",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "--reporter",
+      "expanded"
+    ],
+    "started_at": "2026-10-14T02:34:19.4569394+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "format-check",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\dart.bat",
+    "arguments": [
+      "format",
+      "--output=none",
+      "--set-exit-if-changed",
+      "lib",
+      "test",
+      "test_support",
+      "integration_test",
+      "scripts/loopback_docker.dart"
+    ],
+    "started_at": "2026-10-14T02:34:29.5912051+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "identifiers",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "arguments": [
+      "scripts/check_identifiers.py",
+      "--strict"
+    ],
+    "started_at": "2026-10-14T02:34:30.7237467+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "android-debug-build",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "build",
+      "apk",
+      "--debug"
+    ],
+    "started_at": "2026-10-14T02:34:30.7751721+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  }
+]

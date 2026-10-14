@@ -1,0 +1,9 @@
+{
+  "documents": [
+    "docs/reports/PHASE_07_REPORT.md",
+    "docs/20_SHOPPING.md",
+    "docs/adr/021_SHOPPING.md"
+  ],
+  "status": "PASS",
+  "missing_local_targets": []
+}

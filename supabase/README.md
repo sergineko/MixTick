@@ -163,4 +163,27 @@ pública local, captura pantalla real y limpia solo identidades/objetos propios.
 
 `benchmark_matching.sql` usa 6.000 recetas temporales en rollback y un rol
 SQL autenticado; no se presenta como Auth GoTrue ni rendimiento de producción.
-No hay lista de compra funcional, remoto, Git, deploy o Fase 07 autorizados.
+Este apartado documenta el alcance histórico de Fase 06; compra se integra en Fase 07.
+
+## Compra compartida — Fase 07
+
+011 conserva las diez migraciones y contratos históricos. Añade snapshots
+invoker, bandeja mínima de invitaciones y ledger privado para creación/importación
+versionada. Son 16 tablas públicas y 6 privadas; catálogo 50/74 intacto.
+Contrato: [Compra](../docs/20_SHOPPING.md), decisiones ADR-021.
+
+`scripts/verify_shopping.ps1 -BackendChecks -ResetLocal -IncludeNative
+-IncludeAndroidBuild` guarda evidencias exclusivamente de Fase 07. Ejecuta
+SQL/API/Auth/recetas/Comunidad/matching y compras con WebSockets independientes.
+`-IncludeNative` requiere Pixel_10a activo y PowerShell 7. Android complementa
+las sesiones A/B independientes; no se afirma disponer de dos móviles Android.
+
+`verify_native_shopping.ps1` captura importación/lista compartida clara/oscura,
+restaura modo noche y limpia sus fixtures p7. La regresión original de galería
+mantiene fuente intacta y usa phase07/recipe-regression. No sobrescribir informes
+o evidencias 01–06. Backend solo loopback y claves públicas en Flutter; teardown
+privilegiado limitado a fixtures locales registradas.
+
+No Git/deploy/remoto/Fase 08 autorizados. iOS, remoto/correo/CDN, worker físico,
+eliminación completa de cuenta, moderación operativa y matching general quedan
+pendientes antes del lanzamiento. Resultados exactos en el informe de Fase 07.

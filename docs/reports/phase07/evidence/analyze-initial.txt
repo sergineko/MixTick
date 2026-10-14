@@ -1,0 +1,32 @@
+Analyzing MixTick...                                            
+
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\data\supabase_shopping_repository.dart:23:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\data\supabase_shopping_repository.dart:81:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\data\supabase_shopping_repository.dart:121:11 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\data\supabase_shopping_repository.dart:194:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\data\supabase_shopping_repository.dart:231:9 - curly_braces_in_flow_control_structures
+   info - Use 'isNotEmpty' instead of 'length' to test whether the collection is empty. Try rewriting the expression to use 'isNotEmpty' - lib\features\shopping\domain\shopping.dart:80:7 - prefer_is_empty
+   info - Use 'isNotEmpty' instead of 'length' to test whether the collection is empty. Try rewriting the expression to use 'isNotEmpty' - lib\features\shopping\domain\shopping.dart:83:11 - prefer_is_empty
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\presentation\shopping_detail_page.dart:61:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\presentation\shopping_detail_page.dart:75:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\presentation\shopping_detail_page.dart:106:31 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\presentation\shopping_detail_page.dart:202:19 - curly_braces_in_flow_control_structures
+warning - The '!' will have no effect because the receiver can't be null. Try removing the '!' operator - lib\features\shopping\presentation\shopping_detail_page.dart:211:53 - unnecessary_non_null_assertion
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\presentation\shopping_detail_page.dart:371:37 - curly_braces_in_flow_control_structures
+warning - The value of 'refresh' should be used. Try using the result by invoking a member, passing it to a function, or returning it from this function - lib\features\shopping\presentation\shopping_page.dart:34:17 - unused_result
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\presentation\shopping_page.dart:51:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\presentation\shopping_providers.dart:26:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\presentation\shopping_providers.dart:29:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\presentation\shopping_providers.dart:64:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\presentation\shopping_providers.dart:75:17 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\presentation\shopping_providers.dart:96:15 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\presentation\shopping_providers.dart:151:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\presentation\shopping_providers.dart:173:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\presentation\shopping_widgets.dart:80:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\presentation\shopping_widgets.dart:91:11 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\presentation\shopping_widgets.dart:107:9 - curly_braces_in_flow_control_structures
+   info - Use 'isNotEmpty' instead of 'length' to test whether the collection is empty. Try rewriting the expression to use 'isNotEmpty' - lib\features\shopping\presentation\shopping_widgets.dart:132:11 - prefer_is_empty
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\presentation\shopping_widgets.dart:161:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - lib\features\shopping\presentation\shopping_widgets.dart:167:9 - curly_braces_in_flow_control_structures
+
+28 issues found. (ran in 48.9s)

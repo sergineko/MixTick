@@ -1,6 +1,6 @@
 # MixTick
 
-Flutter Android/iOS, backend SQL, Auth/perfiles, Mi recetario, Comunidad y ¿Qué cocino hoy? de Fases 01–06. Nombre técnico `mixtick`, organización
+Flutter Android/iOS, backend SQL y los cuatro módulos de Fases 01–07. Nombre técnico `mixtick`, organización
 `es.sergiotech` e identificador fijo `es.sergiotech.mixtick` para ambas plataformas.
 El nombre comercial MixTick sigue pendiente de validación legal/comercial.
 
@@ -10,7 +10,8 @@ Comunidad y Mi recetario tienen interfaces y repositorios reales. Auth/perfiles 
 repositorios reales, formularios, retorno PKCE, sesión segura y avatar opcional.
 Hay esquema SQL probado localmente, sin backend remoto provisionado. ¿Qué cocino
 hoy? añade selección temporal y coincidencias bajo RLS, verificadas localmente en Fase 06.
-Lista de compra sigue en Foundation hasta su fase autorizada.
+Lista de compra incorpora listas/invitaciones reales, Realtime y la importación
+segura de ingredientes y faltantes. [Contrato técnico](docs/20_SHOPPING.md).
 
 ## Entorno
 

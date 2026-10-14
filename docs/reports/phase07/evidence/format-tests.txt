@@ -1,0 +1,7 @@
+Formatted lib\features\shopping\data\supabase_shopping_repository.dart
+Formatted lib\features\shopping\presentation\shopping_widgets.dart
+Formatted test\shopping\shopping_test.dart
+Formatted test/support/fake_shopping_repository.dart
+Formatted test_support/shopping_local.dart
+Formatted integration_test/shopping_native_test.dart
+Formatted 12 files (6 changed) in 0.09 seconds.

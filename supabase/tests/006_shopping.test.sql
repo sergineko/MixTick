@@ -1,0 +1,16 @@
+begin;
+select plan(12);
+select ok((select relrowsecurity from pg_class where oid='private.shopping_requests'::regclass),'Retry ledger has RLS');
+select ok(not has_table_privilege('authenticated','private.shopping_requests','SELECT'),'Ledger hidden from clients');
+select ok(not has_function_privilege('anon','public.shopping_list_snapshot(uuid)','EXECUTE'),'Anonymous snapshot denied');
+select ok(not has_function_privilege('anon','public.shopping_recipe_preview(uuid)','EXECUTE'),'Anonymous preview denied');
+select ok(not has_function_privilege('anon','public.import_recipe_checked(uuid,uuid,bigint,uuid,uuid[],integer[],boolean)','EXECUTE'),'Anonymous import denied');
+select ok(not (select prosecdef from pg_proc where oid='public.shopping_list_snapshot(uuid)'::regprocedure),'Snapshot honors caller RLS');
+select ok(not (select prosecdef from pg_proc where oid='public.shopping_recipe_preview(uuid)'::regprocedure),'Preview honors caller RLS');
+select ok((select proconfig @> array['search_path=""'] from pg_proc where oid='private.import_recipe_checked(uuid,uuid,bigint,uuid,uuid[],integer[],boolean)'::regprocedure),'Import closes search path');
+select ok((select pubinsert and pubupdate and not pubdelete from pg_publication where pubname='supabase_realtime'),'Only safe insert/update events');
+select is((select count(*)::integer from pg_publication_tables where pubname='supabase_realtime'),2,'Only existing shopping tables published');
+select is((select count(*)::integer from pg_tables where schemaname='public'),16,'No new business tables');
+select ok(has_function_privilege('authenticated','public.import_recipe_ingredients(uuid,uuid,uuid,integer[])','EXECUTE'),'Historical import contract preserved');
+select * from finish();
+rollback;

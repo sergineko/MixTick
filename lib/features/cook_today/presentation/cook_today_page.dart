@@ -131,14 +131,18 @@ class _CookTodayScreenState extends ConsumerState<_CookTodayScreen> {
     }
   }
 
-  Future<void> open(Recipe recipe) async {
+  Future<void> open(RecipeMatch match) async {
+    final recipe = match.recipe;
     focus.unfocus();
     ref.invalidate(recipeDetailProvider(recipe.id));
     ref.invalidate(socialEntryProvider(recipe.id));
     if (recipe.photoPath != null) {
       ref.invalidate(recipePhotoProvider(recipe.photoPath!));
     }
-    await context.push('/recipes/${recipe.id}');
+    await context.push(
+      '/recipes/${recipe.id}',
+      extra: match.missing > 0 ? match.transfer : null,
+    );
     if (mounted) await refresh();
   }
 
@@ -372,7 +376,7 @@ class _CookTodayScreenState extends ConsumerState<_CookTodayScreen> {
               return framed(
                 MatchingCard(
                   match: matches[index - 1],
-                  onOpen: () => open(matches[index - 1].recipe),
+                  onOpen: () => open(matches[index - 1]),
                 ),
               );
             }

@@ -1,0 +1,12 @@
+Formatted lib\features\shopping\data\supabase_shopping_repository.dart
+Formatted lib\features\shopping\domain\shopping.dart
+Formatted lib\features\shopping\domain\shopping_repository.dart
+Formatted lib\features\shopping\presentation\shopping_detail_page.dart
+Formatted lib\features\shopping\presentation\shopping_import_page.dart
+Formatted lib\features\shopping\presentation\shopping_page.dart
+Formatted lib\features\shopping\presentation\shopping_providers.dart
+Formatted lib\features\shopping\presentation\shopping_widgets.dart
+Formatted lib/app/router.dart
+Formatted lib/features/recipes/presentation/recipe_detail_page.dart
+Formatted lib/features/cook_today/presentation/cook_today_page.dart
+Formatted 11 files (11 changed) in 0.14 seconds.

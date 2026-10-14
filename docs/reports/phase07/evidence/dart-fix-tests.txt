@@ -1,0 +1,7 @@
+Computing fixes in shopping_local.dart...
+Applying fixes...
+
+shopping_local.dart
+  curly_braces_in_flow_control_structures - 2 fixes
+
+2 fixes made in 1 file.

@@ -1,0 +1,3 @@
+PASS: actual Android screenshot shopping-selection
+PASS: actual Android screenshot shopping-light
+PASS: actual Android screenshot shopping-dark

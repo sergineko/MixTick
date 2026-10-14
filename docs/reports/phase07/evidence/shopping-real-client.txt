@@ -1,0 +1,22 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test_support/shopping_local.dart
+00:00 +0: (setUpAll)
+00:00 +0: L01-03 lists persist, owner rename, version conflict, delete confirmed payload
+00:00 +1: L04-10 free household item, decimals, edits, toggle, delete and request tombstone
+00:00 +2: S01-03 no accepted membership: C/B cannot read, write or self grant
+00:00 +3: L11-15 explicit pending, wrong recipient, self/missing/duplicate reject and acceptance atomic
+00:00 +4: L16 rejected invitation cannot reopen or grant C access
+00:00 +5: L17 member edits products, cannot invite, rename, delete or revoke
+00:00 +6: L23-24 concurrent edits: exactly one winner, other gets PT409, no hidden overwrite
+00:00 +7: L30-35 private import: original quantities, retries, bought state, new deliberate request, tombstones
+00:01 +8: L36-40 origin is private, C cannot import; transaction rejects bad ID/ordinal, stale recipe, optional missing
+00:01 +9: L31-33 actual matching transfer imports only mandatory missing and preserves free quantity/unit
+00:01 +10: L34/48 HYBRID lost real committed create/import responses reuse UUID without duplicating
+00:01 +11: L21-22/25/29 real independent A/B WebSockets: add, toggle, quantity, deletion signal and reconnect
+PASS Realtime: independent sockets A/B delivered authorized changes; reconnect reread reconciled deletion/offline insertion
+00:03 +12: L28 unauthorized C and anon raw WebSocket attempts receive no product events
+00:08 +13: L18-20/28 revoke, old acceptance, block and leave cannot bypass membership
+00:08 +14: L10 persistence across a real fresh client session; basic 200-item snapshot measurement
+P7_PERFORMANCE:{"items":200,"snapshot_ms":9,"scope":"local authenticated HTTP and DTO parsing; not device FPS"}
+00:08 +15: L27/45 HYBRID response held across real identity switch cannot expose old list
+00:09 +16: (tearDownAll)
+00:09 +16: All tests passed!

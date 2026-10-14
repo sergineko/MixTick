@@ -1,0 +1,72 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test/shopping/shopping_test.dart
+00:00 +0: L36 manual household names stay free; amount validation is precise
+00:00 +1: L32 version/line identity/optional check prevents stale matching import
+00:00 +2: L07 optimistic toggle is reconciled, pending/bought groups reflect server (mock)
+00:01 +3: L26 duplicate/out of order signals reread once and never duplicate rows (mock)
+00:01 +4: L48 quick draft survives network failure, exact retry keeps request UUID (mock)
+00:01 +5: L24 conflict preserves editor draft and blocks save until actual reload (mock)
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+pumpAndSettle timed out
+
+When the exception was thrown, this was the stack:
+#0      WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:717:11)
+<asynchronous suspension>
+#1      TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#2      tapShopping (file:///C:/Users/Sergio/Desktop/Proyectos/MixTick/test/shopping/shopping_test.dart:24:92)
+<asynchronous suspension>
+#3      main.<anonymous closure> (file:///C:/Users/Sergio/Desktop/Proyectos/MixTick/test/shopping/shopping_test.dart:64:5)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  L24 conflict preserves editor draft and blocks save until actual reload (mock)
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:03 +5 -1: L24 conflict preserves editor draft and blocks save until actual reload (mock) [E]
+  Test failed. See exception logs above.
+  The test description was: L24 conflict preserves editor draft and blocks save until actual reload (mock)
+  
+00:03 +5 -1: L18/29 permission revalidation clears protected rows (mock)
+00:03 +6 -1: L27 session switch closes stream and drops draft/modal (mock)
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+pumpAndSettle timed out
+
+When the exception was thrown, this was the stack:
+#0      WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:717:11)
+<asynchronous suspension>
+#1      TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#2      tapShopping (file:///C:/Users/Sergio/Desktop/Proyectos/MixTick/test/shopping/shopping_test.dart:24:92)
+<asynchronous suspension>
+#3      main.<anonymous closure> (file:///C:/Users/Sergio/Desktop/Proyectos/MixTick/test/shopping/shopping_test.dart:77:5)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  L27 session switch closes stream and drops draft/modal (mock)
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:04 +6 -2: L27 session switch closes stream and drops draft/modal (mock) [E]
+  Test failed. See exception logs above.
+  The test description was: L27 session switch closes stream and drops draft/modal (mock)
+  
+00:04 +6 -2: L27 switching list routes disposes previous channel (mock)
+00:04 +7 -2: L41/48 shopping accessible 320px 200% light (mock)
+00:05 +8 -2: L41/48 shopping accessible 320px 200% dark (mock)
+00:05 +9 -2: L32 stale matching preview offers recalculation and no import (mock)
+00:05 +10 -2: Some tests failed.
+
+Failing tests:
+  C:/Users/Sergio/Desktop/Proyectos/MixTick/test/shopping/shopping_test.dart: L24 conflict preserves editor draft and blocks save until actual reload (mock)
+  C:/Users/Sergio/Desktop/Proyectos/MixTick/test/shopping/shopping_test.dart: L27 session switch closes stream and drops draft/modal (mock)

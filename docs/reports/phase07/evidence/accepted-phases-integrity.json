@@ -1,0 +1,23 @@
+{
+  "modified_existing": [
+    "README.md",
+    "docs/10_DECISIONS.md",
+    "docs/PROGRESS.md",
+    "integration_test/README.md",
+    "lib/app/localization/app_es.arb",
+    "lib/app/localization/generated/app_localizations.dart",
+    "lib/app/localization/generated/app_localizations_es.dart",
+    "lib/app/router.dart",
+    "lib/features/cook_today/presentation/cook_today_page.dart",
+    "lib/features/recipes/presentation/recipe_detail_page.dart",
+    "lib/features/shopping/presentation/shopping_page.dart",
+    "supabase/README.md"
+  ],
+  "staged_files": [],
+  "head": "8aefe513c201914946c05c4a1da4ed37515514fd",
+  "historical_migrations_unchanged": true,
+  "unexpected_changes": [],
+  "baseline_files": 671,
+  "protected_files": 659,
+  "accepted_reports_unchanged": true
+}

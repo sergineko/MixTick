@@ -1,0 +1,22 @@
+[
+  {
+    "name": "gen-l10n",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "gen-l10n"
+    ],
+    "started_at": "2026-10-14T02:33:21.1463196+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "flutter-analyze",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "analyze"
+    ],
+    "started_at": "2026-10-14T02:33:22.4201748+02:00",
+    "exit_code": 1,
+    "status": "FAIL"
+  }
+]

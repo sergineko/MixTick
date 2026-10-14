@@ -8,34 +8,37 @@
 | 04 Mi recetario | VERIFIED | 2026-10-13 | 8 migraciones desde cero; 35 pgTAP; 20 regresiones API; 16 casos cliente de recetas (1 híbrido); Auth 13 por modo; 66 tests Flutter; UI y galería Android reales; analyze/formato/IDs/APK; auditoría cero fixtures | iOS/físico NOT_RUN; remoto/CDN/Realtime/worker/eliminación completa de cuenta/moderación pendientes |
 | 05 Comunidad | VERIFIED | 2026-10-13 | 9 migraciones desde cero; 50 SQL; 20 API; recetas 16; Comunidad 30 (2 híbridos); Auth 13 por modo; 83 Flutter; 2 integraciones Android; formato/IDs/analyze/APK; auditoría cero fixtures | iOS/físico NOT_RUN; remoto/CDN/Realtime/worker/eliminación de cuenta/moderación operativa pendientes |
 | 06 ¿Qué cocino? | VERIFIED | 2026-10-13 | 10 migraciones desde cero; 72 SQL; 20 API; recetas 16; Comunidad 30; matching 23 (2 híbridos); Auth 13 por modo; 99 Flutter; 2 Android; formato/IDs/analyze/APK; benchmark 6.000 recetas; cero fixtures | iOS/físico NOT_RUN; remoto/CDN/Realtime/worker/eliminación/moderación pendientes |
-| 07 Compra | TODO | — | — | No autorizada |
+| 07 Compra | VERIFIED | 2026-10-14 | 11 migraciones desde cero; 84 SQL; 20 API; recetas 16; Comunidad 30; matching 23; compra 16 (2 híbridos); Auth 13 por modo; 114 Flutter; WebSockets A/B reales; 2 Android; formato/IDs/analyze/APK; cero fixtures | iOS/físico y dos Android simultáneos NOT_RUN; remoto/CDN/worker/eliminación/moderación/optimización de matching pendientes |
 | 08 Auditoría | TODO | — | — | No autorizada |
 
 ## Último cambio
 
-Fase 06 finalizada y verificada localmente: selección efímera, coincidencias
-PostgreSQL bajo RLS, catálogo/alias/texto libre, tarjetas paginadas, fotografías,
-detalle original y contrato tipado de faltantes. Solo se añade migración 010;
-001–009, implementaciones, tests e informes/evidencias aceptados intactos.
+Fase 07 finalizada y verificada localmente: listas propias/compartidas, productos,
+invitaciones explícitas, Realtime y receta/faltantes con confirmación versionada
+idempotente. Solo migración incremental 011; las diez anteriores y los
+informes/evidencias/tests/contratos aceptados permanecen intactos.
 
-Fecha: 2026-10-13 (Europe/Madrid).
-Motivo: cierre de `prompts/06_COOK_TODAY.md` autorizado por el propietario.
-Decisiones: [ADR-020](adr/020_COOK_TODAY.md).
-Informe completo/evidencias: [Fase 06](reports/PHASE_06_REPORT.md).
-Contratos: [Cook Today](19_COOK_TODAY.md), [algoritmo](06_MATCHING_ALGORITHM.md),
-[Comunidad](18_COMMUNITY.md), [Mi recetario](17_MY_RECIPES.md).
+Fecha: 2026-10-14 (Europe/Madrid).
+Decisión: [ADR-021](adr/021_SHOPPING.md).
+Informe completo: [Fase 07](reports/PHASE_07_REPORT.md).
+Contrato de listas, invitaciones, sincronización e integración:
+[Compra](20_SHOPPING.md).
 
-Todas las comprobaciones finales enumeradas PASS; los FAIL iniciales se
-conservan, incluido el teclado Android y su corrección. Auditoría final cero
-fixtures/objetos/correos, catálogo 50/74 conservado. Backend local y emulador
-propio apagados. HEAD permanece `107d4fe3fda7b31d3dc826533833669d6f190765`;
-Fase 06 sin stage/commit/push, deploy o cambios de Supabase remoto.
-Próximo paso autorizado: ninguno; detener para revisión. Fase 07 NO autorizada.
+Calidad final PASS: analyze, 114 Flutter, formato de 104 archivos, IDs estrictos,
+APK debug e identidad. SQL 84; regresiones API/Auth/recetas/Comunidad/matching;
+16 escenarios de compra con 2 híbridos identificados. WebSockets reales A/B,
+C/anon negativos y Android complementario; dos Android simultáneos NOT_RUN.
+Los FAIL iniciales se conservan con sus correcciones en el informe.
+Auditoría final cero fixtures/objetos/correos, catálogo 50/74 y esquema 11/16/6.
+Backend local y emulador propio apagados. HEAD continúa
+`8aefe513c201914946c05c4a1da4ed37515514fd`, sin stage/commit/push o deploy.
 
-`VERIFIED` solo cubre las comprobaciones locales enlazadas: no representa
-backend remoto/CDN/Realtime, compilación iOS o preparación de publicación.
-Se mantienen los gates anteriores de worker, eliminación completa de cuenta
-y moderación operativa.
+Próximo paso autorizado: ninguno. Detener para revisión; **Fase 08 NO autorizada**.
+VERIFIED cubre solo las comprobaciones locales enlazadas, no iOS/remoto/CDN
+ni distribución. Worker físico, eliminación completa de cuenta, moderación
+operativa y rendimiento de producción conservan sus gates de lanzamiento.
+Benchmark de Fase 06 pendiente: Exact 1,911 s; Near 3,138 s; siguiente 3,637 s.
+No se modifica su algoritmo ni se inicia optimización general en esta fase.
 
 ## Autorización posterior de GitHub
 
@@ -173,3 +176,21 @@ Las afirmaciones anteriores sobre HEAD y ausencia de commit/push describen el
 cierre previo a esta autorización posterior. No se autoriza Fase 07, despliegue
 ni cambio de Supabase remoto. El push se verifica comparando HEAD con
 `refs/heads/main` de GitHub.
+
+## Inicio autorizado de Fase 07
+
+El propietario autoriza exclusivamente listas compartidas e integración receta/faltantes. Inspección completa de contratos e informes 01–06; baseline de 671 archivos con HEAD 8aefe513c201914946c05c4a1da4ed37515514fd. Estado: IN_PROGRESS. Sin Git, deploy remoto ni Fase 08.
+
+## Cierre de Fase 07
+
+Estado VERIFIED LOCAL el 2026-10-14; informe y evidencias enlazados arriba. Detenido para revisión. No autorización de Git, remoto, tiendas o Fase 08.
+
+## Autorización posterior de GitHub para Fase 07
+
+Fecha: 2026-10-14 (Europe/Madrid). Después del cierre verificado, el propietario
+solicitó «Realiza push». Autoriza crear el commit y subir el estado actual de
+Fase 07 a `https://github.com/sergineko/MixTick.git`, rama `main`.
+Incluye código, migración 011, pruebas, documentación, evidencias y capturas;
+se excluyen configuración local, secretos, SDK, cachés y APK según `.gitignore`.
+Las restricciones de Git anteriores describen el cierre previo a esta solicitud.
+No se autoriza Fase 08, despliegue, tiendas ni cambios de Supabase remoto.

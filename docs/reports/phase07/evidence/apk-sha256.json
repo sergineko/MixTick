@@ -1,0 +1,7 @@
+{
+  "sha256": "96D72E816C7253B761F300949EE6787BC22E97E1DE31A40828D932057A8054AB",
+  "path": "build/app/outputs/flutter-apk/app-debug.apk",
+  "entrypoint": "lib/main.dart",
+  "bytes": 245879218,
+  "kind": "debug, not integration APK"
+}

@@ -1,0 +1,196 @@
+[
+  {
+    "name": "sql-tests",
+    "executable": "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe",
+    "arguments": [
+      "test",
+      "db",
+      "--network-id",
+      "b19982ba9414278465857c0b14cf0dfeea11c68da24823533094ce2d91b86763"
+    ],
+    "started_at": "2026-10-14T02:18:18.4708923+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "db-lint",
+    "executable": "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe",
+    "arguments": [
+      "db",
+      "lint",
+      "--local",
+      "--level",
+      "warning",
+      "--network-id",
+      "b19982ba9414278465857c0b14cf0dfeea11c68da24823533094ce2d91b86763"
+    ],
+    "started_at": "2026-10-14T02:18:19.7862514+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "api-regression",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "arguments": [
+      "scripts/test_database_api.py",
+      "--cli",
+      "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\.tooling\\supabase\\supabase.exe",
+      "--evidence-dir",
+      "C:\\Users\\Sergio\\Desktop\\Proyectos\\MixTick\\docs\\reports\\phase07\\evidence\\regression-db"
+    ],
+    "started_at": "2026-10-14T02:18:20.0971058+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "recipes-real-client",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "test_support/recipes_local.dart",
+      "--dart-define-from-file=.tooling/phase07-client.local.json",
+      "--reporter",
+      "expanded"
+    ],
+    "started_at": "2026-10-14T02:18:28.0877848+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "client-fixture-cleanup",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "arguments": [
+      "scripts/cleanup_recipe_fixtures.py"
+    ],
+    "started_at": "2026-10-14T02:18:32.7177993+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "community-real-client",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "test_support/community_local.dart",
+      "--dart-define-from-file=.tooling/phase07-client.local.json",
+      "--reporter",
+      "expanded"
+    ],
+    "started_at": "2026-10-14T02:18:37.6412497+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "community-fixture-cleanup",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "arguments": [
+      "scripts/cleanup_community_fixtures.py"
+    ],
+    "started_at": "2026-10-14T02:18:42.9565815+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "matching-real-client",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "test_support/matching_local.dart",
+      "--dart-define-from-file=.tooling/phase07-client.local.json",
+      "--reporter",
+      "expanded"
+    ],
+    "started_at": "2026-10-14T02:18:48.6390192+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "matching-fixture-cleanup",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "arguments": [
+      "scripts/cleanup_matching_fixtures.py"
+    ],
+    "started_at": "2026-10-14T02:18:54.4783758+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "shopping-real-client",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "test_support/shopping_local.dart",
+      "--dart-define-from-file=.tooling/phase07-client.local.json",
+      "--reporter",
+      "expanded"
+    ],
+    "started_at": "2026-10-14T02:18:59.8046372+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "shopping-fixture-cleanup",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "arguments": [
+      "scripts/cleanup_shopping_fixtures.py"
+    ],
+    "started_at": "2026-10-14T02:19:12.2003641+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "native-recipes-regression",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+    "arguments": [
+      "-NoProfile",
+      "-File",
+      "scripts/verify_native_recipes.ps1",
+      "-EvidenceDirectory",
+      "docs/reports/phase07/recipe-regression/evidence"
+    ],
+    "started_at": "2026-10-14T02:19:16.7968193+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "native-shopping-runner",
+    "executable": "C:\\Users\\Sergio\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+    "arguments": [
+      "-NoProfile",
+      "-File",
+      "scripts/verify_native_shopping.ps1"
+    ],
+    "started_at": "2026-10-14T02:20:48.2026144+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "auth-regression-auto-confirm",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "test_support/auth_profile_local.dart",
+      "--dart-define-from-file=.tooling/phase07-client.local.json",
+      "--reporter",
+      "expanded"
+    ],
+    "started_at": "2026-10-14T02:22:36.6767608+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "auth-regression-email-confirm",
+    "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+    "arguments": [
+      "test",
+      "test_support/auth_profile_local.dart",
+      "--dart-define-from-file=.tooling/phase07-client.local.json",
+      "--dart-define=MIXTICK_TEST_CONFIRMATION=true",
+      "--reporter",
+      "expanded"
+    ],
+    "started_at": "2026-10-14T02:23:39.3037422+02:00",
+    "exit_code": 0,
+    "status": "PASS"
+  }
+]

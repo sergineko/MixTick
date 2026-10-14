@@ -913,6 +913,217 @@ class AppLocalizationsEs extends AppLocalizations {
   String matchMissingNames(String names) {
     return 'Faltan: $names';
   }
+
+  @override
+  String get shopIntro =>
+      'Organiza tus compras y comparte una lista mediante invitación.';
+
+  @override
+  String get shopCreate => 'Crear lista';
+
+  @override
+  String get shopRename => 'Renombrar lista';
+
+  @override
+  String get shopTitle => 'Título de la lista';
+
+  @override
+  String get shopLists => 'Mis listas';
+
+  @override
+  String get shopEmpty =>
+      'Todavía no tienes listas. Crea la primera o acepta una invitación.';
+
+  @override
+  String get shopNoBackend =>
+      'Configura Supabase para gestionar listas de compra.';
+
+  @override
+  String get shopOwn => 'Lista propia';
+
+  @override
+  String get shopOwnShared => 'Propia · compartida';
+
+  @override
+  String get shopMember => 'Lista compartida';
+
+  @override
+  String get shopAccount => 'Cuenta';
+
+  @override
+  String get shopInvitations => 'Invitaciones pendientes';
+
+  @override
+  String get shopAccept => 'Aceptar';
+
+  @override
+  String get shopReject => 'Rechazar';
+
+  @override
+  String get shopInvite => 'Invitar por nombre de usuario';
+
+  @override
+  String get shopInvitationPending => 'Invitación pendiente';
+
+  @override
+  String get shopMembers => 'Personas de la lista';
+
+  @override
+  String get shopOwner => 'Tú eres el propietario';
+
+  @override
+  String get shopOwnerOther => 'El propietario administra las invitaciones';
+
+  @override
+  String get shopRevoke => 'Revocar acceso';
+
+  @override
+  String get shopRevokeInfo =>
+      'Esta persona dejará de acceder a los productos y no podrá restaurar su acceso con la invitación anterior.';
+
+  @override
+  String get shopLeave => 'Abandonar lista';
+
+  @override
+  String get shopLeaveInfo =>
+      'Dejarás de ver y modificar sus productos. Necesitarás una nueva invitación para volver.';
+
+  @override
+  String get shopDeleteList => 'Eliminar lista';
+
+  @override
+  String get shopDeleteInfo =>
+      'Se eliminarán la lista, sus productos y las invitaciones. Confirma para continuar.';
+
+  @override
+  String get shopProduct => 'Producto';
+
+  @override
+  String get shopAdd => 'Añadir producto';
+
+  @override
+  String get shopEdit => 'Editar producto';
+
+  @override
+  String get shopWithAmount => 'Indicar cantidad y unidad';
+
+  @override
+  String get shopQuick => 'Añadir rápidamente';
+
+  @override
+  String get shopHousehold => 'Alimentos, jabón, papel…';
+
+  @override
+  String get shopPending => 'Pendientes';
+
+  @override
+  String get shopBought => 'Comprados';
+
+  @override
+  String get shopMarkBought => 'Marcar como comprado';
+
+  @override
+  String get shopMarkPending => 'Marcar como pendiente';
+
+  @override
+  String get shopNoItems => 'No hay productos pendientes.';
+
+  @override
+  String get shopNoBought => 'No hay productos comprados.';
+
+  @override
+  String get shopRemove => 'Eliminar producto';
+
+  @override
+  String get shopRemoveInfo =>
+      'Se eliminará este producto de la lista compartida.';
+
+  @override
+  String get shopConnecting => 'Conectando sincronización…';
+
+  @override
+  String get shopSynced => 'Conectado a Realtime';
+
+  @override
+  String get shopChecking => 'Comprobando cambios…';
+
+  @override
+  String get shopDisconnected =>
+      'Sin sincronización en vivo. Recarga para comprobar cambios.';
+
+  @override
+  String get shopReload => 'Recargar desde el servidor';
+
+  @override
+  String get shopDiscardDraft =>
+      'Se sustituirá tu borrador por los datos actuales del servidor.';
+
+  @override
+  String get shopConflict =>
+      'Los datos han cambiado o la solicitud ya se utilizó. Recarga y revisa antes de guardar.';
+
+  @override
+  String get shopForbidden =>
+      'La lista, receta o producto ya no está disponible para tu cuenta.';
+
+  @override
+  String get shopInvalid =>
+      'Revisa nombre, cantidad y unidad. Usa una cantidad positiva con un máximo de tres decimales.';
+
+  @override
+  String get shopNetwork =>
+      'No se pudo comprobar el resultado. Tu borrador se conserva; vuelve a intentarlo cuando tengas conexión.';
+
+  @override
+  String get shopSameRequest =>
+      'El reintento comprobará la misma solicitud para evitar duplicados.';
+
+  @override
+  String get shopImport => 'Añadir ingredientes a la lista';
+
+  @override
+  String get shopMissingImport => 'Añadir lo que me falta';
+
+  @override
+  String get shopDestination => 'Lista de destino';
+
+  @override
+  String get shopChooseCreate => 'Crea una lista para continuar.';
+
+  @override
+  String get shopConfirmImport => 'Confirmar ingredientes seleccionados';
+
+  @override
+  String get shopOpenList => 'Abrir lista';
+
+  @override
+  String get shopImportPrivacy =>
+      'La lista recibirá solo productos y cantidades. El título y los datos privados de la receta no se compartirán.';
+
+  @override
+  String get shopOriginalAmounts =>
+      'Se conservan las cantidades y raciones originales. No se suman productos existentes ni se convierten unidades.';
+
+  @override
+  String get shopRecipeChanged =>
+      'La receta cambió desde la consulta. Vuelve a comprobar los faltantes antes de importar.';
+
+  @override
+  String get shopRecalculate => 'Revisar de nuevo qué cocino hoy';
+
+  @override
+  String get shopSave => 'Guardar';
+
+  @override
+  String shopImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Se han confirmado $count ingredientes.',
+      one: 'Se ha confirmado 1 ingrediente.',
+    );
+    return '$_temp0';
+  }
 }
 
 /// The translations for Spanish Castilian, as used in Spain (`es_ES`).

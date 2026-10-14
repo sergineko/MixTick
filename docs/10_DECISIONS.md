@@ -29,3 +29,5 @@ Ningún prompt debe contradecir estas decisiones sin aprobación expresa del pro
 - **ADR-019 / Comunidad:** proyecciones invoker bajo RLS, referencias guardadas, cursor de publicación, búsqueda explícita, interacciones reconciliadas y comentarios idempotentes por actor. [ADR-019](adr/019_COMMUNITY.md).
 
 - **ADR-020 / ¿Qué cocino hoy?:** selección efímera y comparación de presencia en PostgreSQL bajo RLS, nombres/alias explícitos, faltantes tipados y paginación por ranking/UUID. [ADR-020](adr/020_COOK_TODAY.md).
+
+- **ADR-021 / Compra:** snapshots bajo RLS, invitación explícita, Realtime como señal, revalidación y creación/importación ligada a versión e idempotencia. [ADR-021](adr/021_SHOPPING.md).

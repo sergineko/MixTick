@@ -1,0 +1,17 @@
+{
+  "name": "native-shopping",
+  "executable": "C:\\Users\\Sergio\\develop\\flutter\\bin\\flutter.bat",
+  "arguments": [
+    "test",
+    "integration_test/shopping_native_test.dart",
+    "-d",
+    "emulator-5554",
+    "--no-uninstall",
+    "--dart-define-from-file=.tooling/phase07-android.local.json",
+    "--reporter",
+    "expanded"
+  ],
+  "started_at": "2026-10-14T02:27:09.0661704+02:00",
+  "exit_code": 1,
+  "status": "FAIL"
+}

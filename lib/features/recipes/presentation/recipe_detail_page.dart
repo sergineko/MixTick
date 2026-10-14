@@ -7,14 +7,16 @@ import '../../../core/widgets/app_states.dart';
 import '../../../core/widgets/access_revalidation.dart';
 import '../../community/presentation/community_detail_social.dart';
 import '../../community/presentation/community_providers.dart';
+import '../../cook_today/domain/matching.dart';
 import '../domain/recipe.dart';
 import '../domain/recipe_repository.dart';
 import 'recipe_providers.dart';
 import 'recipe_widgets.dart';
 
 class RecipeDetailPage extends ConsumerStatefulWidget {
-  const RecipeDetailPage({required this.id, super.key});
+  const RecipeDetailPage({required this.id, this.missing, super.key});
   final String id;
+  final MissingIngredientsTransfer? missing;
   @override
   ConsumerState<RecipeDetailPage> createState() => _RecipeDetailPageState();
 }
@@ -102,6 +104,42 @@ class _RecipeDetailPageState extends ConsumerState<RecipeDetailPage>
                                   )
                                 else
                                   RecipeContent(recipe: recipe),
+                                Padding(
+                                  padding: const EdgeInsets.all(20),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.stretch,
+                                    children: [
+                                      OutlinedButton.icon(
+                                        key: const ValueKey(
+                                          'shop-import-recipe',
+                                        ),
+                                        onPressed: () => context.push(
+                                          '/shopping/import/${recipe.id}',
+                                        ),
+                                        icon: const Icon(
+                                          Icons.add_shopping_cart,
+                                        ),
+                                        label: Text(s.shopImport),
+                                      ),
+                                      if (widget.missing?.lines.isNotEmpty ==
+                                          true)
+                                        FilledButton.icon(
+                                          key: const ValueKey(
+                                            'shop-import-missing',
+                                          ),
+                                          onPressed: () => context.push(
+                                            '/shopping/import/${recipe.id}',
+                                            extra: widget.missing,
+                                          ),
+                                          icon: const Icon(
+                                            Icons.shopping_basket_outlined,
+                                          ),
+                                          label: Text(s.shopMissingImport),
+                                        ),
+                                    ],
+                                  ),
+                                ),
                                 if (recipe.authorId == actor)
                                   Padding(
                                     padding: const EdgeInsets.all(20),

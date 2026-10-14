@@ -1,0 +1,24 @@
+Computing fixes in shopping...
+Applying fixes...
+
+data\supabase_shopping_repository.dart
+  curly_braces_in_flow_control_structures - 5 fixes
+
+domain\shopping.dart
+  prefer_is_empty - 2 fixes
+
+presentation\shopping_detail_page.dart
+  curly_braces_in_flow_control_structures - 5 fixes
+  unnecessary_non_null_assertion - 1 fix
+
+presentation\shopping_page.dart
+  curly_braces_in_flow_control_structures - 1 fix
+
+presentation\shopping_providers.dart
+  curly_braces_in_flow_control_structures - 7 fixes
+
+presentation\shopping_widgets.dart
+  curly_braces_in_flow_control_structures - 5 fixes
+  prefer_is_empty - 1 fix
+
+27 fixes made in 6 files.

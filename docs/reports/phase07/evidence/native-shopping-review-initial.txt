@@ -1,0 +1,75 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/integration_test/shopping_native_test.dart
+Running Gradle task 'assembleDebug'...                          
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/C:/Users/Sergio/.gradle/wrapper/dists/gradle-9.3.1-all/9ot9r568e8zfvvd4mn8rbu1j0/gradle-9.3.1/lib/native-platform-0.22-milestone-29.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Running Gradle task 'assembleDebug'...                             22,6s
+√ Built build\app\outputs\flutter-apk\app-debug.apk
+Installing build\app\outputs\flutter-apk\app-debug.apk...        1.177ms
+00:00 +0: L46/47 Android real: lists, import, invitation, two-session changes, revoke and matching integration
+P7_FIXTURE:[recorded locally for cleanup]
+P7_FIXTURE:[recorded locally for cleanup]
+P7_FIXTURE:[recorded locally for cleanup]
+P7_SCREEN:shopping-selection
+P7_SCREEN:shopping-light
+P7_SCREEN:shopping-dark
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+Finder specifies a widget that would not receive pointer events.
+A call to tap() with finder "Found 1 widget with key [<'shop-import-missing'>]: [
+  FilledButton-[<'shop-import-missing'>](dependencies: [IconTheme, InheritedCupertinoTheme,
+MediaQuery, _InheritedTheme, _LocalizationsScope-[GlobalKey#eca91], _ScrollableScope], state:
+_ButtonStyleState#52bde),
+]" derived an Offset (Offset(205.7, 901.4)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot
+receive pointer events.
+The finder corresponds to this RenderBox: RenderSemanticsAnnotations#73f0e relayoutBoundary=up17(creator: Semantics ← FilledButton-[<'shop-import-missing'>] ← Column ← Padding ← Column ← ConstrainedBox ← Center ← _SingleChildViewport ← IgnorePointer-[GlobalKey#b0023] ← Semantics ← Listener ← _GestureSemantics ← ⋯, parentData: offset=Offset(0.0, 48.0); flex=null; fit=null (can use size), constraints: BoxConstraints(w=371.4, 0.0<=h<=Infinity), semantics node: SemanticsNode#440, semantic boundary, size: Size(371.4, 52.0))
+The hit test result at that offset is: HitTestResult(_RenderInkFeatures#1b6c2@Offset(205.7, 901.4),
+RenderPhysicalModel#69527@Offset(205.7, 901.4), RenderSemanticsAnnotations#0e3a9@Offset(205.7,
+901.4), RenderRepaintBoundary#ddc65@Offset(205.7, 901.4), RenderIgnorePointer#35aea@Offset(205.7,
+901.4), RenderRepaintBoundary#737b3@Offset(205.7, 901.4),
+RenderSemanticsAnnotations#83940@Offset(205.7, 901.4), RenderOffstage#02e96@Offset(205.7, 901.4),
+RenderSemanticsAnnotations#f5849@Offset(205.7, 901.4), _RenderTheater#a7c9b@Offset(205.7, 901.4),
+RenderAbsorbPointer#422d6@Offset(205.7, 901.4), RenderPointerListener#63ea1@Offset(205.7, 901.4),
+RenderSemanticsAnnotations#50471@Offset(205.7, 901.4),
+RenderSemanticsAnnotations#df528@Offset(205.7, 901.4),
+RenderSemanticsAnnotations#53c38@Offset(205.7, 901.4), RenderTapRegionSurface#35ed7@Offset(205.7,
+901.4), RenderSemanticsAnnotations#59877@Offset(205.7, 901.4),
+RenderSemanticsAnnotations#df6b1@Offset(205.7, 901.4),
+HitTestEntry<HitTestTarget>#23c77(_ReusableRenderView#022ba),
+HitTestEntry<HitTestTarget>#468d7(<IntegrationTestWidgetsFlutterBinding>))
+If you expected this target not to be able to receive pointer events, pass "warnIfMissed: false" to
+"tap()".
+To make this error into a non-fatal warning, set WidgetController.hitTestWarningShouldBeFatal to
+false.
+
+When the exception was thrown, this was the stack:
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2133:11)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1947:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1080:7)
+#3      shopTap (file:///C:/Users/Sergio/Desktop/Proyectos/MixTick/integration_test/shopping_native_test.dart:36:16)
+<asynchronous suspension>
+#4      main.<anonymous closure> (file:///C:/Users/Sergio/Desktop/Proyectos/MixTick/integration_test/shopping_native_test.dart:357:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  L46/47 Android real: lists, import, invitation, two-session changes, revoke and matching
+  integration
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:41 +0 -1: L46/47 Android real: lists, import, invitation, two-session changes, revoke and matching integration [E]
+  Test failed. See exception logs above.
+  The test description was: L46/47 Android real: lists, import, invitation, two-session changes, revoke and matching integration
+  
+00:41 +0 -1: (tearDownAll)
+00:41 +0 -1: Some tests failed.
+
+Failing tests:
+  C:/Users/Sergio/Desktop/Proyectos/MixTick/integration_test/shopping_native_test.dart: L46/47 Android real: lists, import, invitation, two-session changes, revoke and matching integration

@@ -1,0 +1,20 @@
+{
+  "avd": "Pixel_10a",
+  "api": "37",
+  "android": "17",
+  "device": "emulator-5554",
+  "launch_pid": 27076,
+  "owned_verified": true,
+  "owned_processes": [
+    {
+      "ProcessId": 27076,
+      "ParentProcessId": 41380,
+      "ExecutablePath": "C:\\Users\\Sergio\\AppData\\Local\\Android\\Sdk\\emulator\\emulator.exe"
+    },
+    {
+      "ProcessId": 4164,
+      "ParentProcessId": 27076,
+      "ExecutablePath": "C:\\Users\\Sergio\\AppData\\Local\\Android\\Sdk\\emulator\\qemu\\windows-x86_64\\qemu-system-x86_64-headless.exe"
+    }
+  ]
+}

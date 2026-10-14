@@ -24,6 +24,9 @@ import '../features/recipes/presentation/recipes_page.dart';
 import '../features/recipes/presentation/recipe_editor_page.dart';
 import '../features/recipes/presentation/recipe_detail_page.dart';
 import '../features/shopping/presentation/shopping_page.dart';
+import '../features/shopping/presentation/shopping_detail_page.dart';
+import '../features/shopping/presentation/shopping_import_page.dart';
+import '../features/cook_today/domain/matching.dart';
 import '../shared/models/app_module.dart';
 import 'app_shell.dart';
 import 'localization/generated/app_localizations.dart';
@@ -194,7 +197,29 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/recipes/:id',
         builder: (_, state) => SessionScope(
-          child: RecipeDetailPage(id: state.pathParameters['id']!),
+          child: RecipeDetailPage(
+            id: state.pathParameters['id']!,
+            missing: state.extra is MissingIngredientsTransfer
+                ? state.extra as MissingIngredientsTransfer
+                : null,
+          ),
+        ),
+      ),
+      GoRoute(
+        path: '/shopping/list/:id',
+        builder: (_, state) => SessionScope(
+          child: ShoppingDetailPage(id: state.pathParameters['id']!),
+        ),
+      ),
+      GoRoute(
+        path: '/shopping/import/:id',
+        builder: (_, state) => SessionScope(
+          child: ShoppingImportPage(
+            recipeId: state.pathParameters['id']!,
+            missing: state.extra is MissingIngredientsTransfer
+                ? state.extra as MissingIngredientsTransfer
+                : null,
+          ),
         ),
       ),
       GoRoute(path: '/profile', builder: (_, _) => const ProfilePage()),

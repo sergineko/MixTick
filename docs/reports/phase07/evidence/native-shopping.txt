@@ -1,0 +1,19 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/integration_test/shopping_native_test.dart
+Running Gradle task 'assembleDebug'...                          
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/C:/Users/Sergio/.gradle/wrapper/dists/gradle-9.3.1-all/9ot9r568e8zfvvd4mn8rbu1j0/gradle-9.3.1/lib/native-platform-0.22-milestone-29.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Running Gradle task 'assembleDebug'...                             19,0s
+√ Built build\app\outputs\flutter-apk\app-debug.apk
+Installing build\app\outputs\flutter-apk\app-debug.apk...        1.083ms
+00:00 +0: L46/47 Android real: lists, import, invitation, two-session changes, revoke and matching integration
+P7_FIXTURE:[recorded locally for cleanup]
+P7_FIXTURE:[recorded locally for cleanup]
+P7_FIXTURE:[recorded locally for cleanup]
+P7_SCREEN:shopping-selection
+P7_SCREEN:shopping-light
+P7_SCREEN:shopping-dark
+00:50 +1: (tearDownAll)
+00:50 +1: All tests passed!

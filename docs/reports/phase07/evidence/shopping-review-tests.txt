@@ -1,0 +1,17 @@
+00:00 +0: loading C:/Users/Sergio/Desktop/Proyectos/MixTick/test/shopping/shopping_test.dart
+00:00 +0: L48 reload retries an initial failed read (mock)
+00:00 +1: L18 denied editor closes and discards protected fields (mock)
+00:01 +2: L04 own list deletion requires confirmation; cancelling preserves it (mock)
+00:01 +3: L36 manual household names stay free; amount validation is precise
+00:01 +4: L32 version/line identity/optional check prevents stale matching import
+00:01 +5: L07 optimistic toggle is reconciled, pending/bought groups reflect server (mock)
+00:01 +6: L26 duplicate/out of order signals reread once and never duplicate rows (mock)
+00:01 +7: L48 quick draft survives network failure, exact retry keeps request UUID (mock)
+00:01 +8: L24 conflict preserves editor draft and blocks save until actual reload (mock)
+00:02 +9: L18/29 permission revalidation clears protected rows (mock)
+00:02 +10: L27 session switch closes stream and drops draft/modal (mock)
+00:02 +11: L27 switching list routes disposes previous channel (mock)
+00:02 +12: L41/48 shopping accessible 320px 200% light (mock)
+00:02 +13: L41/48 shopping accessible 320px 200% dark (mock)
+00:02 +14: L32 stale matching preview offers recalculation and no import (mock)
+00:02 +15: All tests passed!

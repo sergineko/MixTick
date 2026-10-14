@@ -1680,6 +1680,378 @@ abstract class AppLocalizations {
   /// In es, this message translates to:
   /// **'Faltan: {names}'**
   String matchMissingNames(String names);
+
+  /// No description provided for @shopIntro.
+  ///
+  /// In es, this message translates to:
+  /// **'Organiza tus compras y comparte una lista mediante invitación.'**
+  String get shopIntro;
+
+  /// No description provided for @shopCreate.
+  ///
+  /// In es, this message translates to:
+  /// **'Crear lista'**
+  String get shopCreate;
+
+  /// No description provided for @shopRename.
+  ///
+  /// In es, this message translates to:
+  /// **'Renombrar lista'**
+  String get shopRename;
+
+  /// No description provided for @shopTitle.
+  ///
+  /// In es, this message translates to:
+  /// **'Título de la lista'**
+  String get shopTitle;
+
+  /// No description provided for @shopLists.
+  ///
+  /// In es, this message translates to:
+  /// **'Mis listas'**
+  String get shopLists;
+
+  /// No description provided for @shopEmpty.
+  ///
+  /// In es, this message translates to:
+  /// **'Todavía no tienes listas. Crea la primera o acepta una invitación.'**
+  String get shopEmpty;
+
+  /// No description provided for @shopNoBackend.
+  ///
+  /// In es, this message translates to:
+  /// **'Configura Supabase para gestionar listas de compra.'**
+  String get shopNoBackend;
+
+  /// No description provided for @shopOwn.
+  ///
+  /// In es, this message translates to:
+  /// **'Lista propia'**
+  String get shopOwn;
+
+  /// No description provided for @shopOwnShared.
+  ///
+  /// In es, this message translates to:
+  /// **'Propia · compartida'**
+  String get shopOwnShared;
+
+  /// No description provided for @shopMember.
+  ///
+  /// In es, this message translates to:
+  /// **'Lista compartida'**
+  String get shopMember;
+
+  /// No description provided for @shopAccount.
+  ///
+  /// In es, this message translates to:
+  /// **'Cuenta'**
+  String get shopAccount;
+
+  /// No description provided for @shopInvitations.
+  ///
+  /// In es, this message translates to:
+  /// **'Invitaciones pendientes'**
+  String get shopInvitations;
+
+  /// No description provided for @shopAccept.
+  ///
+  /// In es, this message translates to:
+  /// **'Aceptar'**
+  String get shopAccept;
+
+  /// No description provided for @shopReject.
+  ///
+  /// In es, this message translates to:
+  /// **'Rechazar'**
+  String get shopReject;
+
+  /// No description provided for @shopInvite.
+  ///
+  /// In es, this message translates to:
+  /// **'Invitar por nombre de usuario'**
+  String get shopInvite;
+
+  /// No description provided for @shopInvitationPending.
+  ///
+  /// In es, this message translates to:
+  /// **'Invitación pendiente'**
+  String get shopInvitationPending;
+
+  /// No description provided for @shopMembers.
+  ///
+  /// In es, this message translates to:
+  /// **'Personas de la lista'**
+  String get shopMembers;
+
+  /// No description provided for @shopOwner.
+  ///
+  /// In es, this message translates to:
+  /// **'Tú eres el propietario'**
+  String get shopOwner;
+
+  /// No description provided for @shopOwnerOther.
+  ///
+  /// In es, this message translates to:
+  /// **'El propietario administra las invitaciones'**
+  String get shopOwnerOther;
+
+  /// No description provided for @shopRevoke.
+  ///
+  /// In es, this message translates to:
+  /// **'Revocar acceso'**
+  String get shopRevoke;
+
+  /// No description provided for @shopRevokeInfo.
+  ///
+  /// In es, this message translates to:
+  /// **'Esta persona dejará de acceder a los productos y no podrá restaurar su acceso con la invitación anterior.'**
+  String get shopRevokeInfo;
+
+  /// No description provided for @shopLeave.
+  ///
+  /// In es, this message translates to:
+  /// **'Abandonar lista'**
+  String get shopLeave;
+
+  /// No description provided for @shopLeaveInfo.
+  ///
+  /// In es, this message translates to:
+  /// **'Dejarás de ver y modificar sus productos. Necesitarás una nueva invitación para volver.'**
+  String get shopLeaveInfo;
+
+  /// No description provided for @shopDeleteList.
+  ///
+  /// In es, this message translates to:
+  /// **'Eliminar lista'**
+  String get shopDeleteList;
+
+  /// No description provided for @shopDeleteInfo.
+  ///
+  /// In es, this message translates to:
+  /// **'Se eliminarán la lista, sus productos y las invitaciones. Confirma para continuar.'**
+  String get shopDeleteInfo;
+
+  /// No description provided for @shopProduct.
+  ///
+  /// In es, this message translates to:
+  /// **'Producto'**
+  String get shopProduct;
+
+  /// No description provided for @shopAdd.
+  ///
+  /// In es, this message translates to:
+  /// **'Añadir producto'**
+  String get shopAdd;
+
+  /// No description provided for @shopEdit.
+  ///
+  /// In es, this message translates to:
+  /// **'Editar producto'**
+  String get shopEdit;
+
+  /// No description provided for @shopWithAmount.
+  ///
+  /// In es, this message translates to:
+  /// **'Indicar cantidad y unidad'**
+  String get shopWithAmount;
+
+  /// No description provided for @shopQuick.
+  ///
+  /// In es, this message translates to:
+  /// **'Añadir rápidamente'**
+  String get shopQuick;
+
+  /// No description provided for @shopHousehold.
+  ///
+  /// In es, this message translates to:
+  /// **'Alimentos, jabón, papel…'**
+  String get shopHousehold;
+
+  /// No description provided for @shopPending.
+  ///
+  /// In es, this message translates to:
+  /// **'Pendientes'**
+  String get shopPending;
+
+  /// No description provided for @shopBought.
+  ///
+  /// In es, this message translates to:
+  /// **'Comprados'**
+  String get shopBought;
+
+  /// No description provided for @shopMarkBought.
+  ///
+  /// In es, this message translates to:
+  /// **'Marcar como comprado'**
+  String get shopMarkBought;
+
+  /// No description provided for @shopMarkPending.
+  ///
+  /// In es, this message translates to:
+  /// **'Marcar como pendiente'**
+  String get shopMarkPending;
+
+  /// No description provided for @shopNoItems.
+  ///
+  /// In es, this message translates to:
+  /// **'No hay productos pendientes.'**
+  String get shopNoItems;
+
+  /// No description provided for @shopNoBought.
+  ///
+  /// In es, this message translates to:
+  /// **'No hay productos comprados.'**
+  String get shopNoBought;
+
+  /// No description provided for @shopRemove.
+  ///
+  /// In es, this message translates to:
+  /// **'Eliminar producto'**
+  String get shopRemove;
+
+  /// No description provided for @shopRemoveInfo.
+  ///
+  /// In es, this message translates to:
+  /// **'Se eliminará este producto de la lista compartida.'**
+  String get shopRemoveInfo;
+
+  /// No description provided for @shopConnecting.
+  ///
+  /// In es, this message translates to:
+  /// **'Conectando sincronización…'**
+  String get shopConnecting;
+
+  /// No description provided for @shopSynced.
+  ///
+  /// In es, this message translates to:
+  /// **'Conectado a Realtime'**
+  String get shopSynced;
+
+  /// No description provided for @shopChecking.
+  ///
+  /// In es, this message translates to:
+  /// **'Comprobando cambios…'**
+  String get shopChecking;
+
+  /// No description provided for @shopDisconnected.
+  ///
+  /// In es, this message translates to:
+  /// **'Sin sincronización en vivo. Recarga para comprobar cambios.'**
+  String get shopDisconnected;
+
+  /// No description provided for @shopReload.
+  ///
+  /// In es, this message translates to:
+  /// **'Recargar desde el servidor'**
+  String get shopReload;
+
+  /// No description provided for @shopDiscardDraft.
+  ///
+  /// In es, this message translates to:
+  /// **'Se sustituirá tu borrador por los datos actuales del servidor.'**
+  String get shopDiscardDraft;
+
+  /// No description provided for @shopConflict.
+  ///
+  /// In es, this message translates to:
+  /// **'Los datos han cambiado o la solicitud ya se utilizó. Recarga y revisa antes de guardar.'**
+  String get shopConflict;
+
+  /// No description provided for @shopForbidden.
+  ///
+  /// In es, this message translates to:
+  /// **'La lista, receta o producto ya no está disponible para tu cuenta.'**
+  String get shopForbidden;
+
+  /// No description provided for @shopInvalid.
+  ///
+  /// In es, this message translates to:
+  /// **'Revisa nombre, cantidad y unidad. Usa una cantidad positiva con un máximo de tres decimales.'**
+  String get shopInvalid;
+
+  /// No description provided for @shopNetwork.
+  ///
+  /// In es, this message translates to:
+  /// **'No se pudo comprobar el resultado. Tu borrador se conserva; vuelve a intentarlo cuando tengas conexión.'**
+  String get shopNetwork;
+
+  /// No description provided for @shopSameRequest.
+  ///
+  /// In es, this message translates to:
+  /// **'El reintento comprobará la misma solicitud para evitar duplicados.'**
+  String get shopSameRequest;
+
+  /// No description provided for @shopImport.
+  ///
+  /// In es, this message translates to:
+  /// **'Añadir ingredientes a la lista'**
+  String get shopImport;
+
+  /// No description provided for @shopMissingImport.
+  ///
+  /// In es, this message translates to:
+  /// **'Añadir lo que me falta'**
+  String get shopMissingImport;
+
+  /// No description provided for @shopDestination.
+  ///
+  /// In es, this message translates to:
+  /// **'Lista de destino'**
+  String get shopDestination;
+
+  /// No description provided for @shopChooseCreate.
+  ///
+  /// In es, this message translates to:
+  /// **'Crea una lista para continuar.'**
+  String get shopChooseCreate;
+
+  /// No description provided for @shopConfirmImport.
+  ///
+  /// In es, this message translates to:
+  /// **'Confirmar ingredientes seleccionados'**
+  String get shopConfirmImport;
+
+  /// No description provided for @shopOpenList.
+  ///
+  /// In es, this message translates to:
+  /// **'Abrir lista'**
+  String get shopOpenList;
+
+  /// No description provided for @shopImportPrivacy.
+  ///
+  /// In es, this message translates to:
+  /// **'La lista recibirá solo productos y cantidades. El título y los datos privados de la receta no se compartirán.'**
+  String get shopImportPrivacy;
+
+  /// No description provided for @shopOriginalAmounts.
+  ///
+  /// In es, this message translates to:
+  /// **'Se conservan las cantidades y raciones originales. No se suman productos existentes ni se convierten unidades.'**
+  String get shopOriginalAmounts;
+
+  /// No description provided for @shopRecipeChanged.
+  ///
+  /// In es, this message translates to:
+  /// **'La receta cambió desde la consulta. Vuelve a comprobar los faltantes antes de importar.'**
+  String get shopRecipeChanged;
+
+  /// No description provided for @shopRecalculate.
+  ///
+  /// In es, this message translates to:
+  /// **'Revisar de nuevo qué cocino hoy'**
+  String get shopRecalculate;
+
+  /// No description provided for @shopSave.
+  ///
+  /// In es, this message translates to:
+  /// **'Guardar'**
+  String get shopSave;
+
+  /// No description provided for @shopImported.
+  ///
+  /// In es, this message translates to:
+  /// **'{count, plural, =1{Se ha confirmado 1 ingrediente.} other{Se han confirmado {count} ingredientes.}}'**
+  String shopImported(int count);
 }
 
 class _AppLocalizationsDelegate

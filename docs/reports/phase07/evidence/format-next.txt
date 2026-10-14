@@ -1,0 +1,2 @@
+Formatted test_support/shopping_local.dart
+Formatted 9 files (1 changed) in 0.06 seconds.
